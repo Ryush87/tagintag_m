@@ -20,11 +20,6 @@
 						<div class="ogiOption">배송비 : 0 (전자상품권)</div>
 					</div>
 				</div>
-				<div class="fL mt10 p10 grayBgBox">
-					<ul class="brownDotLi">
-						<li class="fs11x">제세공과금 상품의 경우 구매시 별도의 안내를 통해 세금(22%) 납부 후 배송 처리됩니다.</li>
-					</ul>
-				</div>
 			</section>
 			<section id="oGoodsOptionBox" class="sectionSlideBox openScts">
 				<h4 class="sctsTitle">옵션선택</h4>
@@ -71,12 +66,14 @@
 						<tr>
 							<th scope="row"><label for="dlvrAdrsSlt">배송지선택</label></th>
 							<td>
+								<!--
 								<select name="" id="dlvrAdrsSlt" class="dlvrAdrsSlt">
 									<option value="">배송지를 선택해주세요</option>
 									<option value="">배송지1</option>
 									<option value="">배송지2</option>
 									<option value="">배송지3</option>
 								</select>
+								-->
 								<div class="radioBoxWrap mt5 mb10">
 									<input type="radio" id="dlvrAdrs1" name="dlvrAdrs"/><label for="dlvrAdrs1">최근배송지</label>
 									<input type="radio" id="dlvrAdrs2" name="dlvrAdrs"/><label for="dlvrAdrs2">신규배송지</label>
@@ -135,7 +132,6 @@
 							<th scope="row"><label for="dlvrMsg2">배송메세지</label></th>
 							<td>
 								<ul id="dlvrMsgBox">
-									<!--
 									<li>
 										<label for="dlvrMsg1" class="blind">배송메세지종류</label>
 										<select name="" id="dlvrMsg_1" class="dlvrMsgSlt">
@@ -143,7 +139,6 @@
 											<option value="">직접입력</option>
 										</select>
 									</li>
-									-->
 									<li class="mt5 mb10">
 										<textarea name="" id="dlvrMsg2" cols="30" rows="3"></textarea>
 									</li>

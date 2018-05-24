@@ -16,37 +16,13 @@
 #contents section:first-child {margin-top:0px;}
 
 /* ing_goods */
-
-.episodeListTabBox {}
-.episodeListTabBox.pageTab {}
-	.episodeListTabBox.pageTab li {width:33.33%;}
-
-.epsdProbability {position:absolute;top:60px;left:5px;width:42px;height:42px;background:#2b343a;border-radius:21px;}
-	.epsdProbability .proba1,
-	.epsdProbability .proba2 {margin:0 auto;width:60%;height:19px;line-height:19px;font-size:12px;text-align:center;color:#fff;}
-	.epsdProbability .proba2 {line-height:15px;border-top:1px solid #fff;}
-
 .ingGoodsDetailWrap {}
 	#mainGoodsBox {float:left;width:100%;}
-		#mainGoodsBox .epsdKindLabel {position:absolute;top:10px;left:10px;width:42px;height:49px;}
-				#mainGoodsBox .epsdKindLabel span {display:block;padding-top:17px;width:100%;height:100%;font-weight:600;font-size:11px;letter-spacing:-0.025em;text-align:center;background:url(../images/common/icon_tag_kind_bg.png) no-repeat;}
-		#mainGoodsBox .epsdKindLabel1 {color:#e40075;}
-		#mainGoodsBox .epsdKindLabel2 {color:#00a7b0;}
-		#mainGoodsBox .epsdKindLabel3 {color:#663b93;}
-		#mainGoodsBox .epsdProbability {position:absolute;top:70px;left:10px;padding-top:2px;width:42px;height:42px;background:#2b343a;border-radius:21px;}
 		.mainGoodsImgBox {position:relative;float:left;width:100%;padding:20px 30px 0;}
-		.mainGoodsInfoBox {position:relative;float:left;padding:15px;width:100%;}
+		.mainGoodsInfoBox {float:left;padding:15px;width:100%;}
 			.mgiName {font-weight:500;font-size:1.6em;color:#444;}
 			.mgiPrice1 {font-size:1.4em;color:#888;text-decoration:line-through;}
 			.mgiPrice2 {font-weight:500;font-size:2em;color:#e82d34;}
-			#copyUrlBtn {position:absolute;bottom:15px;right:15px;}
-				#copyUrlBtn a {display:block;padding-left:30px;height:25px;line-height:25px;font-size:14px;color:#333;background:url(../images/common/icon_url_btn.png) no-repeat 0 0;}
-			.shareFtBtns {position:absolute;bottom:55px;right:15px;width:25px;height:25px;cursor:pointer;background:url(../images/common/icon_sns_btn.png) no-repeat 0 0;}
-			.shareFtBtns.actOn {background:url(../images/common/icon_url_btn.png) no-repeat 0 0;}
-				.shareFtBtns ul {position:absolute;bottom:35px;display:block;}
-					.shareFtBtns ul li {display:block;margin-top:10px;width:25px;height:25px;}
-						.shareFtBtns ul li a {display:block;width:100%;height:100%;}
-					.shft_facebook {cursor:pointer;background:url(../images/common/icon_url_btn.png) no-repeat 0 0;}
 	/*
 		.mainGoods_01 {background:url(../images/temp/temp_main_goods_01.jpg) no-repeat 50% 0;}
 		.mainGoods_02 {background:url(../images/temp/temp_main_goods_02.jpg) no-repeat 50% 0;}
@@ -189,8 +165,6 @@
 									.bOtionItem > li span {vertical-align:middle;}
 									.boiItem .iCaution {margin-left:10px;}
 									.boiItem .tSoldOut {margin-left:10px;}
-		
-		#tagCountInfoBox {float:left;width:100%;}
 
 		#buyStandbyBox {float:left;width:100%;;}
 			.bsbTotal {float:left;font-size:15px;color:#888;}
@@ -244,31 +218,31 @@
 				.questRegBox .pageBtnBox {margin-top:5px;}
 			.questRegBtnBox {float:left;width:100%;}
 				.questRegBtnBox select {float:left;width:63%;}
-				.questRegBtnBox .mBtn {float:right;margin-top:3px;margin-left:5px;width:35%;height:30px;line-height:30px;}
+				.questRegBtnBox .mBtn {float:right;margin-left:5px;width:35%;height:30px;line-height:30px;}
 			#goodsQnaBox .qnaSlideListBox {margin-top:10px;}
 				/* slideListBox */
 				.qnaSlideListBox {float:left;width:100%;font-family:inherit;}
-					.qnaSlideListBox .slideListBody {float:left;margin-bottom:10px;width:100%;}
+					.qnaSlideListBox .slideListBody {float:left;margin-bottom:10px;}
 						.qnaSlideListBox .slideListBody > li {float:left;width:100%;font-size:1.3em;letter-spacing:-0.025em;border-bottom:0;}
 						.qnaSlideListBox .slideListBody > li:last-child {border-bottom:1px solid #e2e2e2;}
 						.qnaSlideListBox > li.openLine {}
 						.qnaSlideListBox > li a {color:#333;}
 						.qnaSlideListBox > li.actOn a {text-decoration:underline;}
-							.qnaSlideListBox .titleLine {position:relative;float:left;padding:15px 0;width:100%;border-top:1px solid #e2e2e2;}
+							.qnaSlideListBox .titleLine {float:left;padding:15px 0;width:100%;border-top:1px solid #e2e2e2;}
 							.qnaSlideListBox .conLine {display:none;float:left;padding:15px 0;width:100%;background:#fff;border-top:1px solid #e2e2e2;}
 				#goodsQnaBox .titleLine a,
 				#goodsQnaBox .titleLine a:hover {text-decoration:none;}
 				.qIcon1 {float:left;width:23px;height:23px;background:url(../images/common/icon_q.png) no-repeat 0 0;background-size:23px;}
 				.qIcon2 {float:left;width:38px;height:23px;background:url(../images/common/blt_a.png) no-repeat 0 0;background-size:38px;}
 				.qText {float:left;margin-left:10px;}
-				#goodsQnaBox .titleLine .qText {width:80%;}
+				#goodsQnaBox .titleLine .qText {width:60%;}
 					#goodsQnaBox .titleLine .qtCon {display:none;}
 				#goodsQnaBox .conLine .qText {width:80%;}
 					.qtTit {font-weight:bold;}
 					.qtCon {padding-top:10px;;color:#555;}
 					.qtInfo {padding-top:10px;font-size:11px;color:#888;}
 						.qtInfo span {font-family:"Arial";}
-				.qStatus {/*float:right;*/position:absolute;top:10px;right:0;}
+				.qStatus {float:right;}
 					.qDone,
 					.qIng {display:inline-block;float:left;padding-right:10px;padding-left:10px;height:20px;line-height:20px;font-size:11px;color:#888;border:1px solid #ddd;}
 					.qDone {background:#fff;}
@@ -430,10 +404,6 @@
 	#pTagOpenHistoryBox {float:left;width:100%;}
 		.pTagOpenGoodsInfo {float:left;margin-top:15px;padding:10px 15px;width:100%;border:1px solid #383838;}
 				.pTagOpenGoodsInfo p {padding:5px 0;line-height:18px;font-weight:500;font-size:1.4em;color:#333;}
-		.pTagOpenHistoryListTabBox {float:left;margin-top:20px;margin-bottom:10px;}
-			.pTagOpenHistoryListTabBox.pageTab {}
-				.pTagOpenHistoryListTabBox.pageTab li {width:33.33%;}
-					.pTagOpenHistoryListTabBox.pageTab li a {height:50px;line-height:50px;}
 		#pTagOpenHistoryBox .brownDotLi {float:left;margin-top:15px;width:100%;}
 			#pTagOpenHistoryBox .brownDotLi li {font-size:1.24em;background-position:0 9px;}
 		#pTagOpenHistoryBox .slideListBox {float:left;width:100%;}
@@ -445,7 +415,6 @@
 						.gthT1 {float:left;width:30px;}
 						.gthT2 {float:left;width:60%;}
 						.gthT3 {float:left;width:60px;}
-						.gthT4 {float:right;width:10%;}
 					#pTagOpenHistoryBox .conLine {background:#fff;}
 					.gthCon {float:left;padding:0 10px 10px 10px;width:100%;border-top:0;}
 						.gthCon dl {float:left;padding:10px 20px;width:100%;background:#f6f7f8;}

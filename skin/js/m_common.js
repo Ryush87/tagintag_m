@@ -135,10 +135,6 @@ function hidePopup2(obj){ //divpopup2 숨기기
 	divPopBg2_hide();
 	objHide($(obj));
 }
-function hidePopup3(obj){ //divpopup3 숨기기
-	resetFadeEff(obj);
-	objHide($(obj));
-}
 function nextPopup(pObj,nObj){ //divpopup 보이기
 	var closeObj=pObj.parents('.divPopupBox');
 	resetFadeEff(closeObj);
@@ -512,10 +508,6 @@ $(function($){
 
 	//BtnAction  s-----------------	
 	//subPage s---------------
-	$('.pageListTab li').click(function(){ //pageListTab 클릭시 활성화
-		$('.pageListTab li').removeClass('actOn');
-		$(this).addClass('actOn');
-	});
 	$('#findIdPwBox .pageTab li a').on('click',function(){ //아이디찾기
 		var targetObj=$(this).attr("tab-href");
 		$(this).parents('.pageTab').find('li').removeClass('actOn');
@@ -555,14 +547,6 @@ $(function($){
 	$(".infoPopBtn").on('click',function(){ //mypage 느낌표 아이콘
 		$(this).next().slideToggle();
 	});
-	$(".shareFtBtns").on('click',function(){ //공유버튼
-		$(this).find('ul').slideToggle();
-		if(Number($(this).find('ul').height())<5){
-			$(this).addClass("actOn");
-		}else{
-			$(this).removeClass("actOn");
-		}
-	});
 	$(".paymentInputBox .payKindUlBox li").on("click",function(){ //충전하기 결제방법
 		var li_index=$(".paymentInputBox .payKindUlBox li").index($(this))+1;
 		$(".paymentInputBox .payKindUlBox li").removeClass('actOn');
@@ -598,21 +582,6 @@ $(function($){
 		hidePopup($(this).parents('.divPopupBox'));
 	});
 	//divPop e---------------
-
-	//clipboard s-------------------
-	var clipboard=new Clipboard('.clipboardBtn');
-	clipboard.on('success', function(e) { //copy URL
-		//console.info('Action:', e.action);
-		//console.info('Text:', e.text);
-		//console.info('Trigger:', e.trigger);
-		alert('선택하신 상품의 고유주소(URL)가 클립보드에 복사되었습니다.\n\Ctrl + V 또는 붙여넣기를 선택하여 이용하시기 바랍니다.');
-		e.clearSelection();
-	});
-	clipboard.on('error', function(e) {
-		console.error('Action:', e.action);
-		console.error('Trigger:', e.trigger);
-	});
-	//clipboard e-------------------
 
 	//BtnAction UI e-----------------
 });
@@ -661,13 +630,9 @@ $(document).ready(function(){
 	//quick_menu_act(quickY);
 });
 
-function setComma( num ){ // 숫자콤마
-	return String(num).replace(/(\d)(?=(?:\d{3})+(?!\d))/g, '$1,'); // 정규식을 통한 콤마 넣기
-}
-
 /******************************** 택관련 함수 ************************************/
 function actTagKeepBtn(){ // 택보관버튼 호출
-	//time_count2($('.leftTimeTag')); //시간 카운트
+	time_count2($('.leftTimeTag')); //시간 카운트
 	$('.tkTimeBtn').fadeIn();
 	$('.tkTimeBtn').animate({'right':'0'},1000);
 }

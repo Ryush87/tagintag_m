@@ -22,54 +22,16 @@
 			.slick-next {right:5% !important;}
 			.slick-dots {bottom:0 !important;}
 			.mCaruselItem {}
-			.slick-prev:before,
-			.slick-next:before {font-size:20px;color:white;}
 
 	#mainTotalDiscountBox {float:left;width:100%;}
-		.mtdTextBox {float:left;width:100%;height:50px;line-height:40px;font-weight:500;font-size:15px;color:#fff;text-align:center;background:#464646;border:5px solid #fff;}
-	#episodeBox {}
-		.episodeBoxWrap {float:left;width:100%;border-top:1px solid #ddd;}
-			.episodeBoxWrap li {float:left;width:50%;}
-				.epsdItem {position:relative;float:left;padding:20px;width:100%;border-right:1px solid #fff;border-bottom:1px solid #ddd;}
-					.episodeBoxWrap li:nth-child(2n+1) .epsdItem {border-right:1px solid #ddd;}
-						.epsdLabel {position:absolute;top:0;right:20px;padding-top:10px;width:45px;height:45px;}
-							.epsdLabel span {display:block;width:100%;height:100%;font-weight:500;font-size:1.2em;color:#fff;text-align:center;background:url(../images/common/list_label_bg.png) no-repeat 50% 100%;}
-						.epsdLabel1 {background:#70b986;}
-						.epsdLabel2 {background:#d26666;}
-						.epsdLabel3 {background:#bac0c4;}
-						.epsdKindLabel {position:absolute;top:5px;left:5px;width:42px;height:49px;}
-							.epsdKindLabel span {display:block;padding-top:14px;width:100%;height:100%;font-weight:600;font-size:12px;letter-spacing:-0.025em;text-align:center;background:url(../images/common/icon_tag_kind_bg.png) no-repeat;background-size:contain;}
-						.epsdKindLabel1 {color:#e40075;}
-						.epsdKindLabel2 {color:#00a7b0;}
-						.epsdKindLabel3 {color:#663b93;}
-						.epsdImg {width:58%;min-height:69px;}
-						.epsdTitle {margin-top:15px;height:52px;font-weight:500;font-size:1.8em;color:#c6a370;overflow:hidden;}
-							.epsdTitle span {}
-						.epsdProbability {position:absolute;top:70px;right:24px;width:46px;height:48px;background:#2b343a;border-radius:23px;}
-							.epsdProbability .proba1,
-							.epsdProbability .proba2 {margin:0 auto;width:60%;height:19px;line-height:19px;font-size:12px;text-align:center;color:#fff;}
-							.epsdProbability .proba2 {line-height:15px;border-top:1px solid #fff;}
-						/*.epsdNum {font-weight:bold;font-size:2em;color:#091b25;}*/
-						.epsdNum {position:absolute;top:45px;right:20px;font-weight:bold;font-size:1.4em;width:45px;text-align:center;color:#091b25;}
-						/*.epsdDate {margin-top:20px;font-size:1.5em;color:#333;}*/
-						.epsdDate {margin-top:5px;font-size:1.5em;color:#333;}
-						.epsdDesc {margin-top:10px;height:35px;font-size:1.2em;color:#a3aeb7;}
-						.epsdBtns {margin-top:10px;text-align:right;}
-							/*.epsdBtns .btnS1 {margin-left:0;padding-right:15px;padding-left:15px;}*/
-							.epsdBtns .btnS1 {width:100%;margin-left:0;padding-right:0px;padding-left:0px;}
-				.epsdItem.epsdItemPrepare {}
-					.epsdItem.epsdItemPrepare .epsdImg {margin:0 auto;}
-					.epsdItem.epsdItemPrepare .epsdTitle {text-align:center;line-height:25px;white-space:initial;overflow:initial}
-					.epsdItem.epsdItemPrepare .epsdDate,
-					.epsdItem.epsdItemPrepare .epsdDesc,
-					.epsdItem.epsdItemPrepare .epsdBtns {visibility:hidden;}
+		.mtdTextBox {float:left;width:100%;height:50px;line-height:40px;font-weight:500;font-size:15px;color:#222;text-align:center;border:5px solid #e8e8e8;}
 	#ingGoodsBox {}
 		.mainPageWrap .ingGoodsList .igiTagPrice {margin-top:0;}
 	#mainBannerBox {float:left;width:100%;}
 	#mainBoardBox {float:left;width:100%;}
-		.mbbWrap {float:left;width:100%;background:#f7f7f7;}
+		.mbbWrap {float:left;width:100%;}
 			.mbbWrap .mbbBox {float:left;padding:5px 0;width:100%;}
-			#mbbWin {border-bottom:1px solid #ddd;}
+			#mbbWin {border-bottom:1px solid #eee;}
 			#mbbReturn {}
 				.mbbLiItem {float:left;width:100%;}
 					.mbCate {float:left;margin-left:5%;line-height:36px;font-size:13px;color:#666;}
@@ -83,11 +45,9 @@
 					#mbbReturn .mbbUser {margin-left:10px;color:#555;}
 					.mbbPrice {float:right;margin-right:5%;line-height:36px;font-size:13px;color:#555;}
 						.mbbPrice span {font-weight:bold;}
-					.mbbCenter {width:100%;line-height:36px;font-size:13px;color:#666;text-align:center;}
-						.mbbCenter span {margin-right:15px;}
 
 /* login */
-.loginWrap {padding-top:30px;}
+.loginWrap {margin-top:30px;}
 	#loginBox {float:left;width:100%;}
 		.loginInputBox {float:left;width:100%;}
 			.loginInputBox input[type="text"],
@@ -119,22 +79,21 @@
 				#restorationBox .guideBox .bd1sEEE {margin-top:10px;padding:10px 20px;line-height:18px;font-weight:500;font-size:1.3em;color:#777;letter-spacing:-0.025em;}
 			#restorationBox #findKind_phon .findIdPwUl {padding-top:180px;background:url(../images/sub_login/find_box_tel_bg.png) no-repeat 50% 30%;background-size:120px;}
 
-.findIdPwWrap {padding-top:10px;}
+.findIdPwWrap {margin-top:10px;}
 	#findIdPwBox {float:left;width:100%;}
 			#findIdPwBox .pageTab li {width:50%;}
 		#findIdPwBox .grayBgBox {float:left;margin-bottom:10px;padding:10px 20px;width:100%;font-weight:500;font-size:1.2em;color:#888;letter-spacing:-0.05em;}
 			#findIdPwBox .grayBgBox span {color:#333;}
 		#findKind_phon {display:block;float:left;width:100%;}
-			/*#findKind_phon .findIdPwUl {padding-top:250px;background:url(../images/sub_login/find_box_tel_bg.png) no-repeat 50% 40%;background-size:120px;}*/
+			#findKind_phon .findIdPwUl {padding-top:250px;background:url(../images/sub_login/find_box_tel_bg.png) no-repeat 50% 40%;background-size:120px;}
 		#findKind_email {display:none;float:left;width:100%;}
 			.idInputBox,
 			.findIdPwUl li {margin-bottom:10px;}
 				#findIdPwBox input[type="text"],
-				#findIdPwBox input[type="email"],
 				#findIdPwBox input[type="password"],
 				#findIdPwBox input[type="number"] {width:100%;font-size:1.2em;}
 				#findIdPwBox input[type="text"].certiNum,
-				#findIdPwBox input[type="number"].certiNum {/*width:65%;*/width:100%;}
+				#findIdPwBox input[type="number"].certiNum {width:65%;}
 				.leftTime {font-size:12px;}
 		.findResultBox {float:left;width:100%;}
 		.resetPwBox {float:left;width:100%;}
@@ -150,11 +109,11 @@
 		#mbJoinBox .mbJoinStepBox {float:left;margin-bottom:0;padding:0 5%;width:100%;line-height:40px;font-size:1.5em;border-bottom:1px solid #eee;}
 		#mbJoinBox .allCheck {float:left;padding:10px 0;width:100%;font-size:1.2em;color:#333;}
 		#mbJoinBox h3 {float:left;width:100%;font-size:1.4em;color:#333;font-weight:bold;}
-		#mbJoinBox .pageBtnBox .mBtn {/*width:49%;*/width:100%;}
+		#mbJoinBox .pageBtnBox .mBtn {width:49%;}
 		.mbPolicyBox {float:left;width:100%;}
 			.mbPolicyBox .gridL {float:left;width:100%;}
 				#mbJoinBox .mbPolicyBox h3 {padding:10px 20px;font-weight:500;font-size:12px;color:#777;background:#f9f9f9;border:1px solid #e9e9e9;}
-				.mbPolicyBox .mbPolicyBoxUL {float:left;padding:5px 0;width:100%;border:1px solid #e9e9e9;border-top:0;}
+				.mbPolicyBox .mbPolicyBoxUL {float:left;padding:5px 0;border:1px solid #e9e9e9;border-top:0;}
 				.mbPolicyBox .mbPolicyBoxUL > li {float:left;margin:4px 0;padding:0 20px;width:100%;font:normal 12px "Noto Sans KR";color:#777;}
 					.mbPolicyBox .mbPolicyBoxUL > li label {line-height:20px;color:#777;}
 					.mbPolicyBox .mbPolicyBoxUL > li .smBtn {float:right;font-family:"Noto Sans KR";color:#777;border-radius:15px;}
@@ -173,11 +132,8 @@
 					.mbNecePolicyBox ul li p {float:left;width:90%;}
 		#mbJoinBox .pageBtnBox {margin-top:0;}
 			#mbJoinBox .pageBtnBox .textBox {float:left;font:normal 1.2em "Noto Sans KR";color:#666;}
-		.mbCertiDescBox {padding-top:140px;padding-bottom:20px;text-align:center;background:url(../images/sub_login/find_box_tel_bg.png) no-repeat 50% 20px;background-size:100px;}
-			.mbCertiDescTit {font-weight:500;font-size:18px;font-family:"Noto Sans KR";}
-		.mbCertiBox {clear:both;margin:0 auto;width:100%;}
-			.mbCertiBox h5 {margin-bottom:5px;width:100%;line-height:40px;font-weight:bold;font-size:15px;color:#444;border-bottom:1px solid #eee;}
-			.mbCertiBox .mBtn{margin-top:20px;margin-left:0;padding-right:20px;padding-left:20px;width:100%;border-radius:5px;}
+		.mbCertiBox {clear:both;margin:0 auto;width:100%;background:url(../images/sub_login/find_box_tel_bg.png) no-repeat 50% 40%;background-size:120px;}
+			.mbCertiBox .mBtn{margin-top:250px;margin-left:0;padding-right:20px;padding-left:20px;width:100%;}
 		.mbInfoInputBox {float:left;width:100%;}
 			.mbJoinGuideBox {float:left;padding:10px 5%;width:100%;font-weight:normal;font-size:12px;color:#444;letter-spacing:-0.05em;}
 			.mbInfoInputBox h5 {margin-bottom:5px;width:100%;line-height:40px;font-weight:bold;font-size:15px;color:#444;border-bottom:1px solid #eee;}
@@ -189,7 +145,7 @@
 			#mbJoinBox .mbJoinCompleteBox .mbjcBox {float:left;width:100%;padding-top:160px;background:url(../images/sub_member/join_complet.png) no-repeat 50% 0;background-size:140px}
 				.mbCmpText,
 				.mbComId {font:500 14px "Noto Sans KR";color:#888;}
-				.mbComId {margin-top:20px;margin-bottom:20px;}
+				.mbComId {margin-top:20px;}
 					.mbComId span {color:#cc5222;}
 			#mbJoinBox .mbJoinCompleteBox .pageBtnBox {margin-top:20px;}
 				#mbJoinBox .mbJoinCompleteBox .pageBtnBox .mBtn {width:100%;}
@@ -211,7 +167,7 @@
 					.mypageHomeWrap #myActInfoBox .gridR ul li a {display:block;width:100%;background:url(../images/common/blt_arrow_right_gray2.png) no-repeat 100% 50%;background-size:10px;}
 					.mypageHomeWrap #myActInfoBox .gridR ul li .fR {color:#ff4100;}
 					.mypageHomeWrap #myActInfoBox .gridR ul li .fR span {display:inline-block;font-family:"Arial";font-weight:bold;font-size:15px;}
-	.mypageHomeWrap #myActInfoBox .grid100 {float:left;width:100%;/*height:130px;*/}
+	.mypageHomeWrap #myActInfoBox .grid100 {float:left;width:100%;height:130px;}
 			.mypageHomeWrap #myActInfoBox .grid100 ul {float:left;width:100%;}
 				.mypageHomeWrap #myActInfoBox .grid100 ul li {float:left;padding:0 15px;width:100%;height:45px;line-height:45px;font-weight:500;font-size:12px;color:#555;border-top:1px solid #ddd;}
 				.mypageHomeWrap #myActInfoBox .grid100 ul li:first-child {height:40px;line-height:40px;font-weight:bold;font-size:12px;color:#222;background:#f6f6f6;border-top:0;}
@@ -272,9 +228,9 @@
 			.ogdItem {float:left;width:100%;border:1px solid #eee;border-top:2px solid #ccc;}
 				.ogdiDate {float:left;padding:0 10px;width:100%;height:35px;font:bold 1.2em / 35px "Arial";color:#444;background:#f7f7f7;}
 					.ogdiDate > span {font-weight:normal;color:#888;}
-					.ogdOrderNum {float:left;}
+					.ogdOrderNum {float:right;color:#888;}
+					.ogdOrderNum:hover {color:#888;}
 						.ogdOrderNum > span {color:#c6a370;}
-					.ogdOrderDate {float:right;}
 				.ogdiInfo {float:left;padding:10px;width:100%;}
 					.ogdiImgBox {float:left;margin-right:10px;/*width:90px;height:90px;*/width:32%;text-align:center;/*border:1px solid #eee;*/overflow:hidden;}
 						.ogdiImgBox img {/*width:auto;height:100%;*/}
@@ -293,7 +249,7 @@
 	#myOrderViewBox {}
 		.topOrderInfoBox {float:left;padding:0 5%;width:100%;height:40px;line-height:40px;font-size:11px;color:#666;background:#f9fafa;}
 			.toN1 {float:left;}
-				.toN1 span {color:#c6a370;}
+				.toN1 span {color:#333;}
 			.toN2 {float:right;font-family:"Arial";font-size:12px;letter-spacing:-0.05em;}
 		#orderGoodsInfoBox {float:left;width:100%;}
 			#orderGoodsInfoBox .sctsCon {margin-top:0;padding-top:0;border-top:0;}
@@ -325,8 +281,6 @@
 
 .myInstantBuyListWrap {}
 	#myInstantBuyListBox {}
-		#myInstantBuyListBox .grayBgBox {float:left;margin-top:15px;margin-bottom:10px;width:100%;height:45px;font:500 1.3em / 45px "Noto Sans KR";color:#333;text-align:center;}
-			#myInstantBuyListBox .grayBgBox span {margin-left:10px;font-weight:bold;font-size:18px;font-family:"Arial";}
 		.myInstantBuyListWrap .slideListBox {float:left;width:100%;}
 		.myInstantBuyListWrap .slideListBody > li {border:1px solid #ddd;border-top:0;}
 			.myInstantBuyListWrap .slideListBody > li:first-child {margin-top:15px;border-top:1px solid #ddd;}
@@ -359,7 +313,6 @@
 						.tStts1 {color:#663b93;border:1px solid #663b93;}
 						.tStts2 {color:#c82358;border:1px solid #c82358;}
 						.tStts3 {color:#aaa;border:1px solid #aaa;}
-						.tStts4 {color:#480000;border:1px solid #480000;}
 				.myTagOpenHistoryListWrap .conLine {background:#fff;}
 				.mthCon {float:left;padding:10px 10px 10px 10px;width:100%;}
 					.mthCon dl {float:left;width:100%;}
@@ -492,22 +445,6 @@
 			.refundApplyBox .pageBtnBox {margin-top:10px;}
 		.returnBankSlt {}
 
-.myTurnoverWrap {}
-	#myTurnoverBox {width:100%;}
-		.myTurnoverInfo {float:left;width:100%;border-bottom:5px solid #eee;}
-		.myTurnoverCerti {float:left;width:100%;}
-		#myTurnoverBox .writeTable2 th,
-		#myTurnoverBox .writeTable2 td {padding-top:10px;padding-bottom:10px;vertical-align:middle;}
-		#myTurnoverBox .writeTable2 th {font-size:14px;}
-		#myTurnoverBox .writeTable2 td {text-align:right;}
-			.trnApplyInput1,
-			.trnApplyInput2 {text-align:right;font-weight:bold;font-size:14px;}
-			.trnApplyUnit {float:right;margin:0 0 0 15px;line-height:30px;font-weight:bold;font-size:20px;color:#222;}
-			.trnDesc {float:right;line-height:20px;color:#666;font-size:11px;}
-		#myTurnoverBox .writeTable2 .checkBoxWrap {float:right;margin-left:20px;}
-		#myTurnoverBox .brownDotLi {clear:both;padding:0;width:100%;}
-			#myTurnoverBox .brownDotLi li {font-size:11px;line-height:14px;}
-
 .myCsCounselListWrap {}
 	#myCsCounselListBox {float:left;width:100%;}
 		.listSearchBox {float:left;width:100%;border:2px solid #c6a370;}
@@ -518,7 +455,7 @@
 		#myCsCounselListBox .csSlideListBox {margin-top:10px;}
 			/* slideListBox */
 			.csSlideListBox {float:left;width:100%;font-family:inherit;}
-				.csSlideListBox .slideListBody {float:left;margin-bottom:10px;width:100%;}
+				.csSlideListBox .slideListBody {float:left;margin-bottom:10px;}
 					.csSlideListBox .slideListBody > li {float:left;width:100%;font-size:1.3em;letter-spacing:-0.025em;border-bottom:0;}
 					.csSlideListBox .slideListBody > li:last-child {border-bottom:1px solid #e2e2e2;}
 					.csSlideListBox > li.openLine {}
@@ -531,11 +468,11 @@
 			.qIcon1 {float:left;width:23px;height:23px;background:url(../images/common/icon_q.png) no-repeat 0 0;background-size:23px;}
 			.qIcon2 {float:left;width:23px;height:23px;background:url(../images/common/icon_a.png) no-repeat 0 0;background-size:23px;}
 			.qText {float:left;margin-left:10px;}
-			#myCsCounselListBox .titleLine .qText {width:80%;}
+			#myCsCounselListBox .titleLine .qText {width:60%;}
 				#myCsCounselListBox .titleLine .qtCon {display:none;}
 			#myCsCounselListBox .conLine .qText {width:80%;}
 				.qtTit {font-weight:bold;}
-				.qtCon {/*padding-top:10px;*/color:#555;}
+				.qtCon {padding-top:10px;;color:#555;}
 				.qtInfo {padding-top:10px;font-size:11px;color:#888;}
 					.qtInfo span {font-family:"Arial";}
 			.qStatus {float:right;}
@@ -567,8 +504,6 @@
 .myMemberInfoWrap {}
 	#myMemberInfoBox {float:left;width:100%;}
 		.basicInfoBox {float:left;width:100%;}
-			.mPhonEditBox1 {display:block;}
-			.mPhonEditBox2 {display:none;margin-top:10px;}
 		.deliveryInfoBox {float:left;width:100%;}
 		.marketingInfoBox {float:left;width:100%;}
 			.myMemberInfoWrap .writeTable2 {margin-bottom:10px;}
@@ -592,7 +527,7 @@
 						.inputPwBox > li > input {width:350px;color:#999;}
 				.inputMailBox {float:left;}
 					.writeTable2 .inputMailBox > input[type="text"],
-					.writeTable2 .inputMailBox > input[type="number"] {float:left;/*width:40%;*/}
+					.writeTable2 .inputMailBox > input[type="number"] {float:left;width:40%;}
 					.inputMailBox select.mDomainSlt {float:left;margin-left:0;width:40%;}
 					.inputMailBox .divi {float:left;margin:0 5px;line-height:30px;}
 				.inputTelBox {}
@@ -757,15 +692,12 @@
 	.customerHomeWrap .pageTab2 li,
 	.csNoticeWrap .pageTab2 li,
 	.csFaqWrap .pageTab2 li,
-	.csInquiryWrap .pageTab2 li {/*width:33.33%;*/width:50%;}
+	.csInquiryWrap .pageTab2 li {width:33.33%;}
 	.customerHomeWrap#contents h2 {padding:0 5%;border-bottom:1px solid #a8b4bc;}
 	.customerHomeWrap #csFaqBox {float:left;width:100%;border-bottom:5px solid #eee;}
 		.customerHomeWrap #csFaqBox ul {float:left;width:100%;}
-			/*.customerHomeWrap #csFaqBox ul li {float:left;padding:10px 0;width:50%;background:url(../images/common/blt_arrow_right_gray2.png) no-repeat 93% 50%;background-size:8px;border-bottom:1px solid #ddd;}*/
-			.customerHomeWrap #csFaqBox ul li {float:left;padding:10px 5%;width:100%;border-bottom:1px solid #ddd;}
-			.customerHomeWrap #csFaqBox .csSlideListBox .titleLine {padding:0;border-top:0;}
-			.customerHomeWrap #csFaqBox .csSlideListBox .conLine {margin-top:10px;}
-			/*.customerHomeWrap #csFaqBox ul li:last-child {border-bottom:0;}
+			.customerHomeWrap #csFaqBox ul li {float:left;padding:10px 0;width:50%;background:url(../images/common/blt_arrow_right_gray2.png) no-repeat 93% 50%;background-size:8px;border-bottom:1px solid #ddd;}
+			.customerHomeWrap #csFaqBox ul li:last-child {border-bottom:0;}
 				.customerHomeWrap #csFaqBox ul li a {display:block;margin:0 5% 0 7%;padding-left:35px;width:90%;height:30px;line-height:27px;font-weight:500;font-size:13px;color:#444;letter-spacing:-0.05em;}
 				.csfCate1 {background:url(../images/sub_customer/icon_faq_01.png) no-repeat 0 50%;background-size:contain;}
 				.csfCate2 {background:url(../images/sub_customer/icon_faq_02.png) no-repeat 0 50%;background-size:contain;}
@@ -774,27 +706,10 @@
 				.csfCate5 {background:url(../images/sub_customer/icon_faq_05.png) no-repeat 0 50%;background-size:contain;}
 				.csfCate6 {background:url(../images/sub_customer/icon_faq_06.png) no-repeat 0 50%;background-size:contain;}
 				.csfCate7 {background:url(../images/sub_customer/icon_faq_07.png) no-repeat 0 50%;background-size:contain;}
-				*/
-			.customerHomeWrap #csFaqBox .pageBtnBox {margin-top:0;margin-bottom:20px;padding:0 5%;}
 	.customerHomeWrap #csNoticeBox {float:left;width:100%;}
 		.customerHomeWrap #csNoticeBox .listTable2 {border-top:0;}
 			.customerHomeWrap #csNoticeBox .listTable2 td:last-child {font-family:"Arial";}
 		.customerHomeWrap #csNoticeBox .pageBtnBox {margin-top:10px;padding:0 5%;}
-	.customerHomeWrap #csInquiryBox {float:left;width:100%;}
-		.customerHomeWrap #csInquiryBox .listTable2 {border-top:0;}
-			.customerHomeWrap #csInquiryBox .listTable2 td:last-child {font-family:"Arial";}
-		.customerHomeWrap #csInquiryBox .pageBtnBox {margin-top:10px;padding:0 5%;}
-
-#csInfoBox {float:left;width:100%;background:url(../images/sub_customer/customer_bg.gif);border-bottom:5px solid #eee;}
-	.csInfoBoxWrap {float:left;padding:20px 15px;width:100%;}
-		.csibImg {display:none;float:left;width:20%;}
-		.csibText1 {float:left;margin-top:10px;width:100%;font-weight:500;font-size:1.2em;color:#45403a;}
-			.csibText1 span {display:inline-block;width:30%;}
-		.csibText2 {float:left;padding:10px 0;width:100%;font-weight:400;font-size:1.2em;letter-spacing:-0.025em;color:#fff;border:5px solid #d3bf82;}
-		.csibBtns {float:left;margin-top:20px;width:100%;}
-			.csibBtn {display:block;padding-left:15px;width:48%;height:40px;line-height:34px;font-weight:500;font-size:1.4em;letter-spacing:-0.05em;border:2px solid #fff;}
-			a.csibBtn1 {float:left;color:#fff;background:url(../images/sub_customer/customer_btn_1.jpg) no-repeat 100% 50%;}
-			a.csibBtn2 {float:right;color:#3b1e1e;background:url(../images/sub_customer/customer_btn_2.jpg) no-repeat 100% 50%;}
 
 .csNoticeWrap {}
 	#csNoticeListBox {float:left;width:100%;}
@@ -810,7 +725,6 @@
 				.bbsvInfo {float:left;width:100%;font-size:12px;color:#888;}
 			.bbsvCon {float:left;width:100%;font-size:12px;color:#888;}
 				.bbsvCon textarea {float:left;width:100%;}
-				.bbsvCon img {margin-bottom:10px;}
 		#csNoticeViewBox .pageBtnBox {margin-top:0;}
 
 .csFaqWrap {}
@@ -854,30 +768,7 @@
 				#csInquiryWriteBox .writeTable2 .uploadFile {float:right;margin-left:0;width:38%;font-weight:500;font-size:14px;color:#555;background:#fff;border:1px solid #ddd;}
 			#csInquiryWriteBox .pushKindBox label {font-size:13px;color:#888;}
 				#csInquiryWriteBox .pushKindBox .rmBtn {margin-top:10px;margin-bottom:10px;}
-			#csInquiryWriteBox .pageBtnBox {padding-top:5px;/*border-top:1px solid #eee;*/}
-
-.tBbsWrap {}
-	#tBbsListBox {width:100%;}
-		#tBbsListBox .listTable2 {margin-top:10px;border-top:1px solid #ddd;}
-		#tBbsListBox .pageBtnBox {margin-top:10px;padding:0 5%;}
-	#tBbsViewBox {width:100%;}
-	#tBbsWriteBox {width:100%;}
-
-/* event */
-.eventListWrap {}
-	#eventListBox {padding-top:15px;width:100%;}
-		.eventListUl {width:100%;}
-			.eventListUl li {float:left;margin-bottom:15px;width:100%;}
-				.evntlItem {}
-
-#contents.eventViewDetailWrap {border-top:0;}
-.eventViewDetailWrap {}
-	#eventViewDetailBox {width:100%;}
-#pInviteConfilmBox .listTable2 th,
-#pInviteConfilmBox .listTable2 td {border-right:1px solid #ddd;}
-#pInviteConfilmBox .listTable2 th:last-child,
-#pInviteConfilmBox .listTable2 td:last-child {border-right:0;}
-
+			#csInquiryWriteBox .pageBtnBox {padding-top:5px;border-top:1px solid #eee;}
 
 /* tagintag */
 .serviceWrap {}
@@ -917,7 +808,7 @@
 				.serviceBox .exUl {float:left;margin-top:20px;width:100%;}
 					.serviceBox .exUl li {float:left;margin-bottom:20px;width:100%;height:80px;}
 						.serviceBox .exUl li .exImg {float:left;width:20%;height:100%;vertical-align:middle;}
-							.serviceBox .exUl li .exImg img {margin-top:0px;width:auto;height:100%;}
+							.serviceBox .exUl li .exImg img {margin-top:10px;width:100%;}
 						.serviceBox .exUl li .exTxt {float:left;padding-left:20px;width:80%;}
 							.serviceBox .exUl li .exTxt .ext1 {font:bold 15px "noto sans kr";letter-spacing:-0.05em;color:#333;}
 							.serviceBox .exUl li .exTxt .ext2 {margin-top:0px;font:normal 12px / 18px "noto sans kr";letter-spacing:-0.05em;color:#666;}
@@ -961,7 +852,7 @@
 /* footer */
 .ftcIntroWrap .pageTab2 li,
 .ftcPartnerWrap .pageTab2 li,
-.ftcMapWrap .pageTab2 li {/*width:33.33%;*/width:50%;}
+.ftcMapWrap .pageTab2 li {width:33.33%;}
 
 .ftcIntroWrap {}
 	#ftcIntroBox {float:left;width:100%;}

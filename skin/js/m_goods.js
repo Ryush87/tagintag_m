@@ -33,8 +33,7 @@ $(function($){
 			if(global_tag_num>0){
 				objHide($(this).parents('.divPopupBox'));
 				$('#slotMachineBox .sltmReelCount .countN').html(global_tag_num);
-				//linkUrl="tag_open_scroll_motion.html";
-				linkUrl="tag_open_scroll_motion_v2.html";
+				linkUrl="tag_open_scroll_motion.html";
 				location.href = linkUrl+"?"+global_tag_num;
 			}else{
 				alert("0보다 큰 숫자를 입력해주세요");

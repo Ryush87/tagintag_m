@@ -9,10 +9,7 @@
 			<section id="myMemberInfoBox">
 				<div class="basicInfoBox strongBB">
 					<div class="wWrap">
-						<h2>
-							기본정보
-							<div class="txtBox fR mt10"><span class="nece"></span> 필수입력</div>
-						</h2>
+						<h2>기본정보</h2>
 						<table class="writeTable2">
 							<caption>기본정보</caption>
 							<colgroup><col width="30%"/><col width="70%"/></colgroup>
@@ -24,52 +21,61 @@
 								<th scope="row"><label>이름</label></th>
 								<td><span class="fixValue">홍길동</span></td>
 							</tr>
-							<!--
 							<tr>
 								<th scope="row"><label for="mPwOld">기존 비밀번호</label></th>
 								<td><input type="password" id="mPwOld"/></td>
 							</tr>
-							-->
 							<tr>
-								<th scope="row"><label for="mPw1">비밀번호</label><span class="nece"></span></th>
-								<td><input type="password" placeholder="영문/숫자 혼합 8~20자" id="mPw1"/></td>
+								<th scope="row"><label for="mPw1">새 비밀번호</label></th>
+								<td><input type="password" id="mPw1"/></td>
 							</tr>
 							<tr>
-								<th scope="row"><label for="mPw2">비밀번호 확인</label><span class="nece"></span></th>
+								<th scope="row"><label for="mPw2">비밀번호확인</label></th>
 								<td>
-									<input type="password" placeholder="영문/숫자 혼합 8~20자" id="mPw2"/>
+									<input type="password" id="mPw2"/>
 									<div class="inputGuideBox pointC1">동일한 비밀번호를 입력해주세요</div>
 								</td>
 							</tr>
 							<tr>
-								<th scope="row"><label for="mEmail">이메일</label><span class="nece"></span></th>
-								<td><input type="email" id="mEmail"/></td>
+								<th scope="row"><label for="mEmail">이메일주소</label></th>
+								<td>
+									<div class="inputMailBox">
+										<input type="text" id="mEmail"/>
+										<span class="divi">@</span>
+										<select name="" id="mDomain2" class="mDomainSlt">
+											<option value="">메일선택</option>
+											<option value="">naver.com</option>
+										</select>
+										<label for="mDomain2" class="blind">메일도메인선택</label>
+									</div>
+								</td>
 							</tr>
 							<tr>
-								<th scope="row"><label for="mPhon">휴대폰번호</label></th>
+								<th scope="row"><label for="mPhon">휴대전화</label></th>
 								<td>
-									<div class="mPhonEditBox1">
-										<span class="fwB">010-1234-5678</span>
-										<a href="#none" onclick="$('.mPhonEditBox2').show();" class="smBtn ml10">수정</a>
-									</div>
-									<div class="mPhonEditBox2">
-										<ul>
-											<li class="mb5">
-												<input type="text" placeholder="휴대폰번호"/>
-												<a href="#none" class="mBtn2 whiteBtnB">인증번호발송</a>
-											</li>
-											<li>
-												<input type="text" placeholder="인증번호입력" class="certiNum"/>
-												<a href="#none" onclick="$('.mPhonEditBox2').hide();$('.mPhonEditBox1').show();" class="mBtn2 whiteBtnB">확인</a>
-											</li>
-										</ul>
+									<span class="phonNum fixValue">010-2223-3333</span>
+									<div class="phonNumEditBtn"><a href="#none" class="mBtn brownBtn" onclick="callPopup('#phoneCertiPopBox'); return false;">휴대전화 변경</a></div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="mTel">일반전화</label></th>
+								<td>
+									<div class="inputTelBox">
+										<select name="" id="mTel" class="mTelSlt">
+											<option value="">02</option>
+											<option value="">031</option>
+											<option value="">032</option>
+										</select>
+										<span class="divi">-</span>
+										<input type="text" id="mTel2"/><label for="mTel2" class="blind">중간번호</label>
+										<span class="divi">-</span>
+										<input type="text" id="mTel3"/><label for="mTel3" class="blind">마지막번호</label>
 									</div>
 								</td>
 							</tr>
 						</table>
 					</div>
 				</div>
-				<!--
 				<div class="deliveryInfoBox strongBB">
 					<div class="wWrap">
 						<h2>배송지 정보</h2>
@@ -182,42 +188,19 @@
 						</ul>
 					</div>
 				</div>
-				-->
-				<div class="marketingInfoBox">
+				<div class="marketingInfoBox strongBB">
 					<div class="wWrap">
-						<h2>부가정보</h2>
-						<!-- <div class="grayBgBox mt5">마케팅 정보를 입력하여 주시면 <span>회원의 등급이 상향되어 더 높은 포인트 보상</span>을 받으실 수 있습니다.</div> -->
+						<h2>마케팅 정보</h2>
+						<div class="grayBgBox mt5">마케팅 정보를 입력하여 주시면 <span>회원의 등급이 상향되어 더 높은 포인트 보상</span>을 받으실 수 있습니다.</div>
 						<table class="writeTable2">
-							<caption>부가정보</caption>
+							<caption>마케팅정보</caption>
 							<colgroup><col width="30%"/><col width="70%"/></colgroup>
-							<tr>
-								<th scope="row">생년월일(6자리)</th>
-								<td><input type="text" id=""/></td>
-							</tr>
-							<tr>
-								<th scope="row">성별</th>
-								<td>
-									<div class="radioBoxWrap">
-										<input type="radio" id="rSex1" name="rSex" /><label for="rSex1" class="fs14x">남자</label>
-										<input type="radio" id="rSex2" name="rSex" /><label for="rSex2" class="fs14x">여자</label>
-									</div>
-								</td>
-							</tr>
 							<tr>
 								<th scope="row"><label for="mLive">거주지역</label></th>
 								<td>
 									<select name="" id="mLive" class="mMarketingSlt">
 										<option value="">제주특별자치도</option>
 										<option value="">서울특별시</option>
-									</select>
-								</td>
-							</tr>
-							<tr>
-								<th scope="row">직업</th>
-								<td>
-									<select name="" id="mJop" class="mMarketingSlt">
-										<option value="">회사원</option>
-										<option value="">자영업</option>
 									</select>
 								</td>
 							</tr>
@@ -231,20 +214,19 @@
 								</td>
 							</tr>
 							<tr>
-								<th scope="row">이메일 수신</th>
+								<th scope="row"><label for="mJop">직업</label></th>
 								<td>
-									<div class="radioBoxWrap">
-										<input type="radio" id="rMarketEmail1" name="rMarketEmail" /><label for="rMarketEmail1">거부</label><br>
-										<input type="radio" id="rMarketEmail2" name="rMarketEmail" class="ml0"/><label for="rMarketEmail2">수신(이벤트/쇼핑정보 메일 수신)</label>
-									</div>
+									<select name="" id="mJop" class="mMarketingSlt">
+										<option value="">회사원</option>
+										<option value="">자영업</option>
+									</select>
 								</td>
 							</tr>
 							<tr>
-								<th scope="row">SMS 수신</th>
-								<td>
-									<div class="radioBoxWrap">
-										<input type="radio" id="rMarketSms1" name="rMarketSms" /><label for="rMarketSms1">거부</label><br>
-										<input type="radio" id="rMarketSms2" name="rMarketSms" class="ml0"/><label for="rMarketSms2">수신(이벤트/쇼핑정보 SMS 수신)</label>
+								<td colspan="2">
+									<div class="pageBtnBox taC">
+										<a href="#none" class="rmBtn whiteBtn">취소</a>
+										<a href="#none" class="rmBtn whiteBtn">저장</a>
 									</div>
 								</td>
 							</tr>
@@ -253,8 +235,7 @@
 				</div>
 				<div class="pageBtnBox taC">
 					<div class="wWrap">
-						<!-- <a href="#none" class="smBtn whiteBtn mt0" onclick="callPopup('#mbmLeaveNoticePopBox'); return false;">회원탈퇴</a> -->
-						<a href="#none" class="mBtn purpleBtn">회원정보수정</a>
+						<a href="member_leave.html" class="mBtn purpleBtn mt0">회원탈퇴</a>
 					</div>
 				</div>
 			</section>

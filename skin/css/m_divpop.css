@@ -33,12 +33,11 @@ body.actPop {overflow:hidden;}
 			.dpCon .pageBtnBox .dmBtn,
 			.dpCon .pageBtnBox .mBtnH {padding-right:5px;padding-left:5px;}
 			.dpCon .grayBgBox {padding:15px 20px;background:#f5f5f5;}
-			.dpCon .baigyBgBox {padding:15px 20px;background:#faf5eb;}
 				.dpCon h5 {padding:0;width:100%;font-weight:normal;font-size:15px;color:#333;text-align:center;letter-spacing:-0.05em;}
 			.dpCon .pageBtnBox {float:none;margin-bottom:10px;}
 			.dpCon .dotWLine {margin-top:10px;padding-top:20px;background:url(../images/common/line_w_dot2.png) repeat-x 0 0;}
 			.dpCon .brownDotLi li {font-size:12px;}
-	.todayClosePopWrap {position:absolute;bottom:25px;left:45px;}
+	.todayClosePopWrap {position:absolute;bottom:10px;left:20px;}
 		.todayClosePopWrap label {font-family:'dotum';font-size:12px;}
 .mainPagePop {position:fixed;top:50%;left:50%;max-width:480px;z-index:910;}
 .subPagePop {position:fixed;top:50%;left:50%;max-width:480px;z-index:910;}
@@ -261,99 +260,6 @@ body.actPop {overflow:hidden;}
 			#csCenterPopWrap .dpTitle h5 {padding:0 20px 0 60px;font-weight:400;font-size:16px;color:#fff;line-height:24px;text-align:left;background:url(../images/divpop/cs_center_title_bg.png) no-repeat 0 50%;background-size:contain;}
 		#csCenterPopWrap .dpCon {padding:10px 20px;font-size:12px;color:#555;line-height:16px;}
 
-/* smsAlarmPopup */
-#smsAlarmPopBox {width:90%;}
-	#smsAlarmPopWrap {}
-		#smsAlarmPopWrap .dpTitle {padding:20px 10px;height:auto;border:0;background:#d7b252;}
-			#smsAlarmPopWrap .dpTitle h5 {padding:0 20px 0 60px;font-weight:400;font-size:16px;color:#fff;line-height:48px;text-align:left;background:url(../images/divpop/sms_alram_title_bg.png) no-repeat 0 50%;background-size:contain;}
-		#smsAlarmPopWrap .dpCon {padding:10px 20px;font-size:12px;color:#555;line-height:16px;}
-
-/* experiencePopup */
-#experiencePopBox {width:90%;}
-	#experiencePopWrap {}
-		#experiencePopWrap .dpTitle {padding:20px 10px;height:auto;border:0;background:#d7b252;}
-			#experiencePopWrap .dpTitle h5 {padding:0 20px 0 60px;font-weight:400;font-size:16px;color:#fff;line-height:48px;text-align:left;background:url(../images/divpop/experience_title_bg.png) no-repeat 0 50%;background-size:contain;}
-		#experiencePopWrap .dpCon {padding:10px 20px;font-size:12px;color:#555;line-height:16px;}
-
-/* ingGoodsListPopup */
-#ingGoodsListPopBox {width:90%;}
-	#ingGoodsListPopWrap {}
-		#ingGoodsListPopWrap .dpTitle {padding:20px 10px;height:auto;border:0;background:#d7b252;}
-			#ingGoodsListPopWrap .dpTitle h5 {padding:0 20px;font-weight:400;font-size:18px;color:#fff;line-height:24px;text-align:center;}
-		#ingGoodsListPopWrap .dpCon {padding:10px 20px;font-size:12px;color:#555;line-height:16px;text-align:center;}
-
-/* freeExperiencePopup */
-#freeExperiencePopBox {width:90%;}
-	#freeExperiencePopWrap {}
-		#freeExperiencePopWrap .dpTitle {padding:20px 10px;height:auto;border:0;background:#d7b252;}
-			#freeExperiencePopWrap .dpTitle h5 {padding:0 20px;font-weight:400;font-size:18px;color:#fff;line-height:24px;text-align:center;}
-		#freeExperiencePopWrap .dpCon {padding:10px 20px;font-size:12px;color:#555;line-height:16px;text-align:center;}
-
-/* turnoverMApplyPopup */
-#turnoverMApplyPopBox {width:90%;}
-	#turnoverMApplyPopWrap {}
-		#turnoverMApplyPopWrap .grayBgBox {width:100%;padding:40px 0;}
-			#turnoverMApplyPopWrap .grayBgBox h5 {line-height:24px;font-size:14px;}
-
-/* turnoverMCompletePopup */
-#turnoverMCompletePopBox {width:90%;}
-	#turnoverMCompletePopWrap {}
-
-/* mbmLeaveNoticePopup*/
-#mbmLeaveNoticePopBox {width:90%;}
-	#mbmLeaveNoticePopWrap {}
-		#mbmLeaveNoticePopWrap .grayBgBox h5 {line-height:24px;font-size:14px;}
-
-/* freeTagOpenCouponPopup */
-#freeTagOpenCouponPopBox {width:90%;}
-	#freeTagOpenCouponPopWrap {}
-		#freeTagOpenCouponPopWrap .baigyBgBox {padding:15px 5px;}
-			#freeTagOpenCouponPopWrap .baigyBgBox .iconBox {padding:20px 0 20px 80px;font-size:14px;letter-spacing:-0.025em;background:url(../images/divpop/icon_sms.png) no-repeat 5px 50%;background-size:60px;}
-
-/* openBefoeEventPopup */
-#openBefoeEventPopBox {width:90%;}
-	#openBefoeEventPopWrap {}
-		#openBefoeEventPopWrap .baigyBgBox {padding:15px 10px;}
-			#openBefoeEventPopWrap .baigyBgBox .iconBox {padding:40px 0 40px 70px;font-size:15px;letter-spacing:-0.025em;background:url(../images/divpop/icon_tag_open.png) no-repeat 10px 50%;}
-
-/* invitePhoneNumPopup */
-#invitePhoneNumPopBox {width:90%;height:495px;}
-	#invitePhoneNumPopWrap {}
-		#invitePhoneNumPopWrap .baigyBgBox {padding:20px 10px;}
-			#invitePhoneNumPopWrap .baigyBgBox .iconBox {padding:5px 0 0 70px;font-size:18px;letter-spacing:-0.025em;background:url(../images/divpop/icon_phone.png) no-repeat 0px 50%;background-size:60px;}
-				#invitePhoneNumPopWrap .baigyBgBox input[type="text"] {margin-top:15px;width:100%;font-size:12px;text-align:center;border:1px solid #ddc793;}
-				#invitePhoneNumPopWrap .bltQ {margin-top:2px;margin-left:5px;}
-			#invitePhoneNumPopWrap .pageBtnBox {}
-
-/* inviteExSmsPopup */
-#inviteExSmsPopBox {width:90%;height:495px;}
-	#inviteExSmsPopWrap {}
-		#inviteExSmsPopWrap .baigyBgBox .textBox {font-size:14px;letter-spacing:-0.025em;text-align:center;}
-		#inviteExSmsPopWrap .brownDotLi li {letter-spacing:-0.025em;}
-
-/* inviteCompletePopup */
-#inviteCompletePopBox {width:90%;}
-	#inviteCompletePopWrap {}
-		#inviteCompletePopWrap .baigyBgBox {padding:40px 30px;}
-			#inviteCompletePopWrap .baigyBgBox .textBox {font-size:14px;letter-spacing:-0.025em;text-align:center;}
-
-/* inviteConfilmPopup */
-#inviteConfilmPopBox {width:90%;}
-	#inviteConfilmPopWrap {}
-		#inviteConfilmPopWrap .listTable th,
-		#inviteConfilmPopWrap .listTable td {font-size:14px;border-right:1px solid #ddd;}
-		#inviteConfilmPopWrap .listTable th:last-child,
-		#inviteConfilmPopWrap .listTable td:last-child {border-right:0;}
-
-/* useTagPopup */
-#useTagPopBox_free,
-#unuseTagPopBox_free,
-#useTagPopBox_event,
-#unuseTagPopBox_event {width:90%;}
-	#useTagPopWrap {}
-		#useTagPopWrap .baigyBgBox {padding:20px 15px;}
-			#useTagPopWrap .baigyBgBox .textBox {font-size:14px;letter-spacing:-0.025em;text-align:center;}
-
 /* tagOpenMotion */
 #tagOpenMotionBox {position:relative;width:100%;height:100%;overflow-y:auto;overflow-x:hidden;scrollbar:hidden;}
 
@@ -382,27 +288,6 @@ body.actPop {overflow:hidden;}
 		.tagNumSubmit {position:relative;display:inline-block;width:100%;}
 			.tagNumSubmit img {}
 			.tagNumSubmitTxt {position:absolute;top:50%;left:0;margin-top:-14px;width:100%;font-weight:bold;font-size:2em;color:#fff;z-index:2;}
-#trialBox {margin-top:0;margin-left:0;width:100%;height:100%;text-align:center;border:5px solid #000;background:#c6a370;}
-	#trialBox .closeIcon {width:18px;top:15px;}
-	.trialConBox {float:left;padding:20px 0;width:100%;}
-		.trialTitle {float:left;margin-bottom:20px;width:100%;font-weight:500;font-size:2em;color:#fff;text-align:center;}
-		#trialBox .gridL {float:left;width:100%;}
-		#trialBox .gridR {float:left;margin-top:20px;width:100%;}
-			.trialBtn {float:left;padding:5px 20px;width:100%;font-weight:bold;font-size:2em;color:#fff;text-align:left;background:url(../images/common/blt_arrow_yellow.png) no-repeat 90% 50%;border:3px solid #fff;}
-				.trialBtn a {display:block;color:#fff;}
-			.trialDescBox {float:left;padding-left:10px;margin-top:10px;width:100%;font-size:1.3em;color:#45403a;text-align:left;letter-spacing:-0.05em;}
-#tagNumConfilmBox {margin-top:0;margin-left:0;width:100%;height:100%;text-align:center;border:5px solid #000;background:#c6a370;}
-	#tagNumConfilmBox .closeIcon {width:18px;top:15px;}
-	#tagNumConfilmBox .tncConBox {padding:60px 0;}
-		.tncTitle {float:left;/*margin-bottom:130px;*/margin-bottom:30px;width:100%;font-weight:500;font-size:2.4em;color:#fff;text-align:center;}
-		.tncDescBox {margin:30px 0 60px;font-size:2em;color:#45403a;text-align:center;}
-			.tncConText {margin-bottom:60px;background:url(../images/common/line_w_dot5.png) repeat-x 0 100%;}
-			.tncBtn {display:inline-block;padding:10px 10px;width:45%;font-weight:bold;font-size:1.8em;color:#fff;text-align:left;background:url(../images/common/blt_arrow_yellow.png) no-repeat 90% 50%;border:3px solid #fff;}
-				.tncBtn a {display:block;}
-				a.tncBtn,
-				.tncBtn:hover {color:#fff;}
-				.tncBtn:first-child {float:left;width:35%;}
-				.tncBtn:last-child {float:right;width:60%;}
 
 /* tagOpenMotion-scroll  */
 .tmStepNavBox {position:fixed;top:0;left:0;width:100%;background:rgba(0,0,0,.8);z-index:999;}
@@ -428,8 +313,6 @@ body.actPop {overflow:hidden;}
 #tmStep4 {background:url(../images/sub_goods/tm_step_bg_4.gif);}
 	.tmConBox {position:absolute;top:50%;left:0;width:100%;text-align:center;}
 		.tmTagTitle {margin:0 auto;padding-left:130px;width:487px;font-size:4.8em;text-align:left;letter-spacing:0.05em;}
-			.tmTagTitle span {font-size:0.6em;}
-			.tmTagTitle .tmResultTagBox span {font-size:1em;}
 		#tmStep4 .tmTagTitle {position:absolute;top:-70px;left:50%;margin-left:-243px;padding-left:0;letter-spacing:0;}
 			.tmBonusBox {float:left;padding-left:50px;font-size:30px;font-weight:900;font-family:"Nanum Gothic";text-align:left;background:url(../images/sub_goods/tm_point_bg.png) no-repeat 0 50%;background-size:contain;}
 			.tmTagBox_unuse .tmBonusBox {background:url(../images/sub_goods/tm_point_bg_gray.png) no-repeat 0 50%;background-size:contain;}
@@ -439,7 +322,6 @@ body.actPop {overflow:hidden;}
 		/*.tmTagBox {position:relative;margin:0 auto;width:487px;height:234px;}*/
 		.tmTagBox {position:relative;display:inline-block;margin:0 40px;width:487px;height:234px;}
 			.tmTagPrcs {position:absolute;top:40px;left:130px;font-weight:900;font-size:3em;font-family:"Nanum Gothic";}
-			.tmTagPrcs {display:none} /* 20171113 삭제*/
 			.tmTagNum {position:absolute;bottom:5px;right:-12px;font-weight:900;font-size:12em;font-family:"Nanum Gothic";text-align:right;letter-spacing:0.1em;}
 			#tmStep5 .tmTagNum {bottom:10px;font-size:8.5em;}
 			.tmTagRate {position:absolute;top:40px;left:130px;font-weight:600;font-size:3em;}
@@ -450,7 +332,6 @@ body.actPop {overflow:hidden;}
 			.tmTagPrice {position:absolute;bottom:25px;right:-5px;font-weight:900;font-size:7.2em;font-family:"Nanum Gothic";text-align:right;letter-spacing:0;}
 				.tmTagPrice span {font-size:0.6em;}
 		.tmDesc {margin-top:120px;font-weight:500;font-size:3em;}
-		.tmSubDesc {margin-top:10px;font-weight:normal;font-size:0.7em;letter-spacing:-0.05em;}
 		#tmStep4 .tmDesc {margin-top:40px;height:35px;}
 			.tmDesc_sub {font-size:22px;}
 			.tmSign {margin:0 10px 0 10px;}
@@ -489,34 +370,6 @@ body.actPop {overflow:hidden;}
 			.tmChoiceDesc {position:absolute;top:10px;right:-200px;width:175px;line-height:24px;font-size:1.6em;color:#fff;text-align:left;}
 		.tmScrollBtn {position:absolute;bottom:30px;left:50%;margin-left:-33px;width:66px;background:url(../images/sub_goods/tm_scroll_bg.png);cursor:pointer;}
 .tmWrap #contentsTopBtn2 {}
-
-/* tagOpenMotion-scroll_v2 */
-.tmStepContentWrap {height:auto;overflow-y:hidden;}
-#tmStep3 .tmConBox_Result {display:block;}
-	#tmStep3 .tmConBox_Result .tmDesc {margin-top:30px;}
-	a.tmConfilmBtn,
-	a.tmConfilmBtn_direct {display:block;margin:0 auto;margin-top:20px;width:200px;color:#fff;border:5px solid #fff;cursor:pointer;}
-	.tmConfilmBtn.tBlink_tmConfilmBtn,
-	.tmConfilmBtn_direct.tBlink_tmConfilmBtn {
-		animation-name:tBlink_tmConfilmBtn;
-		animation-duration:2s;
-		animation-timing-function:linear;
-		animation-delay:0s;
-		animation-iteration-count:infinite;
-	}
-	@keyframes tBlink_tmConfilmBtn {
-		0% {color:#fff;border-color:#fff;}
-		25% {color:#091b25;border-color:#091b25;}
-		50% {color:#fff;border-color:#fff;}
-		75% {color:#091b25;border-color:#091b25;}
-		100% {color:#fff;border-color:#fff;}
-	}
-	.tmConfilmBtn:hover,
-	.tmConfilmBtn_direct:hover,
-	.tmConfilmBtn:focus,
-	.tmConfilmBtn_direct:focus {color:#333;background:#fff;}
-	#tmStep3 .tmConBox_Count {display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);}
-		#tmStep3 .tmConBox_Count span {font-size:22em;}
 
 /* tagOpenMotion-scroll mobile에서만 */
 .tmStepUlBox > li > a {color:#999;}
@@ -567,14 +420,13 @@ body.actPop {overflow:hidden;}
 }
 
 /* inc_tag_keep */
-/*
 .tkTimeBtn {position:fixed;top:60px;right:-200px;width:120px;cursor:pointer;}
 .tagKeepBoxWrap {display:none;position:fixed;top:50%;left:50%;margin-top:-100px;margin-left:-140px;width:280px;height:200px;background:url(../images/common/tag_keep_box_bg.png) no-repeat 0 0;background-size:contain;box-shadow:0 0 5px #000;border-radius:12px;z-index:9999;}
 	.tkTimeBox {position:absolute;top:20px;left:50%;margin-left:-70px;width:140px;}
 		.tkTimeBtn dt,
 		.tkTimeBox dt {float:left;width:60%;height:30px;background:#f74b55;text-align:center;border-radius:15px 0 0 15px;font:500 1em "noto sans kr";color:#fff;}
-			.tkTimeBtn dt span {padding-left:15px;line-height:30px;background:url(../images/common/blt_clock.png) no-repeat 0 3px;background-size:12px;}
-			.tkTimeBox dt span {line-height:30px;}
+			.tkTimeBtn dt span,
+			.tkTimeBox dt span {padding-left:15px;line-height:30px;background:url(../images/common/blt_clock.png) no-repeat 0 3px;background-size:12px;}
 		.tkTimeBtn dd {float:left;width:40%;height:30px;line-height:30px;background:#3b3e3f;text-align:center;border-radius:0;}
 		.tkTimeBox dd {float:left;width:40%;height:30px;line-height:30px;background:#3b3e3f;text-align:center;border-radius:0 15px 15px 0;}
 		.tkTime {font:bold 1.2em "noto sans kr";color:#fff;}
@@ -587,20 +439,4 @@ body.actPop {overflow:hidden;}
 				.tkPrice2 {font:500 1.4em "noto sans kr";color:#000;}
 				.tkPrice3 {font:400 1.2em "noto sans kr";color:#666;}
 			.tkDescBox {margin-top:5px;font:400 1em "noto sans kr";color:#8b8883;}
-			.tagKeepBox .smBtn {margin-top:15px;padding:5px 15px;font:400 1.2em "noto sans kr";color:#2b343a;border:1px solid #999;border-radius:5px;}
-*/
-
-.tkTimeBtn {position:fixed;top:50%;right:-200px;width:90px;cursor:pointer;}
-.tagKeepBoxWrap {display:none;position:fixed;top:50%;left:50%;margin-top:-100px;margin-left:-140px;width:280px;height:200px;background:url(../images/common/tag_keep_box_bg.png) no-repeat 0 0;background-size:contain;box-shadow:0 0 5px #000;border-radius:12px;z-index:9999;}
-	.tkTimeBox {position:absolute;top:20px;left:50%;margin-left:-100px;width:200px;}
-		.tkTimeBtn dt {float:left;width:100%;height:30px;background:#f74b55;text-align:center;border-radius:15px 0 0 15px;font:500 1em "noto sans kr";color:#fff;}
-		.tkTimeBox dt {float:left;width:100%;height:30px;background:#f74b55;text-align:center;border-radius:15px;font:500 1.5em "noto sans kr";color:#fff;}
-			.tkTimeBtn dt span {padding-left:15px;line-height:30px;background:url(../images/common/blt_clock.png) no-repeat 0 3px;background-size:12px;}
-			.tkTimeBox dt span {line-height:30px;}
-	.tkWrapBox {}
-		.tagKeepBoxClose {display:block;position:absolute;top:15px;right:15px;width:12px;}
-		.tagKeepBox {padding-top:65px;width:100%;text-align:center;}
-			.tkPriceBox {margin:20px 0;letter-spacing:-0.07em;}
-				.tkPrice1 {font:normal 2em "impact";color:#da0101;}
-				.tkPrice2 {margin-left:10px;font:500 1.7em "noto sans kr";color:#000;}
-			.tagKeepBox .smBtn {margin-top:15px;padding:5px 15px;font:400 1.2em "noto sans kr";color:#2b343a;border:1px solid #999;border-radius:5px;}
+			.tagKeepBox .smBtn {margin-top:15px;padding:5px 20px;font:400 1.2em "noto sans kr";color:#2b343a;border:1px solid #999;border-radius:5px;}

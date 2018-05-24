@@ -30,11 +30,7 @@
 			<a href="tag_open_motion.html" class="botOpenBtn"><img src="<?=$root?>/skin/images/sub_goods/btn_tag_open_text.png" alt="까보기" /></a>
 			-->
 			<a href="#none" class="tagCountBoxBtn">Tag구성 열기</a>
-			<!-- <a href="tag_open_motion.html" class="botOpenBtn">까보기</a> -->
-			<a href="#none" class="botOpenBtn" onclick="callPopup('#useTagPopBox_free'); return false;">까보기</a>
-			<!-- <a href="#none" class="botOpenBtn" onclick="callPopup('#unuseTagPopBox_free'); return false;">까보기</a> -->
-			<!-- <a href="#none" class="botOpenBtn" onclick="callPopup('#useTagPopBox_event'); return false;">까보기</a> -->
-			<!-- <a href="#none" class="botOpenBtn" onclick="callPopup('#unuseTagPopBox_event'); return false;">까보기</a> -->
+			<a href="tag_open_motion.html" class="botOpenBtn">까보기</a>
 		</div>
 	</div>
 </div>

@@ -13,38 +13,28 @@
 						<li><a href="#none" tab-href="#findKind_email">이메일 인증</a></li>
 					</ul>
 					<div id="findKind_phon" class="findKindInput">
-						<div class="grayBgBox"><span>등록되어 있는 회원정보</span>로 비밀번호를 재설정 할 수 있습니다. 아래 정보를 입력해주세요.</div>
+						<div class="idInputBox"><input type="text" placeholder="아이디"/></div>
 						<ul class="findIdPwUl">
-							<li><input type="text" placeholder="아이디"/></li>
-							<li><a href="#none" class="mBtn2 whiteBtnB mt0">확인</a></li>
-							<li><input type="text" placeholder="이름"/></li>
-							<li><input type="text" placeholder="휴대폰번호"/></li>
-							<li><a href="#none" class="mBtn2 whiteBtnB mt0">인증번호발송</a></li>
 							<li>
-								<input type="text" placeholder="인증번호입력" class="certiNum"/>
-								<span class="leftTime ml10"><span class="pointC4">5분 이내에 입력해주세요.</span></span>
-							</li>
-							<li class="mt15">
-								<!--<a href="#none" class="mBtn purpleBtn" onclick="callPopup('#findPwResetPopBox2'); return false;">비밀번호 찾기</a>-->
-								<a href="reset_pw.html" class="mBtn purpleBtn">확인</a>
+								<!--<a href="#none" class="mBtn purpleBtn" onclick="callPopup('#findPwResetPopBox1'); return false;">휴대폰 인증</a>-->
+								<a href="reset_pw.html" class="mBtn purpleBtn">휴대폰 인증</a>
 							</li>
 						</ul>
 					</div>
 					<div id="findKind_email" class="findKindInput">
-						<div class="grayBgBox"><span>등록되어 있는 회원정보</span>로 비밀번호를 재설정 할 수 있습니다. 아래 정보를 입력해주세요.</div>
+						<div class="grayBgBox"><span>등록되어 있는 회원정보</span>로 아이디를 찾을 수 있습니다. <br />아래 정보를 입력해주세요.</div>
+						<div class="idInputBox"><input type="text" placeholder="아이디"/></div>
 						<ul class="findIdPwUl">
-							<li><input type="text" placeholder="아이디"/></li>
-							<li><a href="#none" class="mBtn2 whiteBtnB mt0">확인</a></li>
 							<li><input type="text" placeholder="이름"/></li>
-							<li><input type="email" placeholder="이메일주소"/></li>
-							<li><a href="#none" class="mBtn2 whiteBtnB mt0">인증번호발송</a></li>
+							<li><input type="text" placeholder="이메일 주소"/></li>
+							<li><a href="#none" class="mBtn2 whiteBtnB mt0">인증번호 받기</a></li>
 							<li>
 								<input type="text" placeholder="인증번호입력" class="certiNum"/>
-								<span class="leftTime ml10"><span class="pointC4">5분 이내에 입력해주세요.</span></span>
+								<span class="leftTime ml10">남은시간 : <span class="pointC4">10:00</span></span>
 							</li>
 							<li class="mt15">
 								<!--<a href="#none" class="mBtn purpleBtn" onclick="callPopup('#findPwResetPopBox2'); return false;">비밀번호 찾기</a>-->
-								<a href="reset_pw.html" class="mBtn purpleBtn">확인</a>
+								<a href="reset_pw.html" class="mBtn purpleBtn">비밀번호 찾기</a>
 							</li>
 						</ul>
 					</div>

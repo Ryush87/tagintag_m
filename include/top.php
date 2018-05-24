@@ -33,10 +33,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
-	<meta name="description" content="세상에 없던 가격 TagInTag">
-	<title>택인택 TagInTag</title>
-	<link rel="canonical" href="http://www.tagintag.com">
-	<link rel="shortcut icon" href="<?=$root?>/skin/images/common/favicon_tagintag.png">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="TagInTag">
+	<meta property="og:description" content="세상에 없던 가격">
+	<meta property="og:image" content="<?=$root?>/skin/images/common/favicon_tagintag.ico">
+	<meta property="og:url" content="<?=$root?>/">
+	<title>TagInTag</title>
+	<link rel="shortcut icon" href="<?=$root?>/skin/images/common/favicon_tagintag.ico">
 	<link rel="stylesheet" href="<?=$root?>/skin/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?=$root?>/skin/css/jquery-ui.css">
 	<!--<link rel="stylesheet" href="<?=$root?>/skin/css/jquery.mobile.min.css">-->
@@ -59,8 +62,5 @@
 	<![endif]-->
 	<script type="text/javascript" src="<?=$root?>/skin/plugin/select_or_die/selectordie.js"></script>
 	<script type="text/javascript" src="<?=$root?>/skin/plugin/innerfade/jquery.innerfade.js"></script>
-	<!-- clipboard s -->
-	<script src="<?=$root?>/skin/plugin/clipboard/clipboard.min.js"></script>
-	<!-- clipboard e -->
 	<script type="text/javascript" src="<?=$root?>/skin/js/m_common.js"></script>
 

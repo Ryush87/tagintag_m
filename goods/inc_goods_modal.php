@@ -8,7 +8,7 @@
 			<img src="<?=$root?>/skin/images/divpop/input_num_title.png" alt="원하는 숫자를 선택하세요" />
 		</div>
 		<div class="inpnInputBox fadeEff slide-rt e2">
-			<label for="tagNumInput" onclick="callPopup('#trialBox'); return false;">직접입력<br />(1 ~ 9999)</label>
+			<label for="tagNumInput">직접입력<br />(1 ~ 9999)</label>
 			<input type="text" id="tagNumInput" class="tagNumInput" maxlength="3" readonly/>
 			<div class="numResetBtn"><a href="#none"><span class="blind">초기화</span></a></div>
 		</div>
@@ -34,41 +34,6 @@
 				<img src="<?=$root?>/skin/images/divpop/input_num_submit.png" alt="선택완료(-50p)"/>
 				<div class="tagNumSubmitTxt">선택완료 (-5000P)</div>
 			</a>
-		</div>
-	</div>
-</div>
-
-<div id="trialBox" class="divPopupBox tagMotionBox fadeEff slide-up">
-	<div class="divPopWrap">
-		<a href="#none" class="closePopBtn" onClick="hidePopupAll();"><img src="<?=$root?>/skin/images/divpop/btn_close.png" alt="닫기" class="closeIcon"/></a>
-		<div class="trialConBox">
-			<div class="trialTitle fadeEff slide-rt">
-				택(가격) 확인은<br>택인택 회원만 가능합니다.
-			</div>
-			<div class="gridL fadeEff slide-rt e2">
-				<div class="trialBtn fadeEff slide-rt e3">
-					<a href="<?=$root?>/member/join_step1_policy.html">회원가입</a>
-				</div>
-				<div class="trialDescBox fadeEff slide-rt e4">
-					지금 회원 가입 하시면<br>
-					특별한 혜택 3가지가 제공 됩니다.<br><br>
-					- 감사 포인트 1,000P 제공<br>
-					- 신규 회차 OPEN시 무료 알림(한시적 제공)<br>
-					- 판매 자격 확보(수익, 돈 버는 쇼핑몰)<br>
-					※ 회원가입 후 바로 택(가격)확인 가능
-				</div>
-			</div>
-			<div class="gridR fadeEff slide-rt e5">
-				<div class="trialBtn fadeEff slide-rt e6"">
-					<a href="#none">체험하기</a>
-				</div>
-				<div class="trialDescBox fadeEff slide-rt e7">
-					돈 버는 쇼핑몰 택인택!<br>
-					체험하기 버튼을 클릭하시면<br>
-					회원가입 없이도 체험이 가능 합니다.<br><br>
-					<span class="pointC7">※ “체험하기”에서는 실제 구매가 불가 합니다.<br>
-				</div>
-			</div>
 		</div>
 	</div>
 </div>

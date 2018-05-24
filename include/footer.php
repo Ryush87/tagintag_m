@@ -19,10 +19,9 @@
 			<div class="ftiB">
 				<ul>
 					<li>택인택(주) 주소 : 서울시 서대문구 신촌로 157 화영빌딩 4층</li>
-					<li>대표이사 : 차찬영 | 사업자 등록번호 : 470-86-00523</li>
+					<li>사업자 등록번호 : 470-86-00523</li>
 					<li>통신판매사업자신고 : 2016-서울서대문구-0628호</li>
-					<li>대표전화 : 02-313-3310 FAX : 02-2088-3340</li>
-					<li>Mail : info@tagintag.com / KakaoID : <a href="https://pf.kakao.com/_ivZGxl" target="_blank">@tagintag</a></li>
+					<li>대표이사 : 차찬영 대표전화 : 02-313-3310 FAX : 02-2088-3340</li>
 				</ul>
 			</div>
 		</div>
