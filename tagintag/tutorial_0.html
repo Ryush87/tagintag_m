@@ -1,0 +1,32 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include '../include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="tutorialWrap">
+			<? include 'inc_tagintag_tab.php' ?> <!-- tab  -->
+			<section id="tutorialBox" class="ttrStep0">
+				<? include 'inc_ttrhead_box.php' ?> <!-- ttrHeadBox -->
+				<div class="ttrContents">
+					<div class="wWrap">
+						<h2></h2>
+						<ul class="brownDotLi">
+							<li>원하는 상품을 고른 다음 택 오픈을 시작합니다.</li>
+						</ul>
+						<img src="<?=$root?>/skin/images/sub_tagintag/tutorial_img_0_1.jpg" alt="까보기 선택 설명이미지" />
+					</div>
+				</div>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+	<script type="text/javascript" src="<?=$root?>/skin/js/m_tutorial.js"></script>
+	<script type="text/javascript">
+		changeTitle("택인택이란?"); //page title
+		currnetTab(3); //tab 활성화
+		currentTutorialStep(0); //현재 튜토리얼 스텝 
+	</script>
+</body>
+</html>

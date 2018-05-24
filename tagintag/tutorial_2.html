@@ -1,0 +1,33 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include '../include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="tutorialWrap">
+			<? include 'inc_tagintag_tab.php' ?> <!-- tab  -->
+			<section id="tutorialBox" class="ttrStep2">
+				<? include 'inc_ttrhead_box.php' ?> <!-- ttrHeadBox -->
+				<div class="ttrContents">
+					<div class="wWrap">
+						<h2></h2>
+						<ul class="brownDotLi">
+							<li>숫자를 선택하면 이전 고객이 받은 Tag 번호를 출발점으로 삼아 행운의 숫자 만큼 번호를 이동합니다.</li>
+							<li>이동하는 번호들 사이에 이미 오픈 된 Tag 번호들은 건너 뜁니다.</li>
+						</ul>
+						<img src="<?=$root?>/skin/images/sub_tagintag/tutorial_img_2_1.jpg" alt="까보기 선택 설명이미지" />
+					</div>
+				</div>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+	<script type="text/javascript" src="<?=$root?>/skin/js/m_tutorial.js"></script>
+	<script type="text/javascript">
+		changeTitle("택인택이란?"); //page title
+		currnetTab(3); //tab 활성화
+		currentTutorialStep(2); //현재 튜토리얼 스텝 
+	</script>
+</body>
+</html>

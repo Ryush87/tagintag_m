@@ -1,0 +1,40 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include '../include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="serviceWrap">
+			<? include 'inc_tagintag_tab.php' ?> <!-- tab  -->
+			<section id="serviceBox_3" class="serviceBox">
+				<div class="wWrap">
+					<? include 'inc_tagintag_service_tab.php' ?> <!-- tab  -->
+					<h2>가격구성</h2>
+					<div class="serviceConWrap">
+						<div id="serviceConBox_3" class="serviceConBox">
+							<ul class="brownDotLi dotLineBottom pb20">
+								<li>택인택의 상품에는 각각 다른 할인가가 적힌 가격 택이 500 ~ 1,000개가 있습니다. (상품별로 구성)</li>
+								<li>최대 할인율인 99%부터 단계별로 각각의 할인구간에 할당된 가격Tag의 수는 그래프에 표기된 숫자를 참조하세요.</li>
+							</ul>
+							<div class="exImg mt15"><img src="<?=$root?>/skin/images/sub_tagintag/item_img_3_1.jpg" alt="설명이미지"/></div>
+						</div>
+						<div id="contentsTopBtn"><a href="#wrap"><img src="<?=$root?>/skin/images/common/btn_top.png" alt="top"/></a></div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("택인택이란?"); //page title
+		currnetTab(0); //tab 활성화
+		currnetTab_servie(2); //tab 활성화
+		$(function($){
+			$(window).scroll(function(){ //스크롤시 topBtn 활성화
+				top_btn_act();
+			});
+		});
+	</script>
+</body>
+</html>

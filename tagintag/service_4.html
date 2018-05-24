@@ -1,0 +1,41 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include '../include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="serviceWrap">
+			<? include 'inc_tagintag_tab.php' ?> <!-- tab  -->
+			<section id="serviceBox_4" class="serviceBox">
+				<div class="wWrap">
+					<? include 'inc_tagintag_service_tab.php' ?> <!-- tab  -->
+					<h2>즉시구매</h2>
+					<div class="serviceConWrap">
+						<div id="serviceConBox_3" class="serviceConBox">
+							<ul class="brownDotLi dotLineBottom pb20">
+								<li>택오픈(까보기)과 상관없이 즉시 구매하고자 한다면, 즉시 구매 대기자 등록을 통하여 즉시구매 희망가격을 제시할 수 있습니다.</li>
+								<li>제시한 가격조건에 맞는 판매자가 양도를 하면 즉시 자동거래가 이루어집니다.</li>
+								<li>제시한 즉시구매 가격이 높을수록 구매 대기자 리스트에서 상단에 노출됩니다.</li>
+							</ul>
+							<div class="exImg mt15"><img src="<?=$root?>/skin/images/sub_tagintag/item_img_4_1.jpg" alt="설명이미지"/></div>
+						</div>
+						<div id="contentsTopBtn"><a href="#wrap"><img src="<?=$root?>/skin/images/common/btn_top.png" alt="top"/></a></div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("택인택이란?"); //page title
+		currnetTab(0); //tab 활성화
+		currnetTab_servie(3); //tab 활성화
+		$(function($){
+			$(window).scroll(function(){ //스크롤시 topBtn 활성화
+				top_btn_act();
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include $d_root.'/include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header -->
+		<div id="contents" class="findIdPwWrap">
+			<div class="wWrap">
+				<section id="findIdPwBox">
+					<div class="resetPwBox">
+						<ul>
+							<li><input type="text" placeholder="비밀번호"/></li>
+							<li><input type="text" placeholder="비밀번호 확인"/></li>
+							<li><span class="pointC6">※ 8~20자의 영문/숫자를 사용해주세요.</span></li>
+						</ul>
+						<div class="pageBtnBox taC dotLineTop">
+							<!-- <a href="#none" class="mBtnH whiteBtn">취소</a> -->
+							<a href="<?=$root?>/login/reset_pw_result.html" class="mBtnH purpleBtn">확인</a>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("비밀번호 재설정"); //page title
+	</script>
+</body>
+</html>

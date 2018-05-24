@@ -1,0 +1,33 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include $d_root.'/include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header -->
+		<div id="contents" class="loginWrap">
+			<div class="wWrap">
+				<section id="restorationBox">
+					<div class="guideBox">
+						<div class="grayBgBox">고객님의 계정은 장기 휴면(6개월 이상) 계정이거나 임시로 비활성화 조치된 계정입니다.</div>
+						<div class="bd1sEEE">택인택에서는 6개월 이상 로그인 한 기록이 없는 계정을 대상으로 휴면 ID로 지정하여 이용자 피해예방 활동을 하고 있습니다. <br />계정을 활성화 하려면 본인인증을 거치셔야 합니다.</div>
+					</div>
+					<div id="findKind_phon" class="findKindInput">
+						<ul class="findIdPwUl">
+							<li>
+								<a href="#none" class="mBtn purpleBtn" onclick="callPopup('#certiCompletePopBox'); return false;">휴대폰 본인인증</a>
+								<a href="#none" class="mBtn purpleBtn mt5" onclick="callPopup('#certiFailPopBox'); return false;">본인인증 실패</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+		<? include '../include/div_popup.php' ?> <!-- divPopup -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("휴면회원 본인인증"); //page title
+	</script>
+</body>
+</html>

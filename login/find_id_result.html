@@ -1,0 +1,32 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include $d_root.'/include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header -->
+		<div id="contents" class="findIdPwWrap">
+			<div class="wWrap">
+				<section id="findIdPwBox">
+					<div class="findResultBox">
+						<div class="grayBgBox mt10 pt20 pb20 taC">
+							<ul>
+								<li class="fs16e clr33">고객님의 아이디 : <span class="pointC6">tagintag</span></li>
+								<li class="fs12e clr99 mt10">2000년 09월 28일 가입</li>
+							</ul>
+						</div>
+						<div class="pageBtnBox taC mt0">
+							<a href="reset_pw.html" class="mBtnH whiteBtn">비밀번호 재설정</a>
+							<a href="login.html" class="mBtnH gryBtn purpleBtn">로그인</a>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("아이디 조회결과"); //page title
+	</script>
+</body>
+</html>

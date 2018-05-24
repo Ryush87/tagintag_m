@@ -1,0 +1,153 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include $d_root.'/include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header -->
+		<div id="contents" class="myOrderListWrap">
+			<section id="myOrderListBox">
+				<div id="myOrderInfoBox">
+					<div class="wWrap">
+						<ul>
+							<li class="myOrderInfoLi1"><div class="myoInfoItem">주문완료<span>2</span></div></li>
+							<li class="myOrderInfoLi2"><div class="myoInfoItem">배송대기<span>1</span></div></li>
+							<li class="myOrderInfoLi3"><div class="myoInfoItem">배송중<span>3</span></div></li>
+							<li class="myOrderInfoLi4"><div class="myoInfoItem">구매확인<span>3</span></div></li>
+						</ul>
+					</div>
+				</div>
+				<ul class="termListSearchBox">
+					<li>
+						<div class="wWrap">
+							<ul class="termCon">
+								<li><a href="#none" class="miniBtn actOn">오늘</a></li>
+								<li><a href="#none" class="miniBtn">어제</a></li>
+								<li><a href="#none" class="miniBtn">1주일</a></li>
+								<li><a href="#none" class="miniBtn">1개월</a></li>
+								<li><a href="#none" class="miniBtn">3개월</a></li>
+								<li><a href="#none" class="miniBtn mr20">6개월</a></li>
+								<li>
+									<div class="calendarBox">
+										<input type="text" id="lsStartDate" class="lsStartDate" name="lsStartDate"/>
+										<div class="blt_calendar"><img src="<?=$root?>/skin/images/common/blt_cal.png" alt="달력아이콘" /></div>
+									</div>
+									<span class="calendarGubun">~</span>
+									<div class="calendarBox">
+										<input type="text" id="lsEndDate" class="lsEndDate" name="lsEndDate"/>
+										<div class="blt_calendar"><img src="<?=$root?>/skin/images/common/blt_cal.png" alt="달력아이콘" /></div>
+									</div>
+								</li>
+							</ul>
+							<script type="text/javascript">setDatePick("lsStartDate");setDatePick("lsEndDate");</script>
+						</div>
+					</li>
+					<li>
+						<div class="wWrap">
+							<select name="" id="orderStatus" class="orderStatusSlt">
+								<option value="">주문상태 선택</option>
+								<option value="">주문완료</option>
+								<option value="">배송대기</option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<div class="wWrap">
+							<div class="lsSearchBox">
+								<label for="lsGoodsName" class="blind">상품명</label>
+								<input type="text" id="lsGoodsName" class="lsGoodsName"/>
+								<a href="#none" class="lsBtn"><img src="<?=$root?>/skin/images/common/btn_search.png" alt="검색" /></a>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="wWrap">
+					<ul class="orderGoodsListBox">
+						<li>
+							<div class="ogdItem noItem">
+								<div class="noItemTit">주문 / 배송 내역이 없습니다.</div>
+								<div class="noItemDesc">고객님께서 주문하신 주문/배송 내역이 존재하지 않습니다.</div>
+							</div>
+						</li>
+						<li>
+							<div class="ogdItem">
+								<div class="ogdiDate">
+									<a href="order_view.html" class="ogdOrderNum">주문번호 : <span>26979931</span></a>
+									<div class="ogdOrderDate">주문일 : <span>2016-01-03</span></div>
+								</div>
+								<div class="ogdiInfo">
+									<a href="order_view.html">
+										<div class="ogdiImgBox"><img src="<?=$root?>/skin/images/temp/temp_goods_4.png" alt="상품이미지"/></div>
+										<div class="ogdiTextBox">
+											<div class="ogdiTit">스타벅스 아메리카노 Grande 스타벅스 아메리카노 Grande</div>
+											<div class="ogdiTit2">[옵션]단일상품</div>
+											<div class="ogdiPrice"><span>3개 / 14,350원</span></div>
+											<div class="ogdiStatus">
+												<div class="ogdiTxt">주문완료</div>
+												<a href="#none" class="smBtn" onclick="callPopup('#orderCancelPopBox'); return false;">주문취소</a>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="ogdItem">
+								<div class="ogdiDate">
+									<a href="order_view.html" class="ogdOrderNum">주문번호 : <span>26979931</span></a>
+									<div class="ogdOrderDate">주문일 : <span>2016-01-03</span></div>
+								</div>
+								<div class="ogdiInfo">
+									<a href="order_view.html">
+										<div class="ogdiImgBox"><img src="<?=$root?>/skin/images/temp/temp_goods_2.png" alt="상품이미지"/></div>
+										<div class="ogdiTextBox">
+											<div class="ogdiTit">스타벅스 아메리카노 Grande</div>
+											<div class="ogdiTit2">[옵션]단일상품</div>
+											<div class="ogdiPrice"><span>3개 / 14,350원</span></div>
+											<div class="ogdiStatus">
+												<div class="ogdiTxt">배송중</div>
+												<a href="#none" class="smBtn">배송조회</a>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="ogdItem">
+								<div class="ogdiDate">
+									<a href="order_view.html" class="ogdOrderNum">주문번호 : <span>26979931</span></a>
+									<div class="ogdOrderDate">주문일 : <span>2016-01-03</span></div>
+								</div>
+								<div class="ogdiInfo">
+									<a href="order_view.html">
+										<div class="ogdiImgBox"><img src="<?=$root?>/skin/images/temp/temp_goods_3.png" alt="상품이미지"/></div>
+										<div class="ogdiTextBox">
+											<div class="ogdiTit">스타벅스 아메리카노 Grande</div>
+											<div class="ogdiTit2">[옵션]단일상품</div>
+											<div class="ogdiPrice"><span>3개 / 14,350원</span></div>
+											<div class="ogdiStatus">
+												<div class="ogdiTxt">배송완료</div>
+												<a href="return_change.html" class="smBtn">반품/교환</a>
+												<a href="#none" class="smBtn" onclick="callPopup('#buyFixPopBox'); return false;">구매확인</a>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="pageBtnBox">
+						<a href="#none" class="listMoreBtn">더보기 (<span>10/47</span>)</a>
+					</div>
+				</div>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+		<? include '../include/div_popup.php' ?> <!-- divPopup -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("주문내역조회"); //page title
+	</script>
+</body>
+</html>

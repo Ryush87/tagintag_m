@@ -1,0 +1,37 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include $d_root.'/include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header -->
+		<div id="contents" class="csNoticeWrap">
+			<? include 'inc_customer_tab.php' ?> <!-- tab  -->
+			<section id="csNoticeViewBox">
+				<div class="wWrap">
+					<div class="bbsVeiwBox mt10">
+						<div class="bbsvTit">
+							<h5>공지사항 제목을 출력합니다.</h5>
+							<div class="bbsvInfo">2017.01.18 21:44</div>
+						</div>
+						<div class="bbsvCon">
+							<p>추가금 내고 다른 버거로 교환은 안되나요?<br />정말다른버거로 교환은 안되나요?</p>
+							<p>추가금 내고 다른 버거로 교환은 안되나요?<br />정말다른버거로 교환은 안되나요?</p>
+							<p>추가금 내고 다른 버거로 교환은 안되나요?<br />정말다른버거로 교환은 안되나요?</p>
+							<p>추가금 내고 다른 버거로 교환은 안되나요?<br />정말다른버거로 교환은 안되나요?</p>
+						</div>
+					</div>
+					<div class="pageBtnBox">
+						<a href="notice_list.html" class="mBtn whiteBtn">목록</a>
+					</div>
+				</div>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("공지사항"); //page title
+		currnetTab(1); //tab 활성화
+	</script>
+</body>
+</html>

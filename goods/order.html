@@ -1,0 +1,401 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_goods.css">
+</head>
+<body>
+	<? include $d_root.'/include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header -->
+		<div id="contents" class="orderWrap">
+			<section id="goodsInfoConfilmBox" class="sectionSlideBox openScts">
+				<h4 class="sctsTitle">상품정보</h4>
+				<div class="sctsCon">
+					<div class="oGoodsImgBox">
+						<img src="<?=$root?>/skin/images/temp/bug_480_330.jpg" alt="상품이미지" />
+					</div>
+					<div class="oGoodsInfoBox">
+						<div class="ogiName">[파리바게뜨]떠먹는 블루베리케이크</div>
+						<div class="ogiPrice1">25,000원</div>
+						<div class="ogiPrice2">2,500원(-50%)</div>
+						<div class="ogiOption">배송비 : 0 (전자상품권)</div>
+					</div>
+				</div>
+				<div class="fL mt10 p10 grayBgBox">
+					<ul class="brownDotLi">
+						<li class="fs11x">제세공과금 상품의 경우 구매시 별도의 안내를 통해 세금(22%) 납부 후 배송 처리됩니다.</li>
+					</ul>
+				</div>
+			</section>
+			<section id="oGoodsOptionBox" class="sectionSlideBox openScts">
+				<h4 class="sctsTitle">옵션선택</h4>
+				<div class="sctsCon">
+					<div class="cautionBox pointC4">
+						<span class="iCaution mr5"></span><span>주의 : 이 옵션의 상품은 재고가 5개 이하입니다. 주문시점에 재고가 없을 수 있으니 참고바랍니다.</span>
+					</div>
+					<ul class="goodsOptionWrap">
+						<li>
+							<label for="gdsOtion_1" class="blind">옵션명1</label>
+							<select name="" id="gdsOtion_1" class="gdsOtionSlt" style="width:90%;">
+								<option value="">단품1</option>
+								<option value="">단품2</option>
+							</select>
+							<span class="iCaution mt5 ml5"></span>
+						</li>
+						<li>
+							<label for="gdsOtion_2" class="blind">옵션명2</label>
+							<select name="" id="gdsOtion_2" class="gdsOtionSlt" style="width:90%;">
+								<option value="">세트메뉴1</option>
+								<option value="">세트메뉴2</option>
+							</select>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section id="deliveryInfoBox" class="sectionSlideBox openScts">
+				<h4 class="sctsTitle">배송지 정보</h4>
+				<div class="sctsCon">
+					<table class="writeTable">
+						<caption>배송지정보</caption>
+						<colgroup><col width="30%"/><col width="70%"/></colgroup>
+						<!-- 배송상품 s -->
+						<!--
+						<tr>
+							<td colspan="2" class="pb10">
+								<div class="radioBoxWrap">
+									<input type="radio" id="dlvrAdrs1" name="dlvrAdrs"/><label for="dlvrAdrs1">최근배송지</label>
+									<input type="radio" id="dlvrAdrs2" name="dlvrAdrs"/><label for="dlvrAdrs2">신규배송지</label>
+								</div>
+							</td>
+						</tr>
+						-->
+						<tr>
+							<th scope="row"><label for="dlvrAdrsSlt">배송지선택</label></th>
+							<td>
+								<select name="" id="dlvrAdrsSlt" class="dlvrAdrsSlt">
+									<option value="">배송지를 선택해주세요</option>
+									<option value="">배송지1</option>
+									<option value="">배송지2</option>
+									<option value="">배송지3</option>
+								</select>
+								<div class="radioBoxWrap mt5 mb10">
+									<input type="radio" id="dlvrAdrs1" name="dlvrAdrs"/><label for="dlvrAdrs1">최근배송지</label>
+									<input type="radio" id="dlvrAdrs2" name="dlvrAdrs"/><label for="dlvrAdrs2">신규배송지</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="dlvrName">수령인</label><span class="nece"></span></th>
+							<td><input type="text" value="" id="dlvrName"/></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="mPhonSlt">연락처</label><span class="nece"></span></th>
+							<td>
+								<div class="inputTelBox">
+									<select name="" id="mPhon" class="mPhonSlt">
+										<option value="">010</option>
+										<option value="">010</option>
+										<option value="">011</option>
+									</select>
+									<span class="divi">-</span>
+									<input type="text" id="mPhon2"/><label for="mPhon2" class="blind">중간번호</label>
+									<span class="divi">-</span>
+									<input type="text" id="mPhon3"/><label for="mPhon3" class="blind">마지막번호</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="mTelSlt">일반전화</label></th>
+							<td>
+								<div class="inputTelBox">
+									<select name="" id="mTel" class="mTelSlt">
+										<option value="">선택</option>
+										<option value="">02</option>
+										<option value="">031</option>
+									</select>
+									<span class="divi">-</span>
+									<input type="text" id="mTel2"/><label for="mTel2" class="blind">중간번호</label>
+									<span class="divi">-</span>
+									<input type="text" id="mTel3"/><label for="mTel3" class="blind">마지막번호</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="dlvrAddress">배송지</label><span class="nece"></span></th>
+							<td>
+								<ul>
+									<li class="mb10"><input type="text" value="12345" id="dlvrPost"/><label for="dlvrPost"><a href="#none" class="ml10 mBtn2 brownBtn">주소찾기</a></label></li>
+									<li>
+										<input type="text" value="서울특별시 서대문구" id="dlvrAddress" class="mb5"/>
+										<input type="text" value="4층" id="dlvrAddress2"/><label for="dlvrAddress2" class="blind">상세주소</label>
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="dlvrMsg2">배송메세지</label></th>
+							<td>
+								<ul id="dlvrMsgBox">
+									<!--
+									<li>
+										<label for="dlvrMsg1" class="blind">배송메세지종류</label>
+										<select name="" id="dlvrMsg_1" class="dlvrMsgSlt">
+											<option value="">직접입력</option>
+											<option value="">직접입력</option>
+										</select>
+									</li>
+									-->
+									<li class="mt5 mb10">
+										<textarea name="" id="dlvrMsg2" cols="30" rows="3"></textarea>
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<div class="grayBgBox">
+									<ul class="brownDotLi">
+										<li>부재시 연락가능한 전화번호 또는 상품수령이 가능한 장소를 남겨주세요. </li>
+										<li>배송일 지정은 별도로 상담하셔야 합니다.</li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<!-- 배송상품 e -->
+						<!-- 전자상품 s -->
+						<tr>
+							<th scope="row"><label for="dlvrName">수신자</label><span class="nece"></span></th>
+							<td><input type="text" value="" id="dlvrName"/></td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="mPhonSlt">핸드폰번호</label><span class="nece"></span></th>
+							<td>
+								<div class="inputTelBox">
+									<select name="" id="mPhon" class="mPhonSlt">
+										<option value="">010</option>
+										<option value="">010</option>
+										<option value="">011</option>
+									</select>
+									<span class="divi">-</span>
+									<input type="text" id="mPhon2"/><label for="mPhon2" class="blind">중간번호</label>
+									<span class="divi">-</span>
+									<input type="text" id="mPhon3"/><label for="mPhon3" class="blind">마지막번호</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<div class="grayBgBox">
+									<ul class="brownDotLi">
+										<li>상품권을 수신할 핸드폰의 수신자 명의가 일치하여야 합니다.</li>
+										<li>결제후에도 상품권 전송이 되지 않을 시 스펨메세지함을 확인 바랍니다.</li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+						<!-- 전자상품 e -->
+					</table>
+				</div>
+			</section>
+			<section id="paymentInfoBox" class="sectionSlideBox openScts">
+				<h4 class="sctsTitle">결제정보 입력</h4>
+				<div class="sctsCon">
+					<div class="pymntInputBox">
+						<ul class="pymntKindUlBox">
+							<li class="payKindLi_0">
+								<ul class="tagMoneyUse">
+									<li><span class="fwB">택머니 사용</span></li>
+									<li>
+										<input type="text" id="tagMoneyPrice" class="tagMoneyPrice" placeholder="0"/><label for="tagMoneyPrice" class="blind">택머니금액</label>
+										<a href="#none" class="mBtn2 whiteBtnB">택머니 충전</a>
+									</li>
+									<li>
+										<input type="checkbox" id="chck_alluse"/><label for="chck_alluse">모두사용</label>
+										(현재잔고 : <span class="pointC1 fwB">152,000원</span>)
+										
+									</li>
+								</ul>
+							</li>
+							<li class="payKindLi_1">
+								<div class="radioBoxWrap">
+									<input type="radio" id="pay_kind_0" name="pay_kind" />
+									<label for="pay_kind_0">신용/체크카드 결제</label>
+									<input type="radio" id="pay_kind_1" name="pay_kind" />
+									<label for="pay_kind_1">실시간 계좌이체</label>
+								</div>
+							</li>
+							<!--
+							<li class="payKindLi_0">
+								<div class="radioBoxWrap payKindChoice">
+									<input type="radio" id="pay_kind_0" name="pay_kind" />
+									<label for="pay_kind_0">택머니 결제</label>
+								</div>
+								<ul class="tagMoneyUse payKindChoiceChild">
+									<li>
+										<div class="tagMoneyUseDesc">택머니로 빠르고 안전하게 결제하세요.</div>
+									</li>
+									<li>
+										<input type="text" id="tagMoneyPrice"/><label for="tagMoneyPrice" class="blind">택머니금액</label>
+										<input type="checkbox" id="chck_alluse"/><label for="chck_alluse">모두사용</label>
+										(현재잔고 : <span class="pointC1 fwB">152,000원</span>)
+										<a href="#none" class="ml10 smBtn">택머니 충전</a>
+									</li>
+								</ul>
+							</li>
+							<li class="payKindLi_1">
+								<div class="radioBoxWrap payKindChoice">
+									<input type="radio" id="pay_kind_2" name="pay_kind" />
+									<label for="pay_kind_2">신용/체크카드 결제</label>
+								</div>
+								<ul class="payKindChoiceChild">
+									<li>
+										<label for="payKind_1">카드선택</label>
+										<select name="" id="" class="payKindSlt">
+											<option value="">카드사선택</option>
+											<option value="">국민</option>
+											<option value="">삼성</option>
+										</select>
+									</li>
+									<li>
+										<label for="">할부선택</label>
+										<select name="" id="payKind_2" class="payKindSlt">
+											<option value="">결제기간 선택</option>
+											<option value="">12개월</option>
+											<option value="">11개월</option>
+										</select>
+									</li>
+									<li>법인/기업 가드는 무이자 할부 적용이 되지 않습니다.</li>
+								</ul>
+							</li>
+							<li class="payKindLi_2">
+								<div class="radioBoxWrap payKindChoice">
+									<input type="radio" id="pay_kind_1" name="pay_kind" />
+									<label for="pay_kind_1">실시간 계좌이체</label>
+								</div>
+								<ul class="payKindChoiceChild">
+									<li>
+										<label for="">현금영수증신청</label>
+										<div class="radioBoxWrap">
+											<input type="radio" id="cash_receipt_1" name="cash_receipt" />
+											<label for="cash_receipt_1">발급</label>
+											<input type="radio" id="cash_receipt_2" name="cash_receipt" />
+											<label for="cash_receipt_2">미발급</label>
+										</div>
+									</li>
+									<li class="deductionBox">
+										<div class="radioBoxWrap">
+											<input type="radio" id="deduction_1" name="cash_receipt" />
+											<label for="deduction_1">소득공제용(일반개인용)</label>
+										</div>
+										<select name="" id="" class="payKindSlt mt10">
+											<option value="">휴대폰번호</option>
+											<option value="">집전화</option>
+										</select>
+										<label for="telNum" class="blind">연락처</label>
+										<input type="text" id="telNum"/>
+									</li>
+									<li>
+										<div class="radioBoxWrap mt10">
+											<input type="radio" id="spending_1" name="cash_receipt" />
+											<label for="spending_1">지출증빙용(사업자용)</label>
+										</div>
+									</li>
+								</ul>
+							</li>
+							<li class="payKindLi_3">
+								<div class="radioBoxWrap payKindChoice">
+									<input type="radio" id="pay_kind_3" name="pay_kind" />
+									<label for="pay_kind_3">휴대폰 결제</label>
+								</div>
+								<ul class="payKindChoiceChild">
+									<li>
+										<label for="">통신사 선택</label>
+										<select name="" id="" class="payKindSlt">
+											<option value="">SKT</option>
+											<option value="">KT</option>
+											<option value="">LG U+</option>
+										</select>
+									</li>
+								</ul>
+							</li>
+							-->
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section id="paymentBox" class="sectionSlideBox openScts">
+				<h4 class="sctsTitle">결제하기</h4>
+				<div class="sctsCon pt0">
+					<div class="paymentInputBox2">
+						<ul class="paySummaryBox">
+							<li class="paysmmryLi1">
+								<div class="gridL grid50">총 주문금액</div>
+								<div class="gridR grid50"><span>999,990원</span></div>
+							</li>
+							<li class="paysmmryLi2">
+								<div class="gridL grid50">택머니 결제금액</div>
+								<div class="gridR grid50"><span>1,950원</span></div>
+							</li>
+							<li class="paysmmryLi3">
+								<div class="gridL grid50">카드/이체 금액</div>
+								<div class="gridR grid50"><span>9,990원</span></div>
+							</li>
+						</ul>
+						<ul class="payPolicyBox">
+							<!-- <li><span class="iconRef">※</span> 원활한 배송을 위해 판매자에게 아래 정보가 제공됩니다.</li> -->
+							<li>
+								<div id="paymentPolicyBox">
+									<div class="textScrollBox">
+										<p>제 1 조 (목적)</p>
+
+										<p>이 약관은 (주)택인택 주식회사 ("회사" 또는 "(주)택인택")가 제공하는 (주)택인택 및 (주)택인택 관련 제반 서비스의 이용과 관련하여 회사와 회원과의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 합니다.</p>
+										<p>제 2 조 (정의)
+
+										<p>이 약관에서 사용하는 용어의 정의는 다음과 같습니다.</p>
+										<p>①"서비스"라 함은 구현되는 단말기(PC, TV, 휴대형단말기 등의 각종 유무선 장치를 포함)와 상관없이 "회원"이 이용할 수 있는 (주)택인택 및 (주)택인택 관련 제반 서비스를 의미합니다.</p>
+										<p>②"회원"이라 함은 회사의 "서비스"에 접속하여 이 약관에 따라 "회사"와 이용계약을 체결하고 "회사"가 제공하는 "서비스"를 이용하는 고객을 말합니다.</p>
+										<p>③"아이디(ID)"라 함은 "회원"의 식별과 "서비스" 이용을 위하여 "회원"이 정하고 "회사"가 승인하는 문자와 숫자의 조합을 의미합니다.</p>
+										<p>④"비밀번호"라 함은 "회원"이 부여 받은 "아이디와 일치되는 "회원"임을 확인하고 비밀보호를 위해 "회원" 자신이 정한 문자 또는 숫자의 조합을 의미합니다.</p>
+										<p>⑤"유료서비스"라 함은 "회사"가 유료로 제공하는 각종 온라인디지털콘텐츠(각종 정보콘텐츠, VOD, 아이템 기타 유료콘텐츠를 포함) 및 제반 서비스를 의미합니다.</p>
+										<p>⑥"포인트"라 함은 서비스의 효율적 이용을 위해 회사가 임의로 책정 또는 지급, 조정할 수 있는 재산적 가치가 없는 "서비스" 상의 가상 데이터를 의미합니다.</p>
+										<p>⑦"게시물"이라 함은 "회원"이 "서비스"를 이용함에 있어 "서비스상"에 게시한 부호ㆍ문자ㆍ음성ㆍ음향ㆍ화상ㆍ동영상 등의 정보 형태의 글, 사진, 동영상 및 각종 파일과 링크 등을 의미합니다.</p>
+										<p>제 3 조 (약관의 게시와 개정)</p>
+
+										<p>①"회사"는 이 약관의 내용을 "회원"이 쉽게 알 수 있도록 서비스 초기 화면에 게시합니다.</p>
+										<p>②"회사"는 "약관의규제에관한법률", "정보통신망이용촉진및정보보호등에관한법률(이하 "정보통신망법")" 등 관련법을 위배하지 않는 범위에서 이 약관을 개정할 수 있습니다.</p>
+										<p>③"회사"가 약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여 현행약관과 함께 제1항의 방식에 따라 그 개정약관의 적용일자 30일 전부터 적용일자 전일까지 공지합니다. 다만, 회원에게 불리한 약관의 개정의 경우에는 공지 외에 일정기간 서비스내 전자우편, 전자쪽지, 로그인시 동의창 등의 전자적 수단을 통해 따로 명확히 통지하도록 합니다.</p>
+										<p>④회사가 전항에 따라 개정약관을 공지 또는 통지하면서 회원에게 30일 기간 내에 의사표시를 하지 않으면 의사표시가 표명된 것으로 본다는 뜻을 명확하게 공지 또는 통지하였음에도 회원이 명시적으로 거부의 의사표시를 하지 아니한 경우 회원이 개정약관에 동의한 것으로 봅니다.</p>
+										<p>⑤회원이 개정약관의 적용에 동의하지 않는 경우 회사는 개정 약관의 내용을 적용할 수 없으며, 이 경우 회원은 이용계약을 해지할 수 있습니다. 다만, 기존 약관을 적용할 수 없는 특별한 사정이 있는 경우에는 회사는 이용계약을 해지할 수 있습니다.</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<input type="checkbox" id="chck_policy"/><label for="chck_policy">이용약관에 동의합니다.</label>
+								<div class="pageBtnBox taC">
+									<a href="#none" class="mBtnH whiteBtn ml0 ">취소</a>
+									<a href="order_complete.html" class="mBtnH purpleBtn">결제</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- 결제완료_팝업)확인용(삭제예정) s -->
+					<!--
+					<div class="pageBtnBox taC">
+						<a href="#none" class="mBtnH purpleBtn" onclick="callPopup('#payCompletePopBox_card'); return false;">결제</a>
+						<a href="#none" class="mBtnH purpleBtn" onclick="callPopup('#payCompletePopBox_realtime'); return false;">결제(실시간)</a>
+						<a href="#none" class="mBtnH purpleBtn" onclick="callPopup('#payCompletePopBox_virtual'); return false;">결제(가상)</a>
+						<a href="#none" class="mBtnH purpleBtn" onclick="callPopup('#payCompletePopBox_tagmoney'); return false;">결제(택머니)</a>
+						<a href="#none" class="mBtnH purpleBtn" onclick="callPopup('#payCompletePopBox_error'); return false;">결제(오류)</a>
+					</div>
+					-->
+					<!-- 결제완료_팝업)확인용(삭제예정) e -->
+				</div>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+		<? include '../include/div_popup.php' ?> <!-- divPopup -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("상품주문");  //page title
+	</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include $d_root.'/include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="ftcPartnerWrap">
+			<? include 'inc_company_tab.php' ?> <!-- tab  -->
+			<section id="ftcPartnerBox" class="mb0">
+				<div class="wWrap">
+					<div class="grayBgBox">
+						<ul>
+							<li><div class="logoItem logoItem01">롯데홈쇼핑</div></li>
+							<li><div class="logoItem logoItem02">피자헛</div></li>
+							<li><div class="logoItem logoItem03">버거킹</div></li>
+							<li><div class="logoItem logoItem04">교촌치킨</div></li>
+							<li><div class="logoItem logoItem05">베스킨라빈스</div></li>
+							<li><div class="logoItem logoItem06">파리바케트</div></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("회사소개"); //page title
+		currnetTab(1); //tab 활성화
+	</script>
+</body>
+</html>

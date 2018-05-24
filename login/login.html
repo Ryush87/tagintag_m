@@ -1,0 +1,43 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include $d_root.'/include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header -->
+		<div id="contents" class="loginWrap">
+			<div class="wWrap">
+				<section id="loginBox">
+					<div class="loginInputBox">
+						<input type="text" placeholder="아이디"/>
+						<input type="password" placeholder="비밀번호"/>
+						<a href="restoration.html" class="mBtn purpleBtn">로그인</a>
+						<div class="checkBoxWrap">
+							<input type="checkbox" id="chck_saveid"/><label for="chck_saveid">아이디 저장</label>
+						</div>
+						<ul>
+							<li><a href="<?=$root?>/login/find_id.html" class="mBtn2 whiteBtn2">아이디 찾기</a></li>
+							<li><a href="<?=$root?>/login/find_pw.html" class="mBtn2 whiteBtn2">비밀번호 찾기</a></li>
+							<li><a href="<?=$root?>/member/join_step1_policy.html" class="mBtn2 gryBtn4">회원가입</a></li>
+						</ul>
+					</div>
+					<!-- 20170216 - SNS계정 로그인 주석 처리 -->
+					<!--
+					<div class="lgnSimple">
+						<ul>
+							<li class="lgnSimpleLi_f"><a href="#none"><img src="<?=$root?>/skin/images/sub_login/icon_sns_facebook.png" alt="페이스북으로 로그인" /></a></li>
+							<li class="lgnSimpleLi_t"><a href="#none"><img src="<?=$root?>/skin/images/sub_login/icon_sns_twitter.png" alt="트위터로 로그인" /></a></li>
+						</ul>
+						<div class="textBox">SNS계정으로 로그인시 서비스 이용에는 지장이 없으나 상품의 주문, 구매, 결제시 아이디/비밀번호 로그인이 필요합니다.</div>
+					</div>
+					-->
+				</section>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("로그인"); //page title
+	</script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_goods.css">
+</head>
+<body>
+	<? include $d_root.'/include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header -->
+		<div id="contents" class="transferRequestCompleteWrap">
+			<section id="myOrderViewBox">
+				<div id="orderResultTxtBox" class="sectionSlideBox openScts strongBB">
+					<div class="sctsCon mt0 pt0 bdt0">
+						<div class="orderResultTxt oResult_1">
+							<ul>
+								<li class="txtBox">즉시구매 대기자 등록이 완료되었습니다.</li>
+							</ul>
+						</div>
+						<div class="orderResultTxt oResult_2">
+							<ul>
+								<li class="txtBox">즉시구매 대기자 등록이 완료되지 않았습니다.</li>
+								<li class="errorCode">Error : 256230</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="orderGoodsInfoBox" class="sectionSlideBox openScts strongBB">
+					<h4 class="sctsTitle">즉시구매 상품정보</h4>
+					<div class="sctsCon">
+						<div class="topOrderInfoBox mb10">
+							<div class="toN1">즉시구매번호 : <span>20169992-289</span></div>
+							<div class="toN2">2016-11-11 15:23:26</div>
+						</div>
+						<div class="oGoodsImgBox">
+							<img src="<?=$root?>/skin/images/temp/temp_main_goods_01.jpg" alt="상품이미지" />
+						</div>
+						<div class="oGoodsInfoBox">
+							<div class="ogiName">[파리바게뜨]떠먹는 블루베리케이크</div>
+							<div class="ogiPrice0">정가 : 25,000원</div>
+							<div class="ogiOption">배송비 : 0 (전자상품권)</div>
+						</div>
+					</div>
+				</div>
+				<div id="deliveryInfoBox" class="sectionSlideBox openScts strongBB">
+					<h4 class="sctsTitle">배송정보</h4>
+					<div class="sctsCon">
+						<table class="viewTable2" summary="이름,휴대폰,전화번호,수령지주소,배송메세지,배송업체,송장번호">
+							<caption>배송정보</caption>
+							<colgroup><col width="20%"/><col /></colgroup>
+							<tr>
+								<th scope="row">이름</th>
+								<td>홍길동</td>
+							</tr>
+							<tr>
+								<th scope="row">휴대폰</th>
+								<td>010-2222-5555</td>
+							</tr>
+							<tr>
+								<th scope="row">전화번호</th>
+								<td>02-2252-5369</td>
+							</tr>
+							<tr>
+								<th scope="row">수령지주소</th>
+								<td>[35879] 서울특별시 서대문구 신촌로 157 (대현동, 화영빌딩)</td>
+							</tr>
+							<tr>
+								<th scope="row">배송메세지</th>
+								<td>부재시 경비실에 놓아주세요</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="payInfoBox" class="sectionSlideBox openScts">
+					<h4 class="sctsTitle">결제정보</h4>
+					<div class="sctsCon">
+						<table class="viewTable2" summary="최종결제금액,배송비,택인택가,결재수단">
+							<caption>결제정보</caption>
+							<colgroup><col width="30%"/><col /></colgroup>
+							<tr>
+								<th scope="row">최종결제금액</th>
+								<td><span class="pointC1">7,020 원</span></td>
+							</tr>
+							<tr>
+								<th scope="row">즉시구매 제시가</th>
+								<td>4,520원</td>
+							</tr>
+							<tr>
+								<th scope="row">배송비</th>
+								<td>2,500원</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="pageBtnBox taC mt0">
+					<div class="wWrap dotLineTop">
+						<a href="#none" class="mBtnH purpleBtn mt20">확인</a>
+					</div>
+				</div>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+		<? include '../include/div_popup.php' ?> <!-- divPopup -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("즉시구매대기 등록완료"); //page title
+	</script>
+</body>
+</html>

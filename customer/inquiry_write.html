@@ -1,0 +1,75 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include $d_root.'/include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header -->
+		<div id="contents" class="csInquiryWrap">
+			<? include 'inc_customer_tab.php' ?> <!-- tab  -->
+			<section id="csInquiryWriteBox">
+				<div class="wWrap">
+					<table class="writeTable2" summary="문의항목,답변알림,제목,내용,첨부파일">
+						<caption>1:1문의 작성</caption>
+						<colgroup><col width="25%"/><col /></colgroup>
+						<tr>
+							<th scope="row">문의항목</th>
+							<td>
+								<select name="" id="wtCateSlt1" class="wtCateSlt">
+									<option value="">대분류선택</option>
+									<option value="">배송</option>
+									<option value="">결제</option>
+								</select>
+								<select name="" id="wtCateSlt2" class="wtCateSlt mt5">
+									<option value="">중분류선택</option>
+									<option value="">신용카드</option>
+									<option value="">결제</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><input type="text" id="wtSubject" placeholder="제목"/></td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<div id="webEditorBox">
+									<textarea name="" id="" cols="30" rows="5"></textarea>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<ul class="attachBox">
+									<li>
+										<input type="text" id="write_attach" class="fileInputType" readonly="readonly" title="첨부된 파일경로" value="선택된 파일 없음"/>
+										<div class="uploadFile">첨부파일<input type="file" name="attach1" onchange="javascript:document.getElementById('write_attach').value=this.value"/></div>
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="wtSubject">답변알림</label></th>
+							<td>
+								<ul class="pushKindBox checkBoxWrap">
+									<li><input type="checkbox" id="pushKind1" name="pushKind" /><label for="pushKind1">휴대폰(010-9874-5632)</label></li>
+									<li><input type="checkbox" id="pushKind2" name="pushKind" /><label for="pushKind2">이메일(honggd@tagintag.com)</label></li>
+									<li><a href="<?=$root?>/mypage/member_info.html" class="rmBtn whiteBtn">개인정보수정</a></li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+					<div class="pageBtnBox">
+						<a href="customer_home.html" class="mBtnH whiteBtn">취소</a>
+						<a href="#none" class="mBtnH purpleBtn">저장</a>
+					</div>
+				</div>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("1:1문의"); //page title
+		currnetTab(3); //tab 활성화
+	</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include '../include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="serviceWrap">
+			<? include 'inc_tagintag_tab.php' ?> <!-- tab  -->
+			<section id="serviceBox_5" class="serviceBox">
+				<div class="wWrap">
+					<? include 'inc_tagintag_service_tab.php' ?> <!-- tab  -->
+					<h2>수익얻기</h2>
+					<div class="serviceConWrap">
+						<div id="serviceConBox_3" class="serviceConBox">
+							<ul class="brownDotLi dotLineBottom pb20">
+								<li>까보기를 통해 얻은 Tag(할인된 가격)보다 더 높은 가격으로 즉시 구입을 희망하는 구매자에게 Tag을 양도하여 수익을 발생 시킬 수 있습니다.</li>
+								<li>할인 된 가격의 Tag을 뽑은 고객은 부가수익을 얻고, 즉시구매자는 시중가보다 저렴하게 원하는 상품을 구입할 수 있습니다.</li>
+							</ul>
+							<div class="exImg mt15"><img src="<?=$root?>/skin/images/sub_tagintag/item_img_5_1.jpg" alt="설명이미지"/></div>
+						</div>
+						<div id="contentsTopBtn"><a href="#wrap"><img src="<?=$root?>/skin/images/common/btn_top.png" alt="top"/></a></div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("택인택이란?"); //page title
+		currnetTab(0); //tab 활성화
+		currnetTab_servie(4); //tab 활성화
+		$(function($){
+			$(window).scroll(function(){ //스크롤시 topBtn 활성화
+				top_btn_act();
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include $d_root.'/include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header -->
+		<div id="contents" class="csInquiryWrap">
+			<? include 'inc_customer_tab.php' ?> <!-- tab  -->
+			<section id="csInquiryViewBox">
+				<div class="wWrap">
+					<div class="bbsVeiwBox mt10">
+						<div class="bbsvTit">
+							<h5>1:1문의 제목을 출력합니다.</h5>
+							<div class="bbsvInfo">상품문의 | 2017.01.18 | 대분류명 > 중분류명</div>
+						</div>
+						<div class="bbsvCon">
+							<p>추가금 내고 다른 버거로 교환은 안되나요?<br />정말다른버거로 교환은 안되나요?</p>
+							<p>추가금 내고 다른 버거로 교환은 안되나요?<br />정말다른버거로 교환은 안되나요?</p>
+							<p>추가금 내고 다른 버거로 교환은 안되나요?<br />정말다른버거로 교환은 안되나요?</p>
+							<p>추가금 내고 다른 버거로 교환은 안되나요?<br />정말다른버거로 교환은 안되나요?</p>
+						</div>
+					</div>
+					<div class="pageBtnBox taC">
+						<a href="#none" class="rmBtn whiteBtn">수정</a>
+						<a href="#none" class="rmBtn whiteBtn">삭제</a>
+					</div>
+					<div class="bbsVeiwBox2 mt10">
+						<div class="bbsvTit">
+							<h5>관리자님이 남긴 답변</h5>
+							<div class="bbsvInfo">2017.01.18</div>
+						</div>
+						<div class="bbsvCon">
+							<p>추가금 내고 다른 버거로 교환은 안되나요?<br />정말다른버거로 교환은 안되나요?</p>
+							<p>추가금 내고 다른 버거로 교환은 안되나요?<br />정말다른버거로 교환은 안되나요?</p>
+						</div>
+					</div>
+					<div class="bbsVeiwRepleBox mt10">
+						<div class="bbsvTit">
+							<h5>답변에 답글 달기</h5>
+						</div>
+						<div class="bbsvCon">
+							<textarea name="" id="" cols="30" rows="3"></textarea>
+						</div>
+						<div class="pageBtnBox taC">
+							<a href="#none" class="rmBtn whiteBtn" onclick="callPopup('#repleRegPopBox'); return false;">저장</a>
+						</div>
+					</div>
+					<div class="pageBtnBox">
+						<a href="inquiry_list.html" class="mBtn whiteBtn">목록</a>
+					</div>
+				</div>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+		<? include '../include/div_popup.php' ?> <!-- divPopup -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("1:1문의"); //page title
+		currnetTab(3); //tab 활성화
+	</script>
+</body>
+</html>

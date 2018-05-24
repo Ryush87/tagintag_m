@@ -1,0 +1,1060 @@
+@charset "utf-8";
+
+/*
+===============================================================================================
+1.	버    전 : sub.css
+2.	작 성 자 : Ryu
+3.	참    고 : SUB
+===============================================================================================
+*/
+.mypageHomeWrap,
+.ftcPartnerWrap {background:#f4f4f4;}
+
+/* main */
+#contents.mainPageWrap section {margin-top:0;}
+	#mainCaruselBox {float:left;width:100%;overflow:hidden;}
+		#mCaruselWrap {float:left;width:100%;}
+			.mSliderLeft {border:1px solid red;}
+				.slick-dotted.slick-slider {margin-bottom:0 !important;}
+			.slick-prev,
+			.slick-next {z-index:899;}
+			.slick-prev {left:5% !important;}
+			.slick-next {right:5% !important;}
+			.slick-dots {bottom:0 !important;}
+			.mCaruselItem {}
+			.slick-prev:before,
+			.slick-next:before {font-size:20px;color:white;}
+
+	#mainTotalDiscountBox {float:left;width:100%;}
+		.mtdTextBox {float:left;width:100%;height:50px;line-height:40px;font-weight:500;font-size:15px;color:#fff;text-align:center;background:#464646;border:5px solid #fff;}
+	#episodeBox {}
+		.episodeBoxWrap {float:left;width:100%;border-top:1px solid #ddd;}
+			.episodeBoxWrap li {float:left;width:50%;}
+				.epsdItem {position:relative;float:left;padding:20px;width:100%;border-right:1px solid #fff;border-bottom:1px solid #ddd;}
+					.episodeBoxWrap li:nth-child(2n+1) .epsdItem {border-right:1px solid #ddd;}
+						.epsdLabel {position:absolute;top:0;right:20px;padding-top:10px;width:45px;height:45px;}
+							.epsdLabel span {display:block;width:100%;height:100%;font-weight:500;font-size:1.2em;color:#fff;text-align:center;background:url(../images/common/list_label_bg.png) no-repeat 50% 100%;}
+						.epsdLabel1 {background:#70b986;}
+						.epsdLabel2 {background:#d26666;}
+						.epsdLabel3 {background:#bac0c4;}
+						.epsdKindLabel {position:absolute;top:5px;left:5px;width:42px;height:49px;}
+							.epsdKindLabel span {display:block;padding-top:14px;width:100%;height:100%;font-weight:600;font-size:12px;letter-spacing:-0.025em;text-align:center;background:url(../images/common/icon_tag_kind_bg.png) no-repeat;background-size:contain;}
+						.epsdKindLabel1 {color:#e40075;}
+						.epsdKindLabel2 {color:#00a7b0;}
+						.epsdKindLabel3 {color:#663b93;}
+						.epsdImg {width:58%;min-height:69px;}
+						.epsdTitle {margin-top:15px;height:52px;font-weight:500;font-size:1.8em;color:#c6a370;overflow:hidden;}
+							.epsdTitle span {}
+						.epsdProbability {position:absolute;top:70px;right:24px;width:46px;height:48px;background:#2b343a;border-radius:23px;}
+							.epsdProbability .proba1,
+							.epsdProbability .proba2 {margin:0 auto;width:60%;height:19px;line-height:19px;font-size:12px;text-align:center;color:#fff;}
+							.epsdProbability .proba2 {line-height:15px;border-top:1px solid #fff;}
+						/*.epsdNum {font-weight:bold;font-size:2em;color:#091b25;}*/
+						.epsdNum {position:absolute;top:45px;right:20px;font-weight:bold;font-size:1.4em;width:45px;text-align:center;color:#091b25;}
+						/*.epsdDate {margin-top:20px;font-size:1.5em;color:#333;}*/
+						.epsdDate {margin-top:5px;font-size:1.5em;color:#333;}
+						.epsdDesc {margin-top:10px;height:35px;font-size:1.2em;color:#a3aeb7;}
+						.epsdBtns {margin-top:10px;text-align:right;}
+							/*.epsdBtns .btnS1 {margin-left:0;padding-right:15px;padding-left:15px;}*/
+							.epsdBtns .btnS1 {width:100%;margin-left:0;padding-right:0px;padding-left:0px;}
+				.epsdItem.epsdItemPrepare {}
+					.epsdItem.epsdItemPrepare .epsdImg {margin:0 auto;}
+					.epsdItem.epsdItemPrepare .epsdTitle {text-align:center;line-height:25px;white-space:initial;overflow:initial}
+					.epsdItem.epsdItemPrepare .epsdDate,
+					.epsdItem.epsdItemPrepare .epsdDesc,
+					.epsdItem.epsdItemPrepare .epsdBtns {visibility:hidden;}
+	#ingGoodsBox {}
+		.mainPageWrap .ingGoodsList .igiTagPrice {margin-top:0;}
+	#mainBannerBox {float:left;width:100%;}
+	#mainBoardBox {float:left;width:100%;}
+		.mbbWrap {float:left;width:100%;background:#f7f7f7;}
+			.mbbWrap .mbbBox {float:left;padding:5px 0;width:100%;}
+			#mbbWin {border-bottom:1px solid #ddd;}
+			#mbbReturn {}
+				.mbbLiItem {float:left;width:100%;}
+					.mbCate {float:left;margin-left:5%;line-height:36px;font-size:13px;color:#666;}
+					.mbbDis {float:left;margin-left:5%;width:36px;height:36px;line-height:36px;text-align:center;font-weight:bold;font-size:13px;color:#fff;letter-spacing:-0.05em;border-radius:18px;}
+						.mbbDis1 {background:#58b4c3;}
+						.mbbDis2 {background:#c8a240;}
+						.mbbDis3 {background:#a3aeb7;}
+						.mbbDis4 {background:#c97d54;}
+					.mbbCon {float:left;padding-left:5px;width:45%;line-height:36px;font-size:13px;color:#666;text-overflow:ellipsis;overflow:hidden;white-space:nowrap;}
+					.mbbUser {float:left;line-height:36px;font-size:13px;color:#666;}
+					#mbbReturn .mbbUser {margin-left:10px;color:#555;}
+					.mbbPrice {float:right;margin-right:5%;line-height:36px;font-size:13px;color:#555;}
+						.mbbPrice span {font-weight:bold;}
+					.mbbCenter {width:100%;line-height:36px;font-size:13px;color:#666;text-align:center;}
+						.mbbCenter span {margin-right:15px;}
+
+/* login */
+.loginWrap {padding-top:30px;}
+	#loginBox {float:left;width:100%;}
+		.loginInputBox {float:left;width:100%;}
+			.loginInputBox input[type="text"],
+			.loginInputBox input[type="password"],
+			.loginInputBox input[type="number"] {width:100%;height:40px;font:normal 12px / 40px "dotum";color:#999;}
+			.loginInputBox input[type="text"],
+			.loginInputBox input[type="number"] {margin-bottom:5px;}
+			.loginInputBox input:focus {color:#333;}
+			.loginInputBox .mBtn2 {margin-top:10px;margin-left:0;width:100%;font-weight:bold;font-size:1.6em;border-radius:3px;}
+			.loginInputBox .checkBoxWrap {margin-top:10px;}
+				.loginInputBox .checkBoxWrap label {font:500 12px "noto sans kr";color:#444;}
+			.loginInputBox ul {}
+				.loginInputBox ul li {float:left;margin-left:2%;width:32%;}
+				.loginInputBox ul li:first-child {margin-left:0;}
+					.loginInputBox ul li .mBtn2 {padding:0;height:30px;line-height:30px;font-weight:500;font-size:11px;}
+		/* 20170216 - SNS계정 로그인 주석 처리
+		.lgnSimple {float:left;margin-top:15px;width:100%;}
+			.lgnSimple ul {float:left;width:100%;}
+				.lgnSimple li {float:left;margin-bottom:10px;width:100%;text-align:center;border-radius:2px;}
+					.lgnSimpleLi_f {background:#4867aa;}
+					.lgnSimpleLi_t {background:#33ccff;}
+						.lgnSimple li a {display:inline-block;height:40px;line-height:40px;font-size:14px;}
+							.lgnSimple li a img {height:20px;}
+			.lgnSimple .textBox {float:left;width:100%;line-height:18px;font-size:1.3em;color:#888;}
+		*/
+		#restorationBox {float:left;width:100%;}
+			#restorationBox .guideBox {float:left;width:100%;}
+				#restorationBox .guideBox .grayBgBox {padding:10px 20px;line-height:18px;font-weight:500;font-size:1.3em;color:#222;letter-spacing:-0.025em;}
+				#restorationBox .guideBox .bd1sEEE {margin-top:10px;padding:10px 20px;line-height:18px;font-weight:500;font-size:1.3em;color:#777;letter-spacing:-0.025em;}
+			#restorationBox #findKind_phon .findIdPwUl {padding-top:180px;background:url(../images/sub_login/find_box_tel_bg.png) no-repeat 50% 30%;background-size:120px;}
+
+.findIdPwWrap {padding-top:10px;}
+	#findIdPwBox {float:left;width:100%;}
+			#findIdPwBox .pageTab li {width:50%;}
+		#findIdPwBox .grayBgBox {float:left;margin-bottom:10px;padding:10px 20px;width:100%;font-weight:500;font-size:1.2em;color:#888;letter-spacing:-0.05em;}
+			#findIdPwBox .grayBgBox span {color:#333;}
+		#findKind_phon {display:block;float:left;width:100%;}
+			/*#findKind_phon .findIdPwUl {padding-top:250px;background:url(../images/sub_login/find_box_tel_bg.png) no-repeat 50% 40%;background-size:120px;}*/
+		#findKind_email {display:none;float:left;width:100%;}
+			.idInputBox,
+			.findIdPwUl li {margin-bottom:10px;}
+				#findIdPwBox input[type="text"],
+				#findIdPwBox input[type="email"],
+				#findIdPwBox input[type="password"],
+				#findIdPwBox input[type="number"] {width:100%;font-size:1.2em;}
+				#findIdPwBox input[type="text"].certiNum,
+				#findIdPwBox input[type="number"].certiNum {/*width:65%;*/width:100%;}
+				.leftTime {font-size:12px;}
+		.findResultBox {float:left;width:100%;}
+		.resetPwBox {float:left;width:100%;}
+				.resetPwBox {padding:30px 0;text-align:center;}
+					.resetPwBox ul {margin:0 auto;width:100%;}
+						.resetPwBox ul li {width:100%;text-align:left;}
+							.resetPwBox input {margin-bottom:10px;width:100%;height:40px;line-height:40px;font-family:"dotum";font-size:12px;}
+							.resetPwBox .pointC6 {font-size:1.3em;}
+
+/* memeber */
+.mbJoinWrap {}
+	#mbJoinBox {float:left;width:100%;}
+		#mbJoinBox .mbJoinStepBox {float:left;margin-bottom:0;padding:0 5%;width:100%;line-height:40px;font-size:1.5em;border-bottom:1px solid #eee;}
+		#mbJoinBox .allCheck {float:left;padding:10px 0;width:100%;font-size:1.2em;color:#333;}
+		#mbJoinBox h3 {float:left;width:100%;font-size:1.4em;color:#333;font-weight:bold;}
+		#mbJoinBox .pageBtnBox .mBtn {/*width:49%;*/width:100%;}
+		.mbPolicyBox {float:left;width:100%;}
+			.mbPolicyBox .gridL {float:left;width:100%;}
+				#mbJoinBox .mbPolicyBox h3 {padding:10px 20px;font-weight:500;font-size:12px;color:#777;background:#f9f9f9;border:1px solid #e9e9e9;}
+				.mbPolicyBox .mbPolicyBoxUL {float:left;padding:5px 0;width:100%;border:1px solid #e9e9e9;border-top:0;}
+				.mbPolicyBox .mbPolicyBoxUL > li {float:left;margin:4px 0;padding:0 20px;width:100%;font:normal 12px "Noto Sans KR";color:#777;}
+					.mbPolicyBox .mbPolicyBoxUL > li label {line-height:20px;color:#777;}
+					.mbPolicyBox .mbPolicyBoxUL > li .smBtn {float:right;font-family:"Noto Sans KR";color:#777;border-radius:15px;}
+					.smPolicyT {display:none;float:left;margin:10px 0;padding-left:20px;width:100%;height:100px;font:normal 10px / 14px "Noto Sans KR";color:#999;border:1px solid #eee;overflow:auto;}
+						.smPolicyT ul li span {float:left;width:13px;}
+						.smPolicyT ul li p {float:left;width:90%;}
+			.mbPolicyBox .gridR {float:left;margin-top:10px;width:100%;}
+		.mbNecePolicyTit {float:left;margin-top:20px;padding:0 5%;width:100%;}
+		.mbJoinDesc {float:left;margin-top:10px;padding:10px 20px;width:100%;font-weight:normal;font-size:12px;color:#444;letter-spacing:-0.05em;background:#f7f7f7;}
+			.mbJoinDesc span {font-weight:500;color:#222;}
+		.mbNecePolicyBox {float:left;margin-top:10px;padding-right:20px;padding-left:20px;width:100%;border:1px solid #e9e9e9;}
+			#mbJoinBox .mbNecePolicyBox h3 {display:inline-block;margin:10px 0;font:500 12px "Noto Sans KR";color:#777;}
+			.mbNecePolicyBox ul {float:left;margin-bottom:10px;width:100%;}
+				.mbNecePolicyBox ul li {float:left;width:100%;font:normal 10px / 14px "Noto Sans KR";color:#999;}
+					.mbNecePolicyBox ul li span {float:left;width:13px;}
+					.mbNecePolicyBox ul li p {float:left;width:90%;}
+		#mbJoinBox .pageBtnBox {margin-top:0;}
+			#mbJoinBox .pageBtnBox .textBox {float:left;font:normal 1.2em "Noto Sans KR";color:#666;}
+		.mbCertiDescBox {padding-top:140px;padding-bottom:20px;text-align:center;background:url(../images/sub_login/find_box_tel_bg.png) no-repeat 50% 20px;background-size:100px;}
+			.mbCertiDescTit {font-weight:500;font-size:18px;font-family:"Noto Sans KR";}
+		.mbCertiBox {clear:both;margin:0 auto;width:100%;}
+			.mbCertiBox h5 {margin-bottom:5px;width:100%;line-height:40px;font-weight:bold;font-size:15px;color:#444;border-bottom:1px solid #eee;}
+			.mbCertiBox .mBtn{margin-top:20px;margin-left:0;padding-right:20px;padding-left:20px;width:100%;border-radius:5px;}
+		.mbInfoInputBox {float:left;width:100%;}
+			.mbJoinGuideBox {float:left;padding:10px 5%;width:100%;font-weight:normal;font-size:12px;color:#444;letter-spacing:-0.05em;}
+			.mbInfoInputBox h5 {margin-bottom:5px;width:100%;line-height:40px;font-weight:bold;font-size:15px;color:#444;border-bottom:1px solid #eee;}
+			.mbInfoInputBox .writeTable {margin-bottom:5px;}
+				.mbInfoInputBox .grayBgBox {float:left;margin-bottom:5px;padding:10px;width:100%;font-size:11px;color:#777;}
+			.mbInfoInputBox .pageBtnBox {border-top:1px solid #eee;}
+		.mbJoinCompleteBox {float:left;width:100%;text-align:center;}
+			.mbJoinCompleteBox h5 {float:left;padding-top:40px;width:100%;font-weight:normal;font-size:35px;color:#222;letter-spacing:-0.05em;}
+			#mbJoinBox .mbJoinCompleteBox .mbjcBox {float:left;width:100%;padding-top:160px;background:url(../images/sub_member/join_complet.png) no-repeat 50% 0;background-size:140px}
+				.mbCmpText,
+				.mbComId {font:500 14px "Noto Sans KR";color:#888;}
+				.mbComId {margin-top:20px;margin-bottom:20px;}
+					.mbComId span {color:#cc5222;}
+			#mbJoinBox .mbJoinCompleteBox .pageBtnBox {margin-top:20px;}
+				#mbJoinBox .mbJoinCompleteBox .pageBtnBox .mBtn {width:100%;}
+
+/* mypage */
+.mypageHomeWrap {}
+	.mypageHomeWrap #myActInfoBox {float:left;margin-bottom:5px;width:100%;background:#fff;border-bottom:1px solid #ddd;overflow:hidden;}
+		.mypageHomeWrap #myActInfoBox .gridL {float:left;width:40%;height:130px;border-right:1px solid #ddd;}
+			.mypageHomeWrap .mmbLevel {float:left;padding-top:10px;width:100%;}
+				.mypageHomeWrap .mmblStarBox {float:left;margin-right:0;margin-left:0;width:100%;height:45px;font:bold 16px / 37px "Noto Sans KR";color:#fff;text-align:center;background:url(../images/sub_mypage/icon_big_star_bg.png) no-repeat 50% 0;background-size:contain;}
+					.mypageHomeWrap .mmblStarTitle {float:left;padding:0 5px;width:100%;text-align:center;}
+						.mypageHomeWrap .mmblStarTxt {margin-top:3px;font:500 11px / 18px "Noto Sans KR";color:#666;}
+							.mypageHomeWrap .mmblName {color:#222;}
+							.mmbLevelBtn {display:inline-block;margin-top:5px;margin-bottom:10px;padding:3px 5px;color:#444;border:1px solid #aaa;border-radius:3px;}
+		.mypageHomeWrap #myActInfoBox .gridR {float:left;width:60%;height:130px;}
+			.mypageHomeWrap #myActInfoBox .gridR ul {float:left;width:100%;}
+				.mypageHomeWrap #myActInfoBox .gridR ul li {float:left;padding:0 15px;width:100%;height:45px;line-height:45px;font-weight:500;font-size:12px;color:#555;border-top:1px solid #ddd;}
+				.mypageHomeWrap #myActInfoBox .gridR ul li:first-child {height:40px;line-height:40px;font-weight:bold;font-size:12px;color:#222;background:#f6f6f6;border-top:0;}
+					.mypageHomeWrap #myActInfoBox .gridR ul li a {display:block;width:100%;background:url(../images/common/blt_arrow_right_gray2.png) no-repeat 100% 50%;background-size:10px;}
+					.mypageHomeWrap #myActInfoBox .gridR ul li .fR {color:#ff4100;}
+					.mypageHomeWrap #myActInfoBox .gridR ul li .fR span {display:inline-block;font-family:"Arial";font-weight:bold;font-size:15px;}
+	.mypageHomeWrap #myActInfoBox .grid100 {float:left;width:100%;/*height:130px;*/}
+			.mypageHomeWrap #myActInfoBox .grid100 ul {float:left;width:100%;}
+				.mypageHomeWrap #myActInfoBox .grid100 ul li {float:left;padding:0 15px;width:100%;height:45px;line-height:45px;font-weight:500;font-size:12px;color:#555;border-top:1px solid #ddd;}
+				.mypageHomeWrap #myActInfoBox .grid100 ul li:first-child {height:40px;line-height:40px;font-weight:bold;font-size:12px;color:#222;background:#f6f6f6;border-top:0;}
+					.mypageHomeWrap #myActInfoBox .grid100 ul li a {display:block;width:100%;background:url(../images/common/blt_arrow_right_gray2.png) no-repeat 100% 50%;background-size:10px;}
+					.mypageHomeWrap #myActInfoBox .grid100 ul li .fR {color:#ff4100;}
+					.mypageHomeWrap #myActInfoBox .grid100 ul li .fR span {display:inline-block;font-family:"Arial";font-weight:bold;font-size:15px;}
+	#myOrderInfoBox {float:left;margin-bottom:5px;width:100%;background:#c6a370;background:linear-gradient(to left,#d9c382,#c6a370);}
+		#myOrderInfoBox ul {float:left;padding:15px 0;width:100%;}
+			#myOrderInfoBox ul li {float:left;width:25%}
+				.myoInfoItem {margin:0 auto;padding-top:20px;width:70px;height:70px;font-weight:500;font-size:11px;color:#fff;text-align:center;border:1px solid #fff;border-radius:35px;}
+					.myoInfoItem span {display:block;font:bold 18px "Arial";color:#fff;}
+				/*
+				.myOrderInfoLi1 .myoInfoItem {background:url(../images/sub_mypage/icon_order_list_1.png) no-repeat 50% 13px;background-size:18%;}
+				.myOrderInfoLi2 .myoInfoItem {background:url(../images/sub_mypage/icon_order_list_2.png) no-repeat 50% 18px;background-size:25%;}
+				.myOrderInfoLi3 .myoInfoItem {background:url(../images/sub_mypage/icon_order_list_3.png) no-repeat 50% 15px;background-size:20%;}
+				*/
+	.mypageHomeWrap #myTagActBox {float:left;margin-bottom:5px;padding:10px 0;width:100%;background:#fff;border-top:1px solid #ddd;border-bottom:1px solid #ddd;}
+		.mypageHomeWrap #myTagActBox .gridL {float:left;width:60%;}
+			.mypageHomeWrap #myTagActBox .gridL ul {float:left;margin-top:7px;width:100%;}
+				.mypageHomeWrap #myTagActBox .gridL ul li {float:left;padding-left:10px;width:50%;font-weight:500;font-size:13px;color:#999;letter-spacing:-0.05em;text-align:center;}
+				.mypageHomeWrap #myTagActBox .gridL ul li:first-child {padding-left:0;padding-right:10px;background:url(../images/common/line_h_d7.gif) no-repeat 100% 50%;background-size:1px 50%;}
+					.mypageHomeWrap #myTagActBox .gridL ul li span {display:block;margin-top:5px;font:bold 16px "Arial";color:#222;}
+		.mypageHomeWrap #myTagActBox .gridR {float:left;width:40%;}
+			.mypageHomeWrap #myTagActBox .gridR a.boxBtn {float:right;width:80%;height:26px;line-height:25px;font-weight:500;font-size:12px;color:#c6a370;text-align:center;background:#fff;border:1px solid #c6a370;border-radius:13px;}
+			.mypageHomeWrap #myTagActBox .gridR a.boxBtn:first-child {margin-bottom:5px;}
+	.mypageHomeWrap #mypageMenuBox {float:left;width:100%;margin-bottom:0;}
+		.mypageHomeWrap #mypageMenuBox ul {float:left;margin-bottom:5px;width:100%;background:#fff;border-bottom:1px solid #ccc;}
+			.mypageHomeWrap #mypageMenuBox ul li {height:40px;line-height:40px;}
+				.mpm1d {float:left;margin:0 auto;padding:0 15px;width:100%;font-weight:bold;font-size:14px;color:#444;border-bottom:1px solid #ccc;}
+				.mpm2d {float:right;margin:0 auto;padding:0 15px 0 0;width:88%;font-weight:500;font-size:12px;color:#444;border-bottom:1px solid #f1f1f1;}
+				.mypageHomeWrap #mypageMenuBox ul li.mpm2d:last-child {border-bottom:0;}
+				.mypageHomeWrap #mypageMenuBox ul li a {display:block;width:100%;background:url(../images/common/blt_arrow_right_gray2.png) no-repeat 98% 50%;background-size:10px;}
+	.mypageHomeWrap #contentsTopBtn {position:relative;float:right;margin-right:10px;margin-bottom:10px;opacity:1;}
+
+.myOrderListWrap {}
+	.myOrderListWrap #myOrderListBox {float:left;width:100%;}
+		.termListSearchBox {float:left;width:100%;}
+			.termListSearchBox > li {float:left;width:100%;}
+				.termCon {float:left;width:100%;}
+					.termCon > li {float:left;padding:3px 0;width:33.33%;}
+					.termCon > li:nth-child(3n+2) {padding-right:3px;padding-left:3px;}
+					.termCon > li:last-child {margin-top:1px;width:100%;}
+						.miniBtn {float:left;width:100%;height:35px;line-height:35px;font-size:1.2em;color:#777;text-align:center;background:#fff;border:1px solid #ddd;}
+						.miniBtn.actOn,
+						.miniBtn:hover {color:#c6a370;border:1px solid #c6a370;}
+						.termListSearchBox .calendarBox {float:left;margin-top:-3px;width:47%;font-size:1.2em;border:1px solid #ddd;}
+							.termListSearchBox .calendarBox input[type="text"],
+							.termListSearchBox .calendarBox input[type="number"] {width:75%;border:0;text-align:center;}
+							.termListSearchBox .calendarBox .blt_calendar {float:right;}
+						.termListSearchBox .calendarGubun {float:left;width:6%;line-height:30px;text-align:center;}
+				.termListSearchBox select {width:100%;}
+				.termListSearchBox .lsSearchBox {float:left;margin-top:4px;width:100%;height:35px;line-height:30px;font-size:1.2em;color:#777;border:1px solid #ddd;overflow:hidden;}
+					input[type="text"].lsGoodsName,
+					input[type="number"].lsGoodsName {width:80%;line-height:30px;border:0;}
+					.lsBtn {float:right;padding-left:10px;margin-right:10px;width:26px;background:url(../images/common/line_h_d7.gif) no-repeat 0 50%;background-size:1px 50%;}
+		.orderGoodsListBox {float:left;width:100%;}
+			.orderGoodsListBox > li {float:left;margin-top:10px;width:100%;}
+			.ogdItem {float:left;width:100%;border:1px solid #eee;border-top:2px solid #ccc;}
+				.ogdiDate {float:left;padding:0 10px;width:100%;height:35px;font:bold 1.2em / 35px "Arial";color:#444;background:#f7f7f7;}
+					.ogdiDate > span {font-weight:normal;color:#888;}
+					.ogdOrderNum {float:left;}
+						.ogdOrderNum > span {color:#c6a370;}
+					.ogdOrderDate {float:right;}
+				.ogdiInfo {float:left;padding:10px;width:100%;}
+					.ogdiImgBox {float:left;margin-right:10px;/*width:90px;height:90px;*/width:32%;text-align:center;/*border:1px solid #eee;*/overflow:hidden;}
+						.ogdiImgBox img {/*width:auto;height:100%;*/}
+					.ogdiTextBox {float:right;width:62%;}
+						.ogdiTit {float:left;width:100%;font-size:1.2em;color:#222;}
+						.ogdiTit2 {float:left;width:100%;font-size:1.1em;color:#666;}
+						.ogdiPrice {float:left;width:100%;font-weight:bold;font-size:1.4em;color:#ff4100;}
+						.ogdiStatus {float:left;margin-top:10px;width:100%;text-align:right;}
+							.ogdiTxt{display:inline-block;padding-top:1px;padding-right:5px;height:25px;font-weight:500;font-size:1.2em;color:#333;background:url(../images/common/line_h_d7.gif) no-repeat 100% 30%;background-size:1px 50%;}
+							.ogdiStatus .smBtn {float:right;margin-left:5px;padding:2px 5px;}
+			.ogdItem.noItem {padding:30px 0;text-align:center;background:#f7f7f7;}
+				.noItemTit {padding-top:80px;font-weight:bold;font-size:1.6em;color:#666;letter-spacing:-0.025em;background:url(../images/common/icon_no_item.png) no-repeat 50% 0;background-size:70px;}
+				.noItemDesc {font-weight:300;font-size:1em;color:#666;letter-spacing:-0.05em;}
+
+.myOrderViewWrap {float:left;width:100%;}
+	#myOrderViewBox {}
+		.topOrderInfoBox {float:left;padding:0 5%;width:100%;height:40px;line-height:40px;font-size:11px;color:#666;background:#f9fafa;}
+			.toN1 {float:left;}
+				.toN1 span {color:#c6a370;}
+			.toN2 {float:right;font-family:"Arial";font-size:12px;letter-spacing:-0.05em;}
+		#orderGoodsInfoBox {float:left;width:100%;}
+			#orderGoodsInfoBox .sctsCon {margin-top:0;padding-top:0;border-top:0;}
+				#myOrderViewBox .oGoodsImgBox {position:relative;float:left;width:30%;/*border:1px solid #e8e8e8;*/}
+				#myOrderViewBox .oGoodsInfoBox {float:left;padding-left:15px;width:70%;letter-spacing:-0.075em;}
+					#myOrderViewBox .ogiName {font-weight:500;font-size:1.6em;color:#444;}
+					#myOrderViewBox .ogiPrice1 {margin-right:5px;display:inline-block;font-size:1.4em;color:#888;text-decoration:line-through;}
+					#myOrderViewBox .ogiPrice2 {display:inline-block;font-weight:500;font-size:1.8em;color:#ff4100;}
+					#myOrderViewBox .ogiOption {font-size:1.3em;color:#666;}
+					#myOrderViewBox .ogiBtn .mBtn2 {margin-right:5px;width:60px;height:25px;line-height:25px;font-size:12px;}
+		#deliveryInfoBox {}
+		#payInfoBox {}
+		#myOrderViewBox .pageBtnBox .mBtn {margin-top:5px;}
+		#myOrderViewBox .pageBtnBox .mBtn:first-child {margin-top:0;}
+
+	.goodsInfoBox.viewTable th,
+	.goodsInfoBox.viewTable td {padding:15px 5px;text-align:center;vertical-align:middle;}
+		.goodsInfoBox .ogoodsName,
+		.goodsInfoBox .ogoodsOption {width:220px;}
+		.myOrderViewWrap .balloonTip {float:right;margin-top:-2px;margin-right:5px;width:20px;}
+
+	/* return_change */
+	.returnChangeWrap {background:#f4f4f4;}
+		#returnGuideBox {}
+			#returnGuideBox p,
+			#returnGuideBox .grayDotLi li {font-size:1.2em;line-height:20px;color:#888;}
+		#changeGuideBox {}
+			#changeGuideBox p {font-size:1.2em;line-height:20px;color:#888;}
+
+.myInstantBuyListWrap {}
+	#myInstantBuyListBox {}
+		#myInstantBuyListBox .grayBgBox {float:left;margin-top:15px;margin-bottom:10px;width:100%;height:45px;font:500 1.3em / 45px "Noto Sans KR";color:#333;text-align:center;}
+			#myInstantBuyListBox .grayBgBox span {margin-left:10px;font-weight:bold;font-size:18px;font-family:"Arial";}
+		.myInstantBuyListWrap .slideListBox {float:left;width:100%;}
+		.myInstantBuyListWrap .slideListBody > li {border:1px solid #ddd;border-top:0;}
+			.myInstantBuyListWrap .slideListBody > li:first-child {margin-top:15px;border-top:1px solid #ddd;}
+				.myInstantBuyListWrap .slideListBox .titleLine {float:left;width:97%;background:url(../images/common/blt_arrow_down_gray.png) no-repeat 100% 16px;background-size:10px;}
+				.myInstantBuyListWrap .slideListBox .openLine .titleLine {background:url(../images/common/blt_arrow_up_gray.png) no-repeat 100% 16px;background-size:10px;}
+				.myInstantBuyListWrap .conLine {background:#fff;}
+		
+
+.myTransferListWrap {}
+	#myTransferListBox {}
+		.myTransferListWrap .slideListBox {float:left;width:100%;}
+		.myTransferListWrap .slideListBody > li {border:1px solid #ddd;border-top:0;}
+			.myTransferListWrap .slideListBody > li:first-child {margin-top:15px;border-top:1px solid #ddd;}
+				.myTransferListWrap .slideListBox .titleLine {float:left;width:97%;background:url(../images/common/blt_arrow_down_gray.png) no-repeat 100% 16px;background-size:10px;}
+				.myTransferListWrap .slideListBox .openLine .titleLine {background:url(../images/common/blt_arrow_up_gray.png) no-repeat 100% 16px;background-size:10px;}
+				.myTransferListWrap .conLine {background:#fff;}
+
+.myTagOpenHistoryListWrap {}
+	#myTagOpenHistoryListBox {}
+		.myTagOpenHistoryListWrap .slideListBox {float:left;width:100%;}
+			.myTagOpenHistoryListWrap .slideListBody > li {border:1px solid #ddd;border-top:0;}
+			.myTagOpenHistoryListWrap .slideListBody > li:first-child {margin-top:15px;border-top:1px solid #ddd;}
+				.myTagOpenHistoryListWrap .slideListBox .titleLine {float:left;width:97%;background:url(../images/common/blt_arrow_down_gray.png) no-repeat 100% 16px;background-size:10px;}
+				.myTagOpenHistoryListWrap .slideListBox .openLine .titleLine {background:url(../images/common/blt_arrow_up_gray.png) no-repeat 100% 16px;background-size:10px;}
+				.mthTit {float:left;padding:10px 10px;width:100%;}
+					.mthT1 {float:left;width:30px;}
+					.mthT2 {float:left;width:60%;}
+					.mthT3 {float:right;width:70px;}
+						.mthT3 span {display:block;margin-right:20%;width:80%;height:20px;line-height:20px;font-size:10px;text-align:center;background:#fff;border-radius:10px;}
+						.tStts1 {color:#663b93;border:1px solid #663b93;}
+						.tStts2 {color:#c82358;border:1px solid #c82358;}
+						.tStts3 {color:#aaa;border:1px solid #aaa;}
+						.tStts4 {color:#480000;border:1px solid #480000;}
+				.myTagOpenHistoryListWrap .conLine {background:#fff;}
+				.mthCon {float:left;padding:10px 10px 10px 10px;width:100%;}
+					.mthCon dl {float:left;width:100%;}
+						.mthCon dt {float:left;padding-left:30px;width:50%;line-height:20px;font-weight:normal;font-size:11px;color:#666;letter-spacing:-0.05em;}
+						.mthCon dd {float:right;padding-right:10px;width:50%;line-height:20px;font-weight:normal;font-size:11px;color:#666;letter-spacing:-0.05em;text-align:right;}
+					.mthCon .pageBtnBox {margin-top:10px;padding-top:10px;border-top:1px solid #ddd;}
+						.mthCon .pageBtnBox .mBtn2 {margin-top:0;width:65px;height:25px;line-height:25px;border:1px solid #aaa;}
+						.mthCon .pageBtnBox .mBtn2:hover {border:1px solid #aaa;}
+						.mthCon .pageBtnBox .mBtn2:first-child {margin-right:5px;}
+						.mthCon .pageBtnBox .whiteBtn2 {font-size:12px;color:#888;}
+		.myTagOpenHistoryListWrap .pageBtnBox {margin-top:10px;}
+
+.mySnsHistoryListWrap {}
+	#mySnsHistoryListBox {}
+
+.myProudHistoryListWrap {}
+	#myProudHistoryListBox {}
+
+.mySmsHistoryListWrap {}
+	#mySmsHistoryListBox {}
+
+.myTagPointMoneyWrap {}
+	#myTagPointMoneyBox {}
+		#myTagPointMoneyBox .viewTable {float:left;width:100%;}
+		#myTagPointMoneyBox .viewTable th {padding:0 20px;height:45px;vertical-align:middle;font-weight:500;font-size:1.3em;color:#555;text-align:left;background:#fff;border-right:0;border-bottom:1px solid #ddd;}
+			#myTagPointMoneyBox .viewTable th > div > a > span {display:block;width:100%;height:100%;line-height:45px;color:#333;}
+			#myTagPointMoneyBox .viewTable .trPoint th > div > a > span {background:url(../images/common/icon_exclamation1.png) no-repeat 100% 50%;background-size:20px;}
+			#myTagPointMoneyBox .viewTable .trMoney th > div > a > span {background:url(../images/common/icon_exclamation2.png) no-repeat 100% 50%;background-size:20px;}
+				.infoPop {display:none;position:absolute;top:50px;left:0;padding:15px 10px;width:280px;font:normal 11px "Noto Sans KR";text-align:left;background:#fff;border-radius:5px;z-index:100;}
+				.trPoint .infoPop {border:1px solid #d9c382;}
+				.trMoney .infoPop {border:1px solid #7ec2cd;}
+		#myTagPointMoneyBox .viewTable td {padding:0 20px;height:45px;vertical-align:middle;font:bold 1.6em "Arial";color:#333;text-align:right;border-bottom:1px solid #ddd;}
+	#myTagPointMoneyBox .myTpmListBox {float:left;padding:0 5%;width:100%;}
+		.myTpmName {font-weight:500;font-size:13px;color:#555;}
+		#myTagPointMoneyBox select {float:left;width:100%;}
+		#myTagPointMoneyBox .listTable {float:left;margin-top:10px;width:100%;}
+			#myTagPointMoneyBox .listTable td {border-bottom:1px solid #f4f4f4;}
+				#myTagPointMoneyBox .listTable .listCate {width:36px;height:36px;line-height:36px;text-align:center;color:#fff;border-radius:18px;}
+				.ct1 {background:#d7b252;}
+				.ct2 {background:#f09774;}
+				.ct3 {background:#f07474;}
+				.ct4 {background:#60add4;}
+				#myTagPointMoneyBox .listTable .myTpmListUl {float:left;width:100%;text-align:left;}
+					#myTagPointMoneyBox .listTable .myTpmListUl li {float:left;width:100%;}
+					.li1 {font-family:"arial";font-size:12px;color:#888;letter-spacing:-0.05em;}
+					.li2 {font-weight:bold;font-size:14px;color:#444;letter-spacing:-0.05em;}
+					.li3 {font-weight:500;font-size:13px;color:#555;letter-spacing:-0.05em;}
+				#myTagPointMoneyBox .listTable td.taR {padding-right:10px;font-weight:bold;font-size:14px;color:#444;}
+		#myTagPointMoneyBox .pageBtnBox {margin-top:10px;margin-bottom:0;}
+	#myTagPointMoneyBox .grayBgBox {float:left;margin-top:15px;margin-bottom:10px;width:100%;height:45px;font:500 1.3em / 45px "Noto Sans KR";color:#333;text-align:center;}
+		#myTagPointMoneyBox .grayBgBox span {margin-left:10px;font-weight:bold;font-size:18px;font-family:"Arial";}
+
+.myChargeWrap {}
+	#myPointChargeBox {}
+		.pointInfoDesc {float:left;padding:20px 20px 20px 35%;width:100%;line-height:24px;background:url(../images/sub_mypage/icon_pointInfo_desc.png) no-repeat 10% 50%;background-size:70px;}
+		.moneyInfoDesc {float:left;padding:20px 20px 20px 35%;width:100%;line-height:24px;background:url(../images/sub_mypage/icon_moneyInfo_desc.png) no-repeat 10% 50%;background-size:70px;}
+			.pointInfoDesc h5,
+			.moneyInfoDesc h5 {float:left;margin-bottom:5px;width:100%;font-weight:500;font-size:1.4em;color:#222;}
+			.pointInfoDesc p,
+			.moneyInfoDesc p {float:left;width:100%;line-height:1.6em;font-weight:400;font-size:1em;color:#777;}
+		.selectChargeCostWrap {float:left;width:100%;background:#d7b252;}
+			.selectChargeCostBox {float:left;padding:20px 20px 20px 35%;width:100%;background:url(../images/sub_mypage/icon_point_charge.png) no-repeat 10% 50%;background-size:70px}
+				.selectChargeCostBox h5 {float:left;width:100%;font-weight:bold;font-size:1.4em;color:#fff;letter-spacing:-0.05em;}
+				.selectChargeCostBox select.chargePriceSlt {float:left;width:70%;font-size:10px;color:#fff;letter-spacing:-0.05em;background:#d7b252;border:1px solid #fff;}
+		.costSummaryBox {float:left;padding:0 5%;width:100%;background:#f5f6f8;}
+			.costSummaryBox li {padding-left:25px;width:100%;height:50px;line-height:50px;font-weight:500;font-size:1.2em;color:#222;letter-spacing:-0.05em;}
+				.costSummaryBox li span {float:right;font-family:"arial";font-weight:bold;font-size:14px;color:#999;letter-spacing:-0.05em;}
+			.chargeC {float:left;background:url(../images/sub_mypage/icon_w.png) no-repeat 0 50%;background-size:19px;}
+			.balaceP {float:left;background:url(../images/sub_mypage/icon_p.png) no-repeat 0 50%;background-size:19px;}
+		.paymentInputBox {float:left;padding:5%;width:100%;background:#f5f6f8;}
+			.payInputUlBox {float:left;width:100%;background:#fff;border-top:1px solid #ddd;}
+				.payInputUlBox > li {float:left;padding:10px;width:100%;border:1px solid #ddd;border-top:0;}
+					.payKindUlBox {float:left;width:100%;}
+						.payKindUlBox > li {float:left;width:50%;}
+						.payKindUlBox > li a {display:block;width:100%;height:35px;line-height:35px;font-weight:500;font-size:13px;color:#444;letter-spacing:-0.05em;text-align:center;background:#f8f9fa;border:1px solid #dfe3e7;}
+						.payKindUlBox > li.actOn a {color:#fff;background:#c6a370;border:1px solid #a88b5f;}
+				.payInputUlBox li.payKindLi_1 {background:#f9fafb;}
+					.paymentInputBox .payKindSlt {float:left;width:100%;}
+						.payKindDesc {float:left;margin:5px 0;width:100%;font-size:1.2em;color:#777;letter-spacing:-0.05em;}
+						.cardInstallmentGuide {float:left;line-height:15px;font-weight:500;font-size:1.1em;color:#333;text-decoration:underline;}
+				.payInputUlBox li.payKindLi_2 {display:none;padding:0;background:#f9fafb;}
+					.cashReciptBox {float:left;padding:10px 5%;width:100%;background:#fff;border-bottom:1px solid #dfe3e7;}
+						.cashReciptTit {float:left;width:40%;font-weight:500;font-size:13px;color:#222;}
+						.cashReciptBox .radioBoxWrap {float:left;width:60%;}
+							.cashReciptBox .radioBoxWrap label {font-family:"Noto Sans KR";font-size:12px;}
+					.cashReciptInputBox {float:left;padding:5%;width:100%;}
+						.cashReciptInputBox .radioBoxWrap {font-size:12px;}
+						.cashReciptInputBox .inputTelBox {float:left;margin-top:10px;width:100%;}
+							.cashReciptInputBox .inputTelBox input[type="text"],
+							.cashReciptInputBox .inputTelBox input[type="number"] {width:29.5%;}
+				.payInputUlBox li.totalPriceBox {float:left;width:100%;}
+					.priceTit {float:left;font:500 12px "Noto Sans KR";color:#333;text-align:left;}
+					.priceNum {float:right;font:500 11px "Noto Sans KR";color:#ff4100;text-align:right;}
+						.priceNum span {font-weight:bold;font-size:18px;font-family:"Arial";}
+		.myChargeWrap .pageBtnBox {margin-top:0;padding:0 5%;background:#f9fafb;}
+			.myChargeWrap .pageBtnBox .checkBoxWrap {float:left;font-size:1.1em;color:#333;text-align:left;}
+				.myChargeWrap .pageBtnBox .checkBoxWrap input {float:left;height:28px;}
+				.myChargeWrap .pageBtnBox .checkBoxWrap label {display:inline;}
+			.myChargeWrap .pageBtnBox .mBtn {margin-top:0;margin-bottom:20px;}
+	#myMoneyChargeBox {}
+		#myMoneyChargeBox .radioBoxWrap input[type="radio"] {margin-left:50px;}
+		#myMoneyChargeBox .radioBoxWrap input[type="radio"]:first-child {margin-left:0px;}
+		.virtualAccountBox {float:left;padding:20px 0;width:100%;border-top:1px solid #dedede;}
+			.sltLabel {font-weight:bold;}
+			.payAccountSlt {margin-left:10px;width:200px;}
+		.payGuideTxt {float:left;width:100%;padding-top:20px;}
+
+.myRefundWrap {}
+	#myRefundBox {}
+		.refundSummaryBox {float:left;padding:10px;width:100%;}
+			.refundSummaryBox .sentenceBox {float:left;margin-bottom:5px;padding-bottom:10px;width:100%;border-bottom:1px solid #eee;}
+			.rfsmrUl {float:left;width:100%;}
+				.rfsmrUl li {float:left;width:100%;height:30px;line-height:30px;font-weight:500;font-size:14px;color:#777;}
+					.rfsmrUl li div {font-size:17px;color:#444;}
+		.refundApplyBox {float:left;width:100%;}
+			.refundApplyBox .writeTable {}
+				.refundApplyBox .writeTable th,
+				.refundApplyBox .writeTable th label {font-weight:500;font-size:14px;color:#444;}
+				.refundApplyBox .writeTable th,
+				.refundApplyBox .writeTable td {padding:5px 5px;vertical-align:middle;}
+				.refundApplyBox .writeTable .inputWrap {border:1px solid #ddd;}
+					.refundApplyBox .writeTable .inputWrap input[type="text"],
+					.refundApplyBox .writeTable .inputWrap input[type="number"] {width:90%;border:0;}
+			.refundApplyBox .viewTable {}
+			.refundApplyBox .viewTable.insideTable {margin-bottom:10px;}
+				.refundApplyBox .viewTable.insideTable th {color:#fff;background:#c6a370;}
+				.refundApplyBox .viewTable.insideTable td {text-align:center;}
+			.refundApplyBox .brownDotLi {float:left;width:100%;}
+				.refundApplyBox .brownDotLi li {line-height:14px;font-size:11px;color:#777;}
+			.refundApplyBox .pageBtnBox {margin-top:10px;}
+		.returnBankSlt {}
+
+.myTurnoverWrap {}
+	#myTurnoverBox {width:100%;}
+		.myTurnoverInfo {float:left;width:100%;border-bottom:5px solid #eee;}
+		.myTurnoverCerti {float:left;width:100%;}
+		#myTurnoverBox .writeTable2 th,
+		#myTurnoverBox .writeTable2 td {padding-top:10px;padding-bottom:10px;vertical-align:middle;}
+		#myTurnoverBox .writeTable2 th {font-size:14px;}
+		#myTurnoverBox .writeTable2 td {text-align:right;}
+			.trnApplyInput1,
+			.trnApplyInput2 {text-align:right;font-weight:bold;font-size:14px;}
+			.trnApplyUnit {float:right;margin:0 0 0 15px;line-height:30px;font-weight:bold;font-size:20px;color:#222;}
+			.trnDesc {float:right;line-height:20px;color:#666;font-size:11px;}
+		#myTurnoverBox .writeTable2 .checkBoxWrap {float:right;margin-left:20px;}
+		#myTurnoverBox .brownDotLi {clear:both;padding:0;width:100%;}
+			#myTurnoverBox .brownDotLi li {font-size:11px;line-height:14px;}
+
+.myCsCounselListWrap {}
+	#myCsCounselListBox {float:left;width:100%;}
+		.listSearchBox {float:left;width:100%;border:2px solid #c6a370;}
+			.listSearchBox input[type="text"]#searchWord,
+			.listSearchBox input[type="number"]#searchWord {float:left;margin-right:10px;width:80%;font-size:1.2em;border:0;}
+			.listSearchBox .listSearchBtn {float:right;padding-left:2px;width:40px;height:35px;line-height:35px;text-align:center;background:#c6a370;}
+				.listSearchBox .listSearchBtn img {width:50%;}
+		#myCsCounselListBox .csSlideListBox {margin-top:10px;}
+			/* slideListBox */
+			.csSlideListBox {float:left;width:100%;font-family:inherit;}
+				.csSlideListBox .slideListBody {float:left;margin-bottom:10px;width:100%;}
+					.csSlideListBox .slideListBody > li {float:left;width:100%;font-size:1.3em;letter-spacing:-0.025em;border-bottom:0;}
+					.csSlideListBox .slideListBody > li:last-child {border-bottom:1px solid #e2e2e2;}
+					.csSlideListBox > li.openLine {}
+					.csSlideListBox > li a {color:#333;}
+					.csSlideListBox > li.actOn a {text-decoration:underline;}
+						.csSlideListBox .titleLine {float:left;padding:15px 0;width:100%;border-top:1px solid #e2e2e2;}
+						.csSlideListBox .conLine {display:none;float:left;padding:15px 0;width:100%;background:#fff;border-top:1px solid #e2e2e2;}
+			#myCsCounselListBox .titleLine a,
+			#myCsCounselListBox .titleLine a:hover {text-decoration:none;}
+			.qIcon1 {float:left;width:23px;height:23px;background:url(../images/common/icon_q.png) no-repeat 0 0;background-size:23px;}
+			.qIcon2 {float:left;width:23px;height:23px;background:url(../images/common/icon_a.png) no-repeat 0 0;background-size:23px;}
+			.qText {float:left;margin-left:10px;}
+			#myCsCounselListBox .titleLine .qText {width:80%;}
+				#myCsCounselListBox .titleLine .qtCon {display:none;}
+			#myCsCounselListBox .conLine .qText {width:80%;}
+				.qtTit {font-weight:bold;}
+				.qtCon {/*padding-top:10px;*/color:#555;}
+				.qtInfo {padding-top:10px;font-size:11px;color:#888;}
+					.qtInfo span {font-family:"Arial";}
+			.qStatus {float:right;}
+				.qDone,
+				.qIng,
+				.qYet {display:inline-block;float:left;width:60px;height:20px;line-height:20px;font-size:11px;color:#888;text-align:center;border:1px solid #ddd;}
+				.qDone {background:#fff;}
+				.qIng {background:#fff;}
+				.qYet {background:#fff;}
+				.qSecret {display:inline-block;width:10px;height:13px;vertical-align:middle;background:url(../images/common/icon_secret.png) no-repeat 0 0;background-size:10px;}
+
+.myGoodsQnaListWrap {}
+	#myGoodsQnaListBox {float:left;width:100%;}
+		#myGoodsQnaListBox .csSlideListBox {margin-top:10px;}
+			#myGoodsQnaListBox .titleLine a,
+			#myGoodsQnaListBox .titleLine a:hover {text-decoration:none;}
+			#myGoodsQnaListBox .titleLine .qText {width:60%;}
+				#myGoodsQnaListBox .titleLine .qtCon {display:none;}
+			#myGoodsQnaListBox .conLine .qText {width:80%;}
+
+.myMemberInfoPwWrap {}
+	#myMemberInfoPwBox {float:left;width:100%;}
+		.mbInfoStepBox {float:left;margin-bottom:0;padding:0 5%;width:100%;line-height:40px;font-size:1.5em;border-bottom:1px solid #eee;}
+			.mbInfoDesc {float:left;margin-top:10px;padding:10px 20px;width:100%;font-weight:normal;font-size:12px;color:#444;letter-spacing:-0.05em;background:#f7f7f7;}
+				.mbInfoDesc span {font-weight:500;color:#222;}
+			.mbInfoInput {float:left;padding-top:200px;width:100%;background:url(../images/sub_mypage/icon_pw.png) no-repeat 50% 30%;background-size:200px;}
+				.mbInfoInput input {float:left;width:100%;}
+
+.myMemberInfoWrap {}
+	#myMemberInfoBox {float:left;width:100%;}
+		.basicInfoBox {float:left;width:100%;}
+			.mPhonEditBox1 {display:block;}
+			.mPhonEditBox2 {display:none;margin-top:10px;}
+		.deliveryInfoBox {float:left;width:100%;}
+		.marketingInfoBox {float:left;width:100%;}
+			.myMemberInfoWrap .writeTable2 {margin-bottom:10px;}
+			.deliveryInfoBox .writeTable2 {border:1px solid #eee;}
+				.deliveryInfoBox .writeTable2 th {background:#f7f7f7;}
+				.deliveryInfoBox .writeTable2 td .label {font-weight:normal;font-size:11px;color:#666;}
+				.deliveryListBox {float:left;width:100%;margin-bottom:10px;}
+					.deliveryListBox .writeTable2 {margin-bottom:0;}
+						.deliveryListBox label {font-weight:500;font-size:12px;color:#222;}
+						.basicAddress {display:none;float:right;padding:0 10px;line-height:15px;font-size:11px;color:#c6a370;background:#fff;border:1px solid #c6a370;border-radius:15px;}
+						.basicAddress.actOn {display:block;}
+			.marketingInfoBox .writeTable2 {margin-bottom:5px;}
+				.marketingInfoBox .grayBgBox {float:left;margin-bottom:5px;padding:10px;width:100%;font-size:11px;color:#777;}
+					.marketingInfoBox .grayBgBox span {color:#222;}
+
+				.inputGuideBox {font-size:11px;}
+				.inputPwBox {float:left;}
+					.inputPwBox > li {margin-top:10px;width:100%;}
+					.inputPwBox > li:first-child {margin-top:0;}
+						.inputPwBox > li > label {width:90px;}
+						.inputPwBox > li > input {width:350px;color:#999;}
+				.inputMailBox {float:left;}
+					.writeTable2 .inputMailBox > input[type="text"],
+					.writeTable2 .inputMailBox > input[type="number"] {float:left;/*width:40%;*/}
+					.inputMailBox select.mDomainSlt {float:left;margin-left:0;width:40%;}
+					.inputMailBox .divi {float:left;margin:0 5px;line-height:30px;}
+				.inputTelBox {}
+					.inputTelBox select.mPhonSlt,
+					.inputTelBox select.mTelSlt {float:left;width:30%;}
+					.inputTelBox > input[type="text"],
+					.writeTable2 .inputTelBox > input[type="text"],
+					.inputTelBox > input[type="number"],
+					.writeTable2 .inputTelBox > input[type="number"] {float:left;width:27%;text-align:center;}
+					.inputTelBox .divi {float:left;margin:0 5px;line-height:30px;}
+				.inputDeliBox {float:left;}
+					.inputDeliBox > li {float:left;margin-top:10px;width:100%;}
+						.inputDeliBox > li > label {float:left;width:60px;line-height:30px;}
+						.postCodeInput {width:80px;text-align:center;}
+					.inputDeliBox > li:first-child {margin-top:0;}
+					.inputDeliBox > li:last-child {padding-left:60px;}
+						.inputDeliBox > li:last-child input {width:260px;}
+				.inputAddressBox {float:left;width:100%;}
+					.inputAddressBox li {float:left;margin-top:5px;width:100%;}
+					.inputAddressBox li:first-child {margin-top:0;}
+				.fixValue {font-weight:500;color:#444;}
+				.phonNum {height:30px;line-height:30px;}
+				.phonNumEditBtn {float:right;width:46%;}
+				a.areaAddBtn {font-size:18px;}
+				.writeTable2 td input[type="text"].postCodeInput,
+				.writeTable2 td input[type="number"].postCodeInput {width:66%;}
+				.zipCodeBtn {float:right;width:30%;}
+				.writeTable2 .mBtn {margin-top:0;height:35px;line-height:35px;font-size:13px;}
+				.writeTable2 .rmBtn {margin-top:0;}
+				.writeTable2 td .pageBtnBox {margin-top:0;margin-bottom:10px;}
+				.delTrBtn {position:absolute;top:0;right:0;width:10px;}
+				.mMarketingSlt {float:left;width:200px;}
+				.sltDesc {float:left;margin-right:10px;margin-left:50px;line-height:30px;}
+
+.myMemberLeaveWrap {}
+	#myMemberLeaveBox {}
+		.leaveInfoDesc {float:left;margin-top:10px;margin-bottom:20px;padding:0;width:100%;font-weight:500;font-size:1.2em;color:#888;letter-spacing:-0.05em;}
+		#myMemberLeaveBox .viewTable {margin-bottom:20px;}
+		#myMemberLeaveBox .viewTable th {font-weight:500;font-size:14px;text-align:left;}
+		#myMemberLeaveBox .viewTable td {line-height:22px;font-size:13px;letter-spacing:-0.05em;}
+		#myMemberLeaveBox .brownDotLi {float:left;width:100%;}
+			#myMemberLeaveBox .brownDotLi li {float:left;width:100%;font-size:13px;}
+		#myMemberLeaveBox .viewTable h6 {margin:10px 0 0 0;padding:0 0 5px 0;font-weight:500;font-size:14px;color:#222;background:none;}
+			#myMemberLeaveBox .insideTable th {padding:5px 0;color:#fff;line-height:12px;text-align:center;background:#c6a370;}
+			#myMemberLeaveBox .insideTable td {padding:5px;text-align:center;}
+		#myMemberLeaveBox .pageBtnBox {margin-top:0px;}
+			#myMemberLeaveBox .pageBtnBox .checkBoxWrap,
+			#myMemberLeaveBox .pageBtnBox .checkBoxWrap input,
+			#myMemberLeaveBox .pageBtnBox .checkBoxWrap label {float:left;margin-top:0;}
+			#myMemberLeaveBox .pageBtnBox label {width:90%;font:normal 1.2em "dotum";}
+
+.myMemberLeaveCmpWrap {}
+	#myMemberLeaveCmpBox {}
+		.leaveCmpInfoDesc {clear:both;margin-top:40px;margin-bottom:30px;width:100%;line-height:24px;font-weight:500;font-size:1.8em;color:#222;text-align:center;}
+			.leaveCmpInfoDesc p {padding-bottom:160px;width:100%;background:url(../images/sub_mypage/icon_member_leave_complet.png) no-repeat 50% 100%;background-size:200px;}
+		#myMemberLeaveCmpBox .sentenceBox {margin:0 auto;margin-bottom:10px;width:90%;font-weight:500;font-size:13px;font-family:"Noto Sans KR";color:#666;}
+		#myMemberLeaveCmpBox .brownDotLi {float:left;padding:15px;width:100%;}
+			#myMemberLeaveCmpBox .brownDotLi li {color:#333;}
+
+
+.myMemberLevelWrap {}
+	#myMemberLevelBox {float:left;width:100%;}
+		.myMemberLevelGuide {float:left;margin-top:10px;margin-bottom:10px;padding:20px;width:100%;border:5px solid #e9e9e9;}
+			.mmblStar {float:left;width:100%;}
+				.mmblStarBox {float:left;;width:40%;height:90px;font:bold 22px / 75px "Noto Sans KR";color:#fff;text-align:center;background:url(../images/sub_mypage/icon_big_star_bg.png) no-repeat 50% 50%;background-size:contain;}
+				.mmblStarTitle {float:left;width:60%;}
+					.mmblStarTxt {margin-top:5px;font:bold 13px / 20px "Noto Sans KR";color:#666;}
+						.mmblName {color:#222;}
+					.mmblStarDesc {margin-top:20px;font:normal 12px / 20px "Noto Sans KR";color:#666;}
+		.mmblGuideTable {float:left;margin-bottom:20px;width:100%;border-top:1px solid #ddd;border-left:0;}
+			.mmblGuideTable th,
+			.mmblGuideTable td {padding:0;text-align:center;vertical-align:middle;border-left:1px solid #ddd;}
+			.mmblGuideTable th:first-child,
+			.mmblGuideTable td:first-child {border-left:0;}
+			.mmblGuideTable th:last-child,
+			.mmblGuideTable td:last-child {border-right:0;}
+			.mmblGuideTable th {height:40px;}
+			.mmblGuideTable td {height:50px;}
+			.viewTable td .mmblStarTBg {width:100%;height:35px;line-height:30px;color:#fff;background:url(../images/sub_mypage/icon_big_star_bg.png) no-repeat 50% 50%;background-size:contain;}
+		.myMemberLevelGuide2 {float:left;margin-bottom:10px;padding:15px 15px;width:100%;border:2px solid #e9e9e9;}
+			.myMemberLevelGuide2 .brownDotLi {float:left;width:100%;}
+				.myMemberLevelGuide2 .brownDotLi li {line-height:15px;font-size:12px;letter-spacing:-0.075em;}
+			.myMemberStarHistory {float:left;width:100%;}
+				.myMemberStarHistory th,
+				.myMemberStarHistory td {padding:0;height:40px;vertical-align:middle;text-align:center;letter-spacing:-0.05em;}
+				.myMemberStarHistory th {color:#fff;background:#c6a370;}
+				.myMemberStarHistory {border-left:0;}
+				.myMemberStarHistory th:last-child,
+				.myMemberStarHistory td:last-child {border-right:0;}
+
+.myMyActWrap {}
+	#myMyActBox {float:left;width:100%;}
+		.myMyActGuide {float:left;margin-top:20px;margin-bottom:10px;padding:15px 20px;width:100%;text-align:center;border:3px solid #e9e9e9;}
+			.mmaGuideTxt {display:inline-block;font:bold 13px / 20px "Noto Sans KR";color:#666;}
+				.mmaName {color:#222;}
+			.mmaGuideDesc {display:inline-block;font:normal 12px / 20px "dotum";color:#666;}
+		.myMyTagOpenHistory {}
+			.myMyTagOpenHistory .listTable th,
+			.myMyTagOpenHistory .listTable td {border-left:1px solid #ddd;}
+			.myMyTagOpenHistory .listTable th:first-child,
+			.myMyTagOpenHistory .listTable td:first-child {border-left:0;}
+			.myMyTagOpenHistory .listTable td {padding:0 5px;font-size:12px;}
+			.mmaTagRating {display:inline-block;width:100%;vertical-align:middle;}
+			.mmaTagRating1 {color:#58b4c3;}
+			.mmaTagRating2 {color:#c8a240;}
+			.mmaTagRating3 {color:#a3aeb7;}
+			.mmaTagRating4 {color:#c97d54;}
+			.myMyTagOpenHistory .vaM {color:#c82358;}
+			.myMyTagOpenHistory .smBtn {margin-top:3px;margin-bottom:5px;}
+		.myMySnsHistory {}
+			.myMySnsHistory .listTable td {padding:10px 10px 10px 5px;}
+				.myMySnsHistory .listTable td span {display:block;width:100%;}
+			.mmaSns {display:inline-block;width:35px;height:35px;vertical-align:middle;}
+			.mmaSns_f {background:url(../images/sub_mypage/icon_sns_facebook.png) repeat-x 0;background-size:cover;}
+			.mmaSns_t {background:url(../images/sub_mypage/icon_sns_twitter.png) repeat-x 0;background-size:cover;}
+		#myMyActBox .pageBtnBox {margin-top:10px;margin-bottom:20px;}
+
+
+/* mytag */
+.mytOpenHistoryWrap {}
+	#mytOpenHistoryBox {}
+		.mytOpenHistoryWrap .slideListBox {float:left;width:100%;}
+			.mytOpenHistoryWrap .slideListBody > li {border:1px solid #ddd;border-top:0;}
+			.mytOpenHistoryWrap .slideListBody > li:first-child {margin-top:15px;border-top:1px solid #ddd;}
+				.mytOpenHistoryWrap .slideListBox .titleLine {float:left;width:97%;background:url(../images/common/blt_arrow_down_gray.png) no-repeat 100% 16px;background-size:10px;}
+				.mytOpenHistoryWrap .slideListBox .openLine .titleLine {background:url(../images/common/blt_arrow_up_gray.png) no-repeat 100% 16px;background-size:10px;}
+				.mthTit {float:left;padding:10px 10px;width:100%;}
+					.mthT1 {float:left;width:30px;}
+					.mthT2 {float:left;width:60%;}
+					.mthT3 {float:right;width:70px;}
+						.mthT3 span {display:block;margin-right:20%;width:80%;height:20px;line-height:20px;font-size:10px;text-align:center;background:#fff;border-radius:10px;}
+						.tStts1 {color:#663b93;border:1px solid #663b93;}
+						.tStts2 {color:#c82358;border:1px solid #c82358;}
+						.tStts3 {color:#aaa;border:1px solid #aaa;}
+				.mytOpenHistoryWrap .conLine {background:#fff;}
+				.mthCon {float:left;padding:10px 10px 10px 10px;width:100%;}
+					.mthCon dl {float:left;width:100%;}
+						.mthCon dt {float:left;padding-left:30px;width:50%;line-height:20px;font-weight:normal;font-size:11px;color:#999;letter-spacing:-0.05em;}
+						.mthCon dd {float:right;padding-right:10px;width:50%;line-height:20px;font-weight:normal;font-size:11px;color:#666;letter-spacing:-0.05em;text-align:right;}
+					.mthCon .pageBtnBox {margin-top:10px;padding-top:10px;border-top:1px solid #ddd;}
+						.mthCon .pageBtnBox .mBtn2 {margin-top:0;width:65px;height:25px;line-height:25px;border:1px solid #aaa;}
+						.mthCon .pageBtnBox .mBtn2:hover {border:1px solid #aaa;}
+						.mthCon .pageBtnBox .mBtn2:first-child {margin-right:5px;}
+						.mthCon .pageBtnBox .whiteBtn2 {font-size:12px;color:#888;}
+		.mytOpenHistoryWrap .pageBtnBox {margin-top:10px;}
+
+.mytTransferHistoryWrap {}
+	#mytTransferHistoryBox {}
+		.mytTransferHistoryWrap .slideListBox {float:left;width:100%;}
+			.mytTransferHistoryWrap .slideListBody > li {border:1px solid #ddd;border-top:0;}
+			.mytTransferHistoryWrap .slideListBody > li:first-child {margin-top:15px;border-top:1px solid #ddd;}
+				.mytTransferHistoryWrap .conLine {background:#fff;}
+				.mytTransferHistoryWrap .slideListBox .titleLine {float:left;width:97%;background:url(../images/common/blt_arrow_down_gray.png) no-repeat 100% 16px;background-size:10px;}
+				.mytTransferHistoryWrap .slideListBox .openLine .titleLine {background:url(../images/common/blt_arrow_up_gray.png) no-repeat 100% 16px;background-size:10px;}
+				.mthCon .grayBgBox {margin-top:5px;padding-top:5px;padding-bottom:5px;}
+					.mytTransferHistoryWrap .mthCon .grayBgBox dd {color:#cc5222;}
+					.mytTransferHistoryWrap .mthCon .pageBtnBox {margin-top:0;border-top:0}
+		.mytTransferHistoryWrap .pageBtnBox {margin-top:10px;}
+
+/* customer */
+.customerHomeWrap {float:left;width:100%;}
+	.customerHomeWrap .pageTab2 li,
+	.csNoticeWrap .pageTab2 li,
+	.csFaqWrap .pageTab2 li,
+	.csInquiryWrap .pageTab2 li {/*width:33.33%;*/width:50%;}
+	.customerHomeWrap#contents h2 {padding:0 5%;border-bottom:1px solid #a8b4bc;}
+	.customerHomeWrap #csFaqBox {float:left;width:100%;border-bottom:5px solid #eee;}
+		.customerHomeWrap #csFaqBox ul {float:left;width:100%;}
+			/*.customerHomeWrap #csFaqBox ul li {float:left;padding:10px 0;width:50%;background:url(../images/common/blt_arrow_right_gray2.png) no-repeat 93% 50%;background-size:8px;border-bottom:1px solid #ddd;}*/
+			.customerHomeWrap #csFaqBox ul li {float:left;padding:10px 5%;width:100%;border-bottom:1px solid #ddd;}
+			.customerHomeWrap #csFaqBox .csSlideListBox .titleLine {padding:0;border-top:0;}
+			.customerHomeWrap #csFaqBox .csSlideListBox .conLine {margin-top:10px;}
+			/*.customerHomeWrap #csFaqBox ul li:last-child {border-bottom:0;}
+				.customerHomeWrap #csFaqBox ul li a {display:block;margin:0 5% 0 7%;padding-left:35px;width:90%;height:30px;line-height:27px;font-weight:500;font-size:13px;color:#444;letter-spacing:-0.05em;}
+				.csfCate1 {background:url(../images/sub_customer/icon_faq_01.png) no-repeat 0 50%;background-size:contain;}
+				.csfCate2 {background:url(../images/sub_customer/icon_faq_02.png) no-repeat 0 50%;background-size:contain;}
+				.csfCate3 {background:url(../images/sub_customer/icon_faq_03.png) no-repeat 0 50%;background-size:contain;}
+				.csfCate4 {background:url(../images/sub_customer/icon_faq_04.png) no-repeat 0 50%;background-size:contain;}
+				.csfCate5 {background:url(../images/sub_customer/icon_faq_05.png) no-repeat 0 50%;background-size:contain;}
+				.csfCate6 {background:url(../images/sub_customer/icon_faq_06.png) no-repeat 0 50%;background-size:contain;}
+				.csfCate7 {background:url(../images/sub_customer/icon_faq_07.png) no-repeat 0 50%;background-size:contain;}
+				*/
+			.customerHomeWrap #csFaqBox .pageBtnBox {margin-top:0;margin-bottom:20px;padding:0 5%;}
+	.customerHomeWrap #csNoticeBox {float:left;width:100%;}
+		.customerHomeWrap #csNoticeBox .listTable2 {border-top:0;}
+			.customerHomeWrap #csNoticeBox .listTable2 td:last-child {font-family:"Arial";}
+		.customerHomeWrap #csNoticeBox .pageBtnBox {margin-top:10px;padding:0 5%;}
+	.customerHomeWrap #csInquiryBox {float:left;width:100%;}
+		.customerHomeWrap #csInquiryBox .listTable2 {border-top:0;}
+			.customerHomeWrap #csInquiryBox .listTable2 td:last-child {font-family:"Arial";}
+		.customerHomeWrap #csInquiryBox .pageBtnBox {margin-top:10px;padding:0 5%;}
+
+#csInfoBox {float:left;width:100%;background:url(../images/sub_customer/customer_bg.gif);border-bottom:5px solid #eee;}
+	.csInfoBoxWrap {float:left;padding:20px 15px;width:100%;}
+		.csibImg {display:none;float:left;width:20%;}
+		.csibText1 {float:left;margin-top:10px;width:100%;font-weight:500;font-size:1.2em;color:#45403a;}
+			.csibText1 span {display:inline-block;width:30%;}
+		.csibText2 {float:left;padding:10px 0;width:100%;font-weight:400;font-size:1.2em;letter-spacing:-0.025em;color:#fff;border:5px solid #d3bf82;}
+		.csibBtns {float:left;margin-top:20px;width:100%;}
+			.csibBtn {display:block;padding-left:15px;width:48%;height:40px;line-height:34px;font-weight:500;font-size:1.4em;letter-spacing:-0.05em;border:2px solid #fff;}
+			a.csibBtn1 {float:left;color:#fff;background:url(../images/sub_customer/customer_btn_1.jpg) no-repeat 100% 50%;}
+			a.csibBtn2 {float:right;color:#3b1e1e;background:url(../images/sub_customer/customer_btn_2.jpg) no-repeat 100% 50%;}
+
+.csNoticeWrap {}
+	#csNoticeListBox {float:left;width:100%;}
+		#csNoticeListBox .listTable2 {margin-top:10px;border-top:1px solid #ddd;}
+		#csNoticeListBox .pageBtnBox {margin-top:10px;padding:0 5%;}
+	#csNoticeViewBox {float:left;width:100%;}
+		.bbsVeiwBox {float:left;padding:15px 20px;width:100%;border:1px solid #eee;}
+		.bbsVeiwBox2 {float:left;padding:15px 20px;width:100%;background:#f7f7f7;border:0;}
+		.bbsVeiwRepleBox {float:left;padding:15px 20px;width:100%;border:1px solid #c6a370;}
+		#csNoticeViewBox .bbsVeiwBox {min-height:320px;}
+			.bbsvTit {float:left;margin-bottom:10px;padding-bottom:10px;width:100%;border-bottom:1px solid #eee;}
+				.bbsvTit h5 {margin-bottom:5px;font-weight:bold;font-size:14px;color:#444;}
+				.bbsvInfo {float:left;width:100%;font-size:12px;color:#888;}
+			.bbsvCon {float:left;width:100%;font-size:12px;color:#888;}
+				.bbsvCon textarea {float:left;width:100%;}
+				.bbsvCon img {margin-bottom:10px;}
+		#csNoticeViewBox .pageBtnBox {margin-top:0;}
+
+.csFaqWrap {}
+	#csFaqBox {float:left;width:100%;}
+		#csFaqBox .csFaqCategoryBox {float:left;width:100%;}
+			#csFaqBox .csFaqCategoryBox li {float:left;margin-bottom:10px;width:100%;}
+				.csFaqCateSlt {float:left;width:100%;}
+		.csFaqCateTit {float:left;width:100%;}
+			.csFaqCateTit li {float:left;font-size:12px;color:#888;}
+				.csFaqCateS {margin:0 5px;width:5px;height:20px;background:url(../images/common/location_bg.gif) no-repeat 50% 45%;background-size:contain;}
+				.csFaqCate1 {}
+				.csFaqCate2 {}
+		#csFaqBox .csSlideListBox {margin-top:5px;}
+				#csFaqBox .csSlideListBox .slideListBody {float:left;margin-bottom:10px;width:100%;}
+			#csFaqBox .titleLine a,
+			#csFaqBox .titleLine a:hover {text-decoration:none;}
+			#csFaqBox .titleLine .qText {width:85%;}
+				#csFaqBox .titleLine .qtCon {display:none;}
+			#csFaqBox .conLine .qText {width:80%;}
+
+.csInquiryWrap {}
+	#csInquiryListBox {float:left;width:100%;}
+		#csInquiryListBox .csSlideListBox {margin-top:10px;}
+				#csInquiryListBox .csSlideListBox .slideListBody {float:left;margin-bottom:10px;width:100%;}
+			#csInquiryListBox .titleLine {padding:10px 0;}
+				#csInquiryListBox .titleLine a,
+				#csInquiryListBox .titleLine a:hover {text-decoration:none;}
+				#csInquiryListBox .titleLine .qText {width:60%;}
+					#csInquiryListBox .titleLine .qText .qtInfo {padding-top:5px;font-size:12px;}
+		.csInquiryWrap .pageBtnBox {margin-top:0;}
+	#csInquiryViewBox {float:left;width:100%;}
+	#csInquiryWriteBox {float:left;width:100%;}
+		#csInquiryWriteBox .writeTable2 {}
+			#csInquiryWriteBox .writeTable2 th,
+			#csInquiryWriteBox .writeTable2 td {padding:5px 0;}
+			#csInquiryWriteBox .writeTable2 th {font-size:13px;}
+			#csInquiryWriteBox #webEditorBox {float:left;width:100%;}
+			#csInquiryWriteBox .attachBox {float:left;padding-bottom:10px;border-bottom:1px solid #eee;}
+				#csInquiryWriteBox .writeTable2 input[type="text"].fileInputType,
+				#csInquiryWriteBox .writeTable2 input[type="number"].fileInputType {width:60%;}
+				#csInquiryWriteBox .writeTable2 .uploadFile {float:right;margin-left:0;width:38%;font-weight:500;font-size:14px;color:#555;background:#fff;border:1px solid #ddd;}
+			#csInquiryWriteBox .pushKindBox label {font-size:13px;color:#888;}
+				#csInquiryWriteBox .pushKindBox .rmBtn {margin-top:10px;margin-bottom:10px;}
+			#csInquiryWriteBox .pageBtnBox {padding-top:5px;/*border-top:1px solid #eee;*/}
+
+.tBbsWrap {}
+	#tBbsListBox {width:100%;}
+		#tBbsListBox .listTable2 {margin-top:10px;border-top:1px solid #ddd;}
+		#tBbsListBox .pageBtnBox {margin-top:10px;padding:0 5%;}
+	#tBbsViewBox {width:100%;}
+	#tBbsWriteBox {width:100%;}
+
+/* event */
+.eventListWrap {}
+	#eventListBox {padding-top:15px;width:100%;}
+		.eventListUl {width:100%;}
+			.eventListUl li {float:left;margin-bottom:15px;width:100%;}
+				.evntlItem {}
+
+#contents.eventViewDetailWrap {border-top:0;}
+.eventViewDetailWrap {}
+	#eventViewDetailBox {width:100%;}
+#pInviteConfilmBox .listTable2 th,
+#pInviteConfilmBox .listTable2 td {border-right:1px solid #ddd;}
+#pInviteConfilmBox .listTable2 th:last-child,
+#pInviteConfilmBox .listTable2 td:last-child {border-right:0;}
+
+
+/* tagintag */
+.serviceWrap {}
+	#serviceHomeBox {background:#c6a370;background:linear-gradient(to left,#d9c382,#c6a370);}
+		.serviceIndexImg {}
+		.serviceIndexBox {float:left;margin:0 5%;width:90%;}
+			.serviceIndexBox li {float:left;padding:0 5px;width:33.33%;}
+			.serviceIndexBox li:hover,
+			.serviceIndexBox li.actOn {}
+				.serviceIndexBox li a {display:block;padding-top:95px;width:100%;height:140px;text-align:center;}
+				.serviceIndexLi_1 a {background:url(../images/sub_tagintag/icon_index_1.png) no-repeat 50% 0;background-size:80px;}
+				.serviceIndexLi_2 a {background:url(../images/sub_tagintag/icon_index_2.png) no-repeat 50% 0;background-size:80px;}
+				.serviceIndexLi_3 a {background:url(../images/sub_tagintag/icon_index_3.png) no-repeat 50% 0;background-size:80px;}
+				.serviceIndexLi_4 a {background:url(../images/sub_tagintag/icon_index_4.png) no-repeat 50% 0;background-size:80px;}
+				.serviceIndexLi_5 a {background:url(../images/sub_tagintag/icon_index_5.png) no-repeat 50% 0;background-size:80px;}
+				.serviceIndexLi_6 a {background:url(../images/sub_tagintag/icon_index_6.png) no-repeat 50% 0;background-size:80px;}
+					.siItem {}
+						.siTitle {display:block;font-weight:500;font-size:1.3em;color:#fff;}
+	.serviceBox {float:left;width:100%;}
+		.serviceBox .pageTab {float:left;margin:5px 0;width:100%;}
+			.serviceBox .pageTab li {float:left;padding:2px;width:33.33%;}
+			.serviceBox .pageTab li a {display:block;width:100%;height:35px;line-height:35px;text-align:center;font-weight:500;font-size:1.2em;color:#666;background:#fff;border:1px solid #e8e8e8;}
+			.serviceBox .pageTab li.actOn a,
+			.serviceBox .pageTab li a:hover {font-weight:500;color:#fff;background:#4a525f;border:1px solid #333;}
+		#contents .serviceBox h2{border-bottom:0;}
+		.serviceConWrap {position:relative;float:left;width:100%;}
+			.serviceConBox {float:left;width:100%;}
+				.serviceConBox .brownDotLi {float:left;width:100%;}
+					.serviceConBox .brownDotLi li {font-weight:500;font-size:1.3em;}
+				.exImg {float:left;}
+				.serviceConWrap .grayBgBox {float:left;margin-top:20px;padding:20px;width:100%;text-align:center;background:#fafafa;border:1px solid #fff;}
+					.serviceConWrap .stress1 {font-weight:500;font-size:1.6em;color:#c6a370;letter-spacing:-0.05em;}
+					.serviceConWrap .stress2 {font-size:1.3em;color:#666;}
+			#serviceBox_1 {}
+			#serviceBox_6 {}
+				.serviceBox .grayBgBox {background:#faf5eb;}
+				.serviceBox .exUl {float:left;margin-top:20px;width:100%;}
+					.serviceBox .exUl li {float:left;margin-bottom:20px;width:100%;height:80px;}
+						.serviceBox .exUl li .exImg {float:left;width:20%;height:100%;vertical-align:middle;}
+							.serviceBox .exUl li .exImg img {margin-top:0px;width:auto;height:100%;}
+						.serviceBox .exUl li .exTxt {float:left;padding-left:20px;width:80%;}
+							.serviceBox .exUl li .exTxt .ext1 {font:bold 15px "noto sans kr";letter-spacing:-0.05em;color:#333;}
+							.serviceBox .exUl li .exTxt .ext2 {margin-top:0px;font:normal 12px / 18px "noto sans kr";letter-spacing:-0.05em;color:#666;}
+
+.serviceFaqWrap {}
+	#serviceFaqBox {float:left;width:100%;}
+		#serviceFaqBox .csSlideListBox {margin-top:5px;}
+				#serviceFaqBox .csSlideListBox .slideListBody {float:left;margin-bottom:10px;width:100%;}
+			#serviceFaqBox .titleLine a,
+			#serviceFaqBox .titleLine a:hover {text-decoration:none;}
+			#serviceFaqBox .titleLine .qText {width:85%;}
+				#serviceFaqBox .titleLine .qtCon {display:none;}
+			#serviceFaqBox .conLine .qText {width:80%;}
+
+.allianceWrap {}
+	#alliacneBox {float:left;width:100%;}
+
+.tutorialWrap {width:100%;}
+	#tutorialBox {float:left;width:100%;}
+		.ttrTopBox,
+		.ttrHeadBox {float:left;padding-right:5%;padding-left:5%;width:100%;}
+		.ttrTopBox {padding-top:7px;padding-bottom:8px;background:#9a8b7d;}
+			.ttrHomeBtn {float:left;margin-top:5px;width:30px;vertical-align:middle;}
+			#ttrStepSelect {float:right;padding-left:10px;width:50%;color:#f2edd1;background:#45403a;border:1px solid #f2edd1;}
+		.ttrHeadBox {height:38px;line-height:38px;text-align:center;background:#e0d3c5;}
+			.ttrPrevBtn,
+			.ttrNextBtn {width:50%;height:100%;}
+			.ttrPrevBtn a,
+			.ttrNextBtn a {display:inline-block;width:100%;height:100%;font-size:1.3em;color:#8b7366;}
+			.ttrPrevBtn:hover a,
+			.ttrNextBtn:hover a {color:#8b7366;}
+			.ttrPrevBtn {float:left;}
+			.ttrNextBtn {float:right;}
+			.ttrPrevBtn a {padding-left:20px;text-align:left;background:url(../images/sub_tagintag/icon_tutorial_arrow_l.png) no-repeat 0 50%;background-size:10px;}
+			.ttrNextBtn a {padding-right:20px;text-align:right;background:url(../images/sub_tagintag/icon_tutorial_arrow_r.png) no-repeat 100% 50%;background-size:10px;}
+		.ttrContents {position:relative;float:left;width:100%;}
+			#contents .ttrContents h2  {margin-top:20px;border-bottom:0;font-size:1.8em;}
+			.ttrContents .brownDotLi {float:left;margin-bottom:10px;padding-bottom:10px;width:100%;background:url(../images/common/line_w_dot2.png) repeat-x 0 100%;}
+				.ttrContents .brownDotLi li {font-size:1.2em;}
+
+/* footer */
+.ftcIntroWrap .pageTab2 li,
+.ftcPartnerWrap .pageTab2 li,
+.ftcMapWrap .pageTab2 li {/*width:33.33%;*/width:50%;}
+
+.ftcIntroWrap {}
+	#ftcIntroBox {float:left;width:100%;}
+		.footer_com_intro_tab {}
+		#ftcIntroBox .pageTab {float:left;margin:5px 0;width:100%;}
+			#ftcIntroBox .pageTab li {float:left;padding:2px;width:25%;}
+			#ftcIntroBox .pageTab li a {display:block;width:100%;height:35px;line-height:35px;text-align:center;font-weight:500;font-size:1.2em;color:#666;background:#fff;border:1px solid #e8e8e8;}
+			#ftcIntroBox .pageTab li.actOn a,
+			#ftcIntroBox .pageTab li a:hover {font-weight:500;color:#fff;background:#4a525f;border:1px solid #333;}
+		.ftcIntroConWrap {position:relative;float:left;padding:0 20px;width:100%;background:#f9f8f4;}
+			.comIntroItem {float:left;padding:30px 0;width:100%;text-align:center;border-top:1px solid #dfdcd0;}
+			.comIntroItem:first-child {border-top:0;}
+				.comIntroItem h5 {display:block;margin-bottom:20px;padding-top:100px;width:100%;font-weight:bold;font-size:20px;color:#333;}
+				#comIntro_1.comIntroItem h5 {background:url(../images/sub_footer/intro_01.png) no-repeat 50% 0;background-size:80px;}
+				#comIntro_2.comIntroItem h5 {background:url(../images/sub_footer/intro_02.png) no-repeat 50% 0;background-size:80px;}
+				#comIntro_3.comIntroItem h5 {background:url(../images/sub_footer/intro_03.png) no-repeat 50% 0;background-size:80px;}
+				#comIntro_4.comIntroItem h5 {background:url(../images/sub_footer/intro_04.png) no-repeat 50% 0;background-size:80px;}
+				#comIntro_5.comIntroItem h5 {background:url(../images/sub_footer/intro_05.png) no-repeat 50% 0;background-size:80px;}
+				#comIntro_6.comIntroItem h5 {background:url(../images/sub_footer/intro_06.png) no-repeat 50% 0;background-size:80px;}
+				#comIntro_7.comIntroItem h5 {background:url(../images/sub_footer/intro_07.png) no-repeat 50% 0;background-size:80px;}
+				#comIntro_8.comIntroItem h5 {background:url(../images/sub_footer/intro_08.png) no-repeat 50% 0;background-size:80px;}
+				.cIntroText {line-height:22px;font-size:13px;color:#666;letter-spacing:-0.075em;}
+					.stress1 {font-weight:bold;color:#58b4c3;}
+					.stress2 {font-weight:500;color:#333;}
+					.mrg4 {display:inline-block;margin:5px 0;width:100%;}
+					.lht {line-height:30px;}
+					#comIntro_7 img {margin-top:20px;width:100%;}
+
+.ftcPartnerWrap {}
+	#ftcPartnerBox {float:left;width:100%;}
+		#ftcPartnerBox .grayBgBox {float:left;padding:10px 0 20px;width:100%;}
+			#ftcPartnerBox .grayBgBox ul {float:left;width:100%;border-top:1px solid #ddd;border-left:1px solid #ddd;}
+				#ftcPartnerBox .grayBgBox ul li {float:left;padding:20px 0 40px 0;width:50%;background:#fff;border-right:1px solid #ddd;border-bottom:1px solid #ddd;}
+					#ftcPartnerBox .logoItem {float:left;padding-top:60px;width:100%;height:50px;font-size:1.6em;color:#333;text-align:center;vertical-align:bottom;}
+						#ftcPartnerBox .logoItem01 {background:url(../images/sub_footer/c_partner_lotte.png) no-repeat 50% 50%;background-size:90px;}
+						#ftcPartnerBox .logoItem02 {background:url(../images/sub_footer/c_partner_pizza.png) no-repeat 50% 50%;background-size:90px;}
+						#ftcPartnerBox .logoItem03 {background:url(../images/sub_footer/c_partner_burger.png) no-repeat 50% 50%;background-size:contain;}
+						#ftcPartnerBox .logoItem04 {background:url(../images/sub_footer/c_partner_kyochon.png) no-repeat 50% 50%;background-size:90px;}
+						#ftcPartnerBox .logoItem05 {background:url(../images/sub_footer/c_partner_baskin.png) no-repeat 50% 50%;background-size:90px;}
+						#ftcPartnerBox .logoItem06 {background:url(../images/sub_footer/c_partner_paris.png) no-repeat 50% 50%;background-size:90px;}
+
+.ftcMapWrap {}
+	#ftcMapBox {float:left;width:100%;}
+		/*
+		.cmpnMapInfo {float:left;padding:30px 50px;width:100%;}
+			.cmpnName {padding-bottom:15px;font-size:1.8em;color:#333;}
+			.cmpnInfo {padding-top:15px;font-size:1.4em;color:#666;border-top:1px solid #ddd;}
+				.cmpnInfo li {float:left;}
+					.cmpnInfo li span {display:block;margin-bottom:5px;font-weight:500;}
+				.cmpnInfoLi1 {width:18%;}
+				.cmpnInfoLi2 {width:20%;}
+				.cmpnInfoLi3 {width:26%;}
+				.cmpnInfoLi4 {width:36%;}
+		*/
+		#ftcMapBox .brownDotLi {float:left;margin-top:10px;width:100%;}
+		#cmpnMapBox {float:left;margin:20px 0;width:100%;}
+		/*
+		.cmpnTransInfo {float:left;padding:30px 50px;width:100%;font-size:1.4em;color:#666;}
+			.cmpnTransInfo .gridL {float:left;width:50%;}
+			.cmpnTransInfo .gridR {float:right;width:50%;}
+				.cmpnTransKind {float:left;margin-top:20px;padding-left:100px;width:100%;height:70px;}
+				.cmpnTransKind1 {padding-top:25px;background:url(../images/sub_footer/icon_subway_num.png) no-repeat 0 0;}
+				.cmpnTransKind2 {padding-top:25px;background:url(../images/sub_footer/icon_bus.png) no-repeat 0 0;}
+				.cmpnTransKind3 {padding-top:15px;background:url(../images/sub_footer/icon_subway.png) no-repeat 0 0;}
+		*/
+
+.ftPolicyWrap {}
+	#ftPolicyBox {}
+		.footer_policy_tab.pageTab2 {margin-top:0;}
+			.footer_policy_tab.pageTab2 li {width:33.3%;}
+				.footer_policy_tab.pageTab2 li a {font-size:1.2em;}
+		.policyTextBox {position:relative;float:left;padding-top:20px;width:100%;}
+			.policyTextBox .ptTit {margin-bottom:15px;font:500 1.4em / 18px 'Noto Sans KR';color:#555;}
+			.policyTextBox .ptCon {margin-bottom:30px;padding-left:20px;font:normal 1.2em / 20px 'dotum';color:#666;}
+			.policyTextBox .ptDesc {margin-bottom:30px;font:normal 1.2em / 20px 'dotum';color:#666;}
+			.policyTextBox .ptMarginB {width:100%;height:40px;}
+				.policyTextBox .ptCon > ul > li {}
+					.policyTextBox .ptCon > ul > li > ul {padding-left:20px;}
+
+.ftPrivacyWrap {}
+	#ftPrivacyBox {}
+
+.ftPolicayAdolWrap {}
+	#ftPolicayAdolBox {}
+
+.ftPartnershipWrap {}
+	#ftPartnershipBox {width:100%;}
+		.ftPrtnDesc {clear:both;padding:10px 0;width:100%;line-height:20px;font-size:1.4em;color:#444;}
+			.ftPrtnDesc p {}
+		.ftCateSlt {width:100%;}
+		#ftPartnershipBox .writeTable2 th,
+		#ftPartnershipBox .writeTable2 td {padding:2px 0;}
+			#ftPartnershipBox .writeTable2 .inputMailBox > input[type="text"],
+			#ftPartnershipBox .writeTable2 .inputMailBox > input[type="number"] {float:left;width:52%;}
+				#ftPartnershipBox .writeTable2 .smTextBox {margin:5px 0;padding-left:0;line-height:14px;font-weight:300;font-size:11px;color:#777;}
+		#ftPartnershipBox .pageBtnBox {margin-top:0;}

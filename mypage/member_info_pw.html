@@ -1,0 +1,26 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include $d_root.'/include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header -->
+		<div id="contents" class="myMemberInfoPwWrap">
+			<section id="myMemberInfoPwBox">
+				<h2 class="mbInfoStepBox">비밀번호 확인</h2>
+				<div class="wWrap">
+					<div class="mbInfoDesc">고객님의 개인정보보호와 보다 안전한 서비스를 위하여 <span>비밀번호를 확인</span>합니다.</div>
+					<div class="mbInfoInput">
+						<input type="password" id="pwConfilm"/>
+					</div>
+					<a href="member_info.html" class="mBtn purpleBtn">확인</a>
+				</div>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("회원정보수정"); //page title
+	</script>
+</body>
+</html>

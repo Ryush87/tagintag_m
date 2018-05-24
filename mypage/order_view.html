@@ -1,0 +1,111 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include $d_root.'/include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header -->
+		<div id="contents" class="myOrderViewWrap">
+			<section id="myOrderViewBox">
+				<div class="topOrderInfoBox">
+					<div class="toN1">주문번호 : <span>201699999302-256489</span></div>
+					<div class="toN2">주문일 : 2016-11-11</div>
+				</div>
+				<div id="orderGoodsInfoBox" class="sectionSlideBox openScts strongBB">
+					<div class="sctsCon">
+						<div class="oGoodsImgBox">
+							<img src="<?=$root?>/skin/images/temp/temp_main_goods_01.jpg" alt="상품이미지" />
+						</div>
+						<div class="oGoodsInfoBox">
+							<div class="ogiName">[파리바게뜨]떠먹는 블루베리케이크</div>
+							<div class="ogiPrice1">25,000원</div>
+							<div class="ogiPrice2">12,500원(-99%)</div>
+							<div class="ogiOption">색상:블랙/헤일로5</div>
+							<div class="ogiOption">택오픈 횟수:3회</div>
+							<div class="ogiBtn">
+								<div class="mBtn2 whiteBtnB">배송중</div>
+								<a href="#none" class="mBtn2 whiteBtn">배송조회</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="deliveryInfoBox" class="sectionSlideBox openScts strongBB">
+					<h4 class="sctsTitle">배송정보</h4>
+					<div class="sctsCon">
+						<table class="viewTable2" summary="이름,휴대폰,전화번호,수령지주소,배송메세지,배송업체,송장번호">
+							<caption>배송정보</caption>
+							<colgroup><col width="20%"/><col /></colgroup>
+							<tr>
+								<th scope="row">이름</th>
+								<td>홍길동</td>
+							</tr>
+							<tr>
+								<th scope="row">휴대폰</th>
+								<td>010-2222-5555</td>
+							</tr>
+							<tr>
+								<th scope="row">전화번호</th>
+								<td>02-2252-5369</td>
+							</tr>
+							<tr>
+								<th scope="row">수령지주소</th>
+								<td>[35879] 서울특별시 서대문구 신촌로 157 (대현동, 화영빌딩)</td>
+							</tr>
+							<tr>
+								<th scope="row">배송메세지</th>
+								<td>부재시 경비실에 놓아주세요</td>
+							</tr>
+							<tr>
+								<th scope="row">배송업체</th>
+								<td>대한통운</td>
+							</tr>
+							<tr>
+								<th scope="row">송장번호</th>
+								<td>612035694563</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div id="payInfoBox" class="sectionSlideBox openScts strongBB">
+					<h4 class="sctsTitle">결제정보</h4>
+					<div class="sctsCon">
+						<table class="viewTable2" summary="최종결제금액,배송비,택인택가,결재수단">
+							<caption>결제정보</caption>
+							<colgroup><col width="20%"/><col /></colgroup>
+							<tr>
+								<th scope="row">최종결제금액</th>
+								<td>7,020 원</td>
+							</tr>
+							<tr>
+								<th scope="row">배송비</th>
+								<td>2,500원</td>
+							</tr>
+							<tr>
+								<th scope="row">택인택가</th>
+								<td>4,520원</td>
+							</tr>
+							<tr>
+								<th scope="row">결제수단</th>
+								<td>택머니 - 4,000원 / 신용카드 - 520원</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="pageBtnBox taC">
+					<div class="wWrap">
+						<a href="return_change.html" class="mBtn whiteBtn2">반품 / 교환 신청</a>
+						<a href="#none" class="mBtn whiteBtn2" onclick="callPopup('#orderCancelPopBox'); return false;">주문취소</a>
+						<a href="#none" class="mBtn whiteBtn2" onclick="callPopup('#buyFixPopBox'); return false;">구매확인</a>
+						<a href="#none" class="mBtn whiteBtn2" onclick="callPopup('#csCenterPopBox'); return false;">고객센터</a>
+					</div>
+				</div>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+		<? include '../include/div_popup.php' ?> <!-- divPopup -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("주문내역조회"); //page title
+	</script>
+</body>
+</html>

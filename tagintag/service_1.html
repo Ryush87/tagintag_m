@@ -1,0 +1,46 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include '../include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="serviceWrap">
+			<? include 'inc_tagintag_tab.php' ?> <!-- tab  -->
+			<section id="serviceBox_1" class="serviceBox">
+				<div class="wWrap">
+					<? include 'inc_tagintag_service_tab.php' ?> <!-- tab  -->
+					<h2>시작하기</h2>
+					<div class="serviceConWrap">
+						<div id="serviceConBox_3" class="serviceConBox">
+							<ul class="brownDotLi dotLineBottom pb20">
+								<li>서비스명에서 유추할 수 있듯이 택 안에 또 다른 택이 있는 서비스입니다. (택인택에서 최고 가격은 인터넷에서 최저가입니다.)</li>
+								<li>원하는 상품을 기존 소비자가에서 단 1%의 가격으로도 구매할 수 있는 기회를 실현시킨 서비스입니다.</li>
+								<li>서비스 이용시 단순히 비용절약 뿐만 아니라 기대치 못했던 행운을 얻는 재미까지 즐길 수 있습니다.</li>
+								<li>각박한 현실을 살아가는 현대인들에게 택인택은 ‘재미’와 ‘희망’을 통하여 ‘행복’을 나누어주는 서비스가 될 것입니다.</li>
+							</ul>
+							<div class="grayBgBox">
+								<div class="stress1">“구매 순간마다 다양한 가격에<br />상품을 판매하는 방법”</div>
+								<div class="stress2 mt10">대한민국 : 특허 제10-2015-0127427<br />PCT국제특허 : PCT/KR2016/009839</div>
+							</div>
+							<div class="exImg mt10"><img src="<?=$root?>/skin/images/sub_tagintag/item_img_1_1.jpg" alt="설명이미지"/></div>
+						</div>
+						<div id="contentsTopBtn"><a href="#wrap"><img src="<?=$root?>/skin/images/common/btn_top.png" alt="top"/></a></div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("택인택이란?"); //page title
+		currnetTab(0); //tab 활성화
+		currnetTab_servie(0); //tab 활성화
+		$(function($){
+			$(window).scroll(function(){ //스크롤시 topBtn 활성화
+				top_btn_act();
+			});
+		});
+	</script>
+</body>
+</html>

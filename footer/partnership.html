@@ -1,0 +1,69 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include $d_root.'/include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="ftPartnershipWrap">
+			<section id="ftPartnershipBox">
+				<div class="wWrap">
+					<div class="ftPrtnDesc"><p>택인택(주)의 든든한 파트너가 되어주세요.<br />택인택을 통해 상품의 판매부터 업무/서비스 제휴까지 다양한 마케팅 활동을 하실 수 있습니다.</p></div>
+					<table class="writeTable2" summary="구분,업체명,담당자명,연락처,이메일,제목,내용,첨부파일">
+						<caption>입점/제휴문의</caption>
+						<colgroup><col /></colgroup>
+						<tr>
+							<td>
+								<select name="" id="ftCateSlt1" class="ftCateSlt">
+									<option value="">문의구분</option>
+									<option value="">상품판매</option>
+									<option value="">입점문의</option>
+									<option value="">결제</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="text" id="ftCompanyName" placeholder="업체명"/></td>
+						</tr>
+						<tr>
+							<td><input type="text" id="ftManagerName" placeholder="담당자명"/></td>
+						</tr>
+						<tr>
+							<td><input type="text" id="ftCompanyName" placeholder="연락처"/></td>
+						</tr>
+						<tr>
+							<td>
+								<div class="inputMailBox">
+									<input type="text" id="mEmail" placeholder="메일주소"/>
+									<span class="divi">@</span>
+									<select name="" id="mDomain2" class="mDomainSlt">
+										<option value="">메일선택</option>
+										<option value="">naver.com</option>
+									</select>
+									<label for="mDomain2" class="blind">메일도메인선택</label>
+								</div>
+								<div class="smTextBox">※ 본 문의에 대한 답변은 이메일로 발송됩니다. <br /><span class="pl15">정확한 이메일 주소를 기입해주세요.</span></div>
+							</td>
+						</tr>
+						<tr>
+							<td><input type="text" id="ftSubject" placeholder="제목"/></td>
+						</tr>
+						<tr>
+							<td><div id="webEditorBox"><textarea name="" id="" cols="30" rows="10"></textarea></div></td>
+						</tr>
+					</table>
+					<div class="pageBtnBox taC">
+						<a href="<?=$root?>/" class="mBtnH whiteBtn">취소</a>
+						<a href="#none" class="mBtnH purpleBtn">저장</a>
+					</div>
+				</div>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("입점/제휴문의"); //page title
+		currnetTab(0); //tab 활성화
+	</script>
+</body>
+</html>

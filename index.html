@@ -1,0 +1,404 @@
+<? include 'include/top.php' ?> <!-- top -->
+<!-- 상품페이지 이동 s -->
+<!--<meta http-equiv="refresh" content="0;url='<?=$root?>/goods/ing_goods_1.html'">-->
+<!-- 상품페이지 이동 e -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_goods.css">
+</head>
+<body>
+	<? include 'include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include 'include/header.php' ?> <!-- header -->
+		<div id="contents" class="mainPageWrap" style="border-top:0;">
+			<section id="mainCaruselBox">
+				<div id="mCaruselWrap">
+					<div class="mCaruselItem">
+						<a href="#none">
+							<img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_10.jpg" alt="배너" />
+						</a>
+					</div>
+					<div class="mCaruselItem">
+						<a href="#none">
+							<img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_09.jpg" alt="배너" />
+						</a>
+					</div>
+					<div class="mCaruselItem">
+						<a href="<?=$root?>/goods/ing_goods.html">
+							<img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_06.jpg" alt="배너" />
+						</a>
+					</div>
+					<div class="mCaruselItem">
+						<a href="<?=$root?>/event/event_view_detail_review.html">
+							<img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_05.jpg" alt="배너" />
+						</a>
+					</div>
+					<div class="mCaruselItem">
+						<a href="<?=$root?>/event/event_view_detail_luxury.html">
+							<img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_04_ing.jpg" alt="배너" />
+						</a>
+					</div>
+					<div class="mCaruselItem">
+						<a href="#none" onclick="callPopup('#ingGoodsListPopBox'); return false;">
+							<img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_07.jpg" alt="배너" />
+						</a>
+					</div>
+					<div class="mCaruselItem">
+						<a href="#none" onclick="callPopup('#freeExperiencePopBox'); return false;">
+							<img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_08.jpg" alt="배너" />
+						</a>
+					</div>
+					<div class="mCaruselItem">
+						<a href="#none" onclick="callPopup('#freeExperiencePopBox'); return false;">
+							<img src="<?=$root?>/skin/images/temp/temp_main_goods_v2_03.jpg" alt="배너" />
+						</a>
+					</div>
+				</div>
+			</section>
+			<section id="mainTotalDiscountBox">
+				<div class="mtdTextBox">
+					<span>총 누적 할인 금액</span>
+					<span class="ml5 pointC6"><span class="counter">56,895,400</span>원</span>
+				</div>
+			</section>
+			<section id="episodeBox">
+				<ul class="episodeBoxWrap">
+					<li>
+						<div class="epsdItem epsdItemPrepare">
+							<div class="epsdImg"><img src="<?=$root?>/skin/images/common/icon_preparing.png" alt="상품준비중" /></div>
+							<div class="epsdTitle">
+								다음 회차<br>
+								상품이<br>
+								준비중이오니 <br>
+								조금만<br>
+								기다려주세요.
+							</div>
+							<div class="epsdNum"><span>&nbsp;</span></div>
+							<div class="epsdDate">&nbsp;</div>
+							<div class="epsdDesc">&nbsp;</div>
+							<div class="epsdBtns">
+								<a href="#none"class="btnS1 whtBtn">&nbsp;</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="epsdItem">
+							<div class="epsdLabel epsdLabel1"><span>오픈전</span></div>
+							<div class="epsdKindLabel epsdKindLabel1"><span>SALE</span></div>
+							<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/goldbar1g_100x100.jpg" alt="상품이미지" /></div>
+							<div class="epsdTitle">24K골드바골드바골드바</div>
+							<div class="epsdNum"><span>322</span>회</div>
+							<div class="epsdProbability"><div class="proba1">77</div><div class="proba2">9999</div></div>
+							<div class="epsdDate">2017.09.26</div>
+							<div class="epsdDesc">오픈(판매)예정</div>
+							<div class="epsdBtns">
+								<a href="#none" onclick="callPopup('#smsAlarmPopBox'); return false;" class="btnS1 whtBtn">문자알림</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="epsdItem">
+							<div class="epsdLabel epsdLabel2"><span>진행중</span></div>
+							<div class="epsdKindLabel epsdKindLabel2"><span>FREE</span></div>
+							<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/masterwatch_100x100.jpg" alt="상품이미지" /></div>
+							<div class="epsdTitle"><span>명품시계</span></div>
+							<div class="epsdNum"><span>1</span>회</div>
+							<div class="epsdDate">730원~</div>
+							<div class="epsdDesc">무료 오픈택 : 999개</div>
+							<div class="epsdBtns"><a href="<?=$root?>/goods/goods_detail.html" class="btnS1 whtBtn">참여하기</a></div>
+						</div>
+					</li>
+					<li>
+						<div class="epsdItem">
+							<div class="epsdLabel epsdLabel2"><span>진행중</span></div>
+							<div class="epsdKindLabel epsdKindLabel2"><span>FREE</span></div>
+							<div class="epsdImg"><img src="<?=$root?>/skin/images/temp/masterwatch_100x100.jpg" alt="상품이미지" /></div>
+							<div class="epsdTitle"><span>명품시계</span></div>
+							<div class="epsdNum"><span>1</span>회</div>
+							<div class="epsdDate">730원~</div>
+							<div class="epsdDesc">무료 오픈택 : 999개</div>
+							<div class="epsdBtns"><a href="<?=$root?>/goods/goods_detail.html" class="btnS1 whtBtn">참여하기</a></div>
+						</div>
+					</li>
+					<!--
+					<li>
+						<div class="epsdItem">
+							<div class="epsdLabel epsdLabel1"><span>오픈전</span></div>
+							<div class="epsdTitle"><span>17</span>회</div>
+							<div class="epsdDate">2017.07.27</div>
+							<div class="epsdDesc">진행예정</div>
+							<div class="epsdBtns"><a href="#none" class="btnS1 whtBtn">문자알림</a></div>
+						</div>
+					</li>
+					<li>
+						<div class="epsdItem">
+							<div class="epsdLabel epsdLabel2"><span>진행중</span></div>
+							<div class="epsdTitle"><span>16</span>회</div>
+							<div class="epsdDate">710원~</div>
+							<div class="epsdDesc">4분 경과</div>
+							<div class="epsdBtns"><a href="<?=$root?>/goods/ing_goods_1.html" class="btnS1 whtBtn">상세보기</a></div>
+						</div>
+					</li>
+					<li>
+						<div class="epsdItem">
+							<div class="epsdLabel epsdLabel3"><span>마감</span></div>
+							<div class="epsdTitle"><span>15</span>회</div>
+							<div class="epsdDate">72일 6시간 40분</div>
+							<div class="epsdDesc">24일 17:59 ~ 26일 08:28</div>
+							<div class="epsdBtns"><a href="#none" class="btnS1 whtBtn">참여이력</a></div>
+						</div>
+					</li>
+					<li>
+						<div class="epsdItem">
+							<div class="epsdLabel epsdLabel2"><span>진행중</span></div>
+							<div class="epsdTitle"><span>14</span>회</div>
+							<div class="epsdDate">710원~</div>
+							<div class="epsdDesc">4분 경과</div>
+							<div class="epsdBtns"><a href="#none" class="btnS1 whtBtn">상세보기</a></div>
+						</div>
+					</li>
+					<li>
+						<div class="epsdItem">
+							<div class="epsdLabel epsdLabel2"><span>진행중</span></div>
+							<div class="epsdTitle"><span>13</span>회</div>
+							<div class="epsdDate">710원~</div>
+							<div class="epsdDesc">4분 경과</div>
+							<div class="epsdBtns"><a href="#none" class="btnS1 whtBtn">상세보기</a></div>
+						</div>
+					</li>
+					<li>
+						<div class="epsdItem">
+							<div class="epsdLabel epsdLabel2"><span>진행중</span></div>
+							<div class="epsdTitle"><span>12</span>회</div>
+							<div class="epsdDate">710원~</div>
+							<div class="epsdDesc">4분 경과</div>
+							<div class="epsdBtns"><a href="#none" class="btnS1 whtBtn">상세보기</a></div>
+						</div>
+					</li>
+					<li>
+						<div class="epsdItem">
+							<div class="epsdLabel epsdLabel3"><span>마감</span></div>
+							<div class="epsdTitle"><span>11</span>회</div>
+							<div class="epsdDate">72일 6시간 40분</div>
+							<div class="epsdDesc">24일 17:59 ~ 26일 08:28</div>
+							<div class="epsdBtns"><a href="#none" class="btnS1 whtBtn">참여이력</a></div>
+						</div>
+					</li>
+					<li>
+						<div class="epsdItem">
+							<div class="epsdLabel epsdLabel3"><span>마감</span></div>
+							<div class="epsdTitle"><span>10</span>회</div>
+							<div class="epsdDate">72일 6시간 40분</div>
+							<div class="epsdDesc">24일 17:59 ~ 26일 08:28</div>
+							<div class="epsdBtns"><a href="#none" class="btnS1 whtBtn">참여이력</a></div>
+						</div>
+					</li>
+					-->
+				</ul>
+			</section>
+			<!--
+			<section id="ingGoodsBox">
+				<ul class="ingGoodsList">
+					<li>
+						<a href="<?=$root?>/goods/ing_goods_1.html">
+							<div class="ingGoodsItem">
+								<div class="igiImg"><img src="<?=$root?>/skin/images/temp/buger_480x330.jpg" alt="상품이미지" /></div>
+								<ul class="igiInfo">
+									<li class="igiName">버거킹 와퍼</li>
+									<li class="igiName2">파리바게트</li>
+									<li class="igiOrgPrice">28,000원</li>
+									<li class="igiTagPrice">50원~</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="<?=$root?>/goods/ing_goods_1.html">
+							<div class="ingGoodsItem">
+								<div class="igiImg"><img src="<?=$root?>/skin/images/temp/bug_320_220.jpg" alt="상품이미지" /></div>
+								<ul class="igiInfo">
+									<li class="igiName">스타벅스 아메리카노 Grande</li>
+									<li class="igiName2">스타벅스</li>
+									<li class="igiOrgPrice">28,000원</li>
+									<li class="igiTagPrice">50원~</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="<?=$root?>/goods/ing_goods_1.html">
+							<div class="ingGoodsItem">
+								<div class="igiImg"><img src="<?=$root?>/skin/images/temp/bug_160_110.jpg" alt="상품이미지" /></div>
+								<ul class="igiInfo">
+									<li class="igiName">교촌치킨 허니 오리지날</li>
+									<li class="igiName2">교촌치킨</li>
+									<li class="igiOrgPrice">28,000원</li>
+									<li class="igiTagPrice">160원~</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="<?=$root?>/goods/ing_goods_1.html">
+							<div class="ingGoodsItem">
+								<div class="igiImg"><img src="<?=$root?>/skin/images/sub_goods/no_img_480_330.jpg" alt="상품이미지" /></div>
+								<ul class="igiInfo">
+									<li class="igiName">웨스틴 조선 서울 뷔페-주말디너</li>
+									<li class="igiName2">주말디너</li>
+									<li class="igiOrgPrice">28,000원</li>
+									<li class="igiTagPrice">980원~</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="<?=$root?>/goods/ing_goods_1.html">
+							<div class="ingGoodsItem">
+								<div class="igiImg"><img src="<?=$root?>/skin/images/temp/temp_goods_2.png" alt="상품이미지" /></div>
+								<ul class="igiInfo">
+									<li class="igiName">스타벅스 아메리카노 Grande</li>
+									<li class="igiName2">스타벅스</li>
+									<li class="igiOrgPrice">28,000원</li>
+									<li class="igiTagPrice">50원~</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="<?=$root?>/goods/ing_goods_1.html">
+							<div class="ingGoodsItem">
+								<div class="igiImg"><img src="<?=$root?>/skin/images/temp/temp_goods_4.png" alt="상품이미지" /></div>
+								<ul class="igiInfo">
+									<li class="igiName">교촌치킨 허니 오리지날</li>
+									<li class="igiName2">교촌치킨</li>
+									<li class="igiOrgPrice">28,000원</li>
+									<li class="igiTagPrice">160원~</li>
+								</ul>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<section id="mainBannerBox">
+				<ul>
+					<li><a href="#none"><img src="<?=$root?>/skin/images/temp/main_btm_banner_1.jpg" alt="배너" /></a></li>
+				</ul>
+			</section>
+			-->
+			<section id="mainBoardBox" class="mb0">
+				<div class="mbbWrap">
+					<div id="mbbWin" class="mbbBox">
+						<div class="mbbLiItem">
+							<div class="mbbDis mbbDis1">93%</div>
+							<div class="mbbCon">키엘 울트라 훼이션 오일프리키엘 울트라 훼이션 오일프리</div>
+							<div class="mbbUser">jhk***님</div>
+							<div class="mbbPrice"><span>2,450</span>원</div>
+						</div>
+						<div class="mbbLiItem">
+							<div class="mbbDis mbbDis2">93%</div>
+							<div class="mbbCon">키엘 울트라 훼이션 오일프리키엘 울트라 훼이션 오일프리</div>
+							<div class="mbbUser">jhk***님</div>
+							<div class="mbbPrice"><span>2,450</span>원</div>
+						</div>
+						<div class="mbbLiItem">
+							<div class="mbbDis mbbDis3">93%</div>
+							<div class="mbbCon">키엘 울트라 훼이션 오일프리키엘 울트라 훼이션 오일프리</div>
+							<div class="mbbUser">jhk***님</div>
+							<div class="mbbPrice"><span>2,450</span>원</div>
+						</div>
+						<div class="mbbLiItem">
+							<div class="mbbDis mbbDis4">93%</div>
+							<div class="mbbCon">키엘 울트라 훼이션 오일프리키엘 울트라 훼이션 오일프리</div>
+							<div class="mbbUser">jhk***님</div>
+							<div class="mbbPrice"><span>2,450</span>원</div>
+						</div>
+					</div>
+				</div>
+				<div class="mbbWrap">
+					<div id="mbbReturn" class="mbbBox">
+						<div class="mbbLiItem">
+							<div class="mbCate">판매수익</div>
+							<div class="mbbUser">jhk***님</div>
+							<div class="mbbPrice"><span>452,450</span>원</div>
+						</div>
+						<div class="mbbLiItem">
+							<div class="mbCate">판매수익</div>
+							<div class="mbbUser">jhk***님</div>
+							<div class="mbbPrice"><span>452,450</span>원</div>
+						</div>
+						<div class="mbbLiItem">
+							<div class="mbCate">판매수익</div>
+							<div class="mbbUser">jhk***님</div>
+							<div class="mbbPrice"><span>452,450</span>원</div>
+						</div>
+						<div class="mbbLiItem">
+							<div class="mbCate">판매수익</div>
+							<div class="mbbUser">jhk***님</div>
+							<div class="mbbPrice"><span>452,450</span>원</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<? include 'include/goods_tag_keep.php' ?> <!-- 택보관  -->
+		<? include 'include/footer.php' ?> <!-- footer -->
+		<? include 'include/div_popup.php' ?> <!-- divPopup -->
+		<? include 'include/popup.php' ?> <!-- popup -->
+	</div>
+	<!-- slickSlide s -->
+	<link rel="stylesheet" href="<?=$root?>/skin/plugin/slick_slide/slick.css">
+	<link rel="stylesheet" href="<?=$root?>/skin/plugin/slick_slide/slick-theme.css">
+	<script src="<?=$root?>/skin/plugin/slick_slide/slick.js"></script>
+	<!-- slickSlide e -->
+	<!-- counterup s -->
+	<script type="text/javascript" src="<?=$root?>/skin/plugin/counterup/waypoints.min.js"></script>
+	<script type="text/javascript" src="<?=$root?>/skin/plugin/counterup/jquery.counterup.min.js"></script>
+	<!-- counterup e -->
+	<script type="text/javascript">
+		changeTitle("<img src='<?=$root?>/skin/images/common/logo_top_m.png' alt='택인택 로고' />"); //page title
+		$(document).ready(function() {
+		var tempItem1=$('#ttbWin').html();
+		var tempItem2=$('#ttbReturn').html();
+		for(i=0;i<10;i++){
+			$('#ttbWin').append(tempItem1);
+			$('#ttbReturn').append(tempItem2);
+		}
+		$("#mCaruselWrap").slick({
+			arrows:true,
+			dots:true,
+			autoplay:true,
+			autoplaySpeed:3000,
+			infinite : true,
+			speed : 500,
+			slidesToShow:1,
+			adaptiveHeight:true
+		});
+		$("#mbbWin").slick({
+			arrows:false,
+			dots:false,
+			autoplay:true,
+			autoplaySpeed:1000,
+			infinite : true,
+			speed : 3000,
+			slidesToShow:1,
+			adaptiveHeight:true
+		});
+		$("#mbbReturn").slick({
+			arrows:false,
+			dots:false,
+			autoplay:true,
+			autoplaySpeed:1500,
+			infinite : true,
+			speed : 5950,
+			slidesToShow:1,
+			adaptiveHeight:true
+		});
+		$('.counter').counterUp({
+			delay: 100,
+			time: 2000
+		});
+	});
+	//무료택안내
+	//callPopup("#freeTagOpenCouponPopBox");
+	</script>
+</body>
+</html>

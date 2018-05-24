@@ -1,0 +1,74 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include '../include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="serviceWrap">
+			<? include 'inc_tagintag_tab.php' ?> <!-- tab  -->
+			<section id="serviceBox_6" class="serviceBox">
+				<div class="wWrap">
+					<? include 'inc_tagintag_service_tab.php' ?> <!-- tab  -->
+					<h2>공정성</h2>
+					<div class="serviceConWrap">
+						<div id="serviceConBox_3" class="serviceConBox">
+							<ul class="brownDotLi dotLineBottom pb20">
+								<li>택인택은 고객 여러분에게 공정한 기회와 행운을 제공하기 위하여 택 오픈과정에 조작이 개입할 수 없도록 만반의 조치를 취하고 있습니다.</li>
+								<li>고객이 입력한 행운의 숫자를 바탕으로 산출된 택번호는 보안 서버의 난수 발생 시스템에 의해 생성됩니다.</li>
+								<li>정직한 운영과 공명정대한 택 오픈을 위해 아래의 시스템을 개발하였습니다.</li>
+							</ul>
+							<div class="grayBgBox">
+								<div class="stress1">“전자 상거래에서 공정한 추첨 방법,<br/>이를 수행하기 위한 기록 매체 및 장치”</div>
+								<div class="stress2 mt10">대한민국 : 특허 제10-2017-0013756</div>
+							</div>
+							<ul class="exUl">
+								<li>
+									<div class="exImg"><img src="<?=$root?>/skin/images/sub_tagintag/item_img_6_1.png" alt="설명이미지"/></div>
+									<div class="exTxt">
+										<div class="ext1">500개의 가격 TAG</div>
+										<div class="ext2">판매자에게 수익율을 보장하고, 구매자는 낮은 가격으로 구매할 수 있는 확률을 높이는 가격구간 설정 알고리즘 적용</div>
+									</div>
+								</li>
+								<li>
+									<div class="exImg"><img src="<?=$root?>/skin/images/sub_tagintag/item_img_6_2.png" alt="설명이미지"/></div>
+									<div class="exTxt">
+										<div class="ext1 mt15">행운의 숫자 선택</div>
+										<div class="ext2">고객이 직접 행운의 숫자를 선택</div>
+									</div>
+								</li>
+								<li>
+									<div class="exImg"><img src="<?=$root?>/skin/images/sub_tagintag/item_img_6_3.png" alt="설명이미지"/></div>
+									<div class="exTxt">
+										<div class="ext1">변수설정</div>
+										<div class="ext2">조작 가능성을 배제하기 위하여 이전고객이 받은 TAG 번호를 현재고객이 입력한 행운숫자에 변수로 입력 (실시간으로 변화함)</div>
+									</div>
+								</li>
+								<li>
+									<div class="exImg"><img src="<?=$root?>/skin/images/sub_tagintag/item_img_6_4.png" alt="설명이미지"/></div>
+									<div class="exTxt">
+										<div class="ext1 mt10">최종 TAG 선택</div>
+										<div class="ext2">현재 고객의 선택 숫자와 이전 고객의 최종 TAG번호를 변수로 하는 가격 TAG번호 추출</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div id="contentsTopBtn"><a href="#wrap"><img src="<?=$root?>/skin/images/common/btn_top.png" alt="top"/></a></div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("택인택이란?"); //page title
+		currnetTab(0); //tab 활성화
+		currnetTab_servie(5); //tab 활성화
+		$(function($){
+			$(window).scroll(function(){ //스크롤시 topBtn 활성화
+				top_btn_act();
+			});
+		});
+	</script>
+</body>
+</html>

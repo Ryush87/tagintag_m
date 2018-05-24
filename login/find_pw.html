@@ -1,0 +1,61 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include $d_root.'/include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header -->
+		<div id="contents" class="findIdPwWrap">
+			<div class="wWrap">
+				<section id="findIdPwBox">
+					<ul class="pageTab">
+						<li class="actOn"><a href="#none" tab-href="#findKind_phon">휴대폰 인증</a></li>
+						<li><a href="#none" tab-href="#findKind_email">이메일 인증</a></li>
+					</ul>
+					<div id="findKind_phon" class="findKindInput">
+						<div class="grayBgBox"><span>등록되어 있는 회원정보</span>로 비밀번호를 재설정 할 수 있습니다. 아래 정보를 입력해주세요.</div>
+						<ul class="findIdPwUl">
+							<li><input type="text" placeholder="아이디"/></li>
+							<li><a href="#none" class="mBtn2 whiteBtnB mt0">확인</a></li>
+							<li><input type="text" placeholder="이름"/></li>
+							<li><input type="text" placeholder="휴대폰번호"/></li>
+							<li><a href="#none" class="mBtn2 whiteBtnB mt0">인증번호발송</a></li>
+							<li>
+								<input type="text" placeholder="인증번호입력" class="certiNum"/>
+								<span class="leftTime ml10"><span class="pointC4">5분 이내에 입력해주세요.</span></span>
+							</li>
+							<li class="mt15">
+								<!--<a href="#none" class="mBtn purpleBtn" onclick="callPopup('#findPwResetPopBox2'); return false;">비밀번호 찾기</a>-->
+								<a href="reset_pw.html" class="mBtn purpleBtn">확인</a>
+							</li>
+						</ul>
+					</div>
+					<div id="findKind_email" class="findKindInput">
+						<div class="grayBgBox"><span>등록되어 있는 회원정보</span>로 비밀번호를 재설정 할 수 있습니다. 아래 정보를 입력해주세요.</div>
+						<ul class="findIdPwUl">
+							<li><input type="text" placeholder="아이디"/></li>
+							<li><a href="#none" class="mBtn2 whiteBtnB mt0">확인</a></li>
+							<li><input type="text" placeholder="이름"/></li>
+							<li><input type="email" placeholder="이메일주소"/></li>
+							<li><a href="#none" class="mBtn2 whiteBtnB mt0">인증번호발송</a></li>
+							<li>
+								<input type="text" placeholder="인증번호입력" class="certiNum"/>
+								<span class="leftTime ml10"><span class="pointC4">5분 이내에 입력해주세요.</span></span>
+							</li>
+							<li class="mt15">
+								<!--<a href="#none" class="mBtn purpleBtn" onclick="callPopup('#findPwResetPopBox2'); return false;">비밀번호 찾기</a>-->
+								<a href="reset_pw.html" class="mBtn purpleBtn">확인</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+		<? include '../include/div_popup.php' ?> <!-- divPopup -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("비밀번호 찾기"); //page title
+	</script>
+</body>
+</html>

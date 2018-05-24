@@ -1,0 +1,269 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include $d_root.'/include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header -->
+		<div id="contents" class="myMemberInfoWrap">
+			<section id="myMemberInfoBox">
+				<div class="basicInfoBox strongBB">
+					<div class="wWrap">
+						<h2>
+							기본정보
+							<div class="txtBox fR mt10"><span class="nece"></span> 필수입력</div>
+						</h2>
+						<table class="writeTable2">
+							<caption>기본정보</caption>
+							<colgroup><col width="30%"/><col width="70%"/></colgroup>
+							<tr>
+								<th scope="row"><label>아이디</label></th>
+								<td><span class="fixValue">musthave</span></td>
+							</tr>
+							<tr>
+								<th scope="row"><label>이름</label></th>
+								<td><span class="fixValue">홍길동</span></td>
+							</tr>
+							<!--
+							<tr>
+								<th scope="row"><label for="mPwOld">기존 비밀번호</label></th>
+								<td><input type="password" id="mPwOld"/></td>
+							</tr>
+							-->
+							<tr>
+								<th scope="row"><label for="mPw1">비밀번호</label><span class="nece"></span></th>
+								<td><input type="password" placeholder="영문/숫자 혼합 8~20자" id="mPw1"/></td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="mPw2">비밀번호 확인</label><span class="nece"></span></th>
+								<td>
+									<input type="password" placeholder="영문/숫자 혼합 8~20자" id="mPw2"/>
+									<div class="inputGuideBox pointC1">동일한 비밀번호를 입력해주세요</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="mEmail">이메일</label><span class="nece"></span></th>
+								<td><input type="email" id="mEmail"/></td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="mPhon">휴대폰번호</label></th>
+								<td>
+									<div class="mPhonEditBox1">
+										<span class="fwB">010-1234-5678</span>
+										<a href="#none" onclick="$('.mPhonEditBox2').show();" class="smBtn ml10">수정</a>
+									</div>
+									<div class="mPhonEditBox2">
+										<ul>
+											<li class="mb5">
+												<input type="text" placeholder="휴대폰번호"/>
+												<a href="#none" class="mBtn2 whiteBtnB">인증번호발송</a>
+											</li>
+											<li>
+												<input type="text" placeholder="인증번호입력" class="certiNum"/>
+												<a href="#none" onclick="$('.mPhonEditBox2').hide();$('.mPhonEditBox1').show();" class="mBtn2 whiteBtnB">확인</a>
+											</li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!--
+				<div class="deliveryInfoBox strongBB">
+					<div class="wWrap">
+						<h2>배송지 정보</h2>
+						<a href="#none" class="mBtn whiteBtn areaAddBtn">+ 배송지 추가</a>
+						<table class="writeTable2 mt10">
+							<caption>배송지정보</caption>
+							<colgroup><col width="25%"/><col width="75%"/></colgroup>
+							<tr>
+								<th scope="col" colspan="2">새로운 배송지</th>
+							</tr>
+							<tr>
+								<td><label for="mAlias">배송지 명칭</label></td>
+								<td><input type="text" value="예)집,회사" id="mAlias"/></td>
+							</tr>
+							<tr>
+								<td><label for="mReceiver">수령인</label></td>
+								<td><input type="text" value="홍길동" id="mReceiver"/></td>
+							</tr>
+							<tr>
+								<td class="vaT"><label for="mPost">주소</label></td>
+								<td>
+									<ul class="inputAddressBox">
+										<li>
+											<input type="text" value="12345" id="mPost" class="postCodeInput"/>
+											<div class="zipCodeBtn"><a href="#none" class="mBtn brownBtn">우편번호</a></div>
+										</li>
+										<li><input type="text" value="서울특별시 서대문구" id="mAddr1"/><label for="mAddr1" class="blind">주소</label></li>
+										<li><input type="text" value="4층" id="mAddr2"/><label for="mAddr2" class="blind">상세주소</label></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="checkBoxWrap">
+										<input type="checkbox" id="chck_policy_1"/><label for="chck_policy_1">기본 배송지로 설정</label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="pageBtnBox taC">
+										<a href="#none" class="rmBtn whiteBtn">취소</a>
+										<a href="#none" class="rmBtn whiteBtn">저장</a>
+									</div>
+								</td>
+							</tr>
+						</table>
+						<ul class="deliveryListBox">
+							<li>
+								<table class="writeTable2">
+									<caption>배송지목록</caption>
+									<colgroup><col width="25%"/><col width="75%"/></colgroup>
+									<tr>
+										<th scope="col" colspan="2">
+											<div class="radioBoxWrap">
+												<input type="radio" id="radio_deli_1" name="radio_deli" checked/><label for="radio_deli_1">우리집</label>
+												<div class="basicAddress actOn">기본배송</div>
+											</div>
+										</th>
+									</tr>
+									<tr>
+										<td><span class="label">이름</span></td>
+										<td>홍길동</td>
+									</tr>
+									<tr>
+										<td><span class="label">주소</span></td>
+										<td>[03766] 서울특별시 서대문구 대현동 90-85 화영빌딩 4층 택인택(주)</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<div class="pageBtnBox taC">
+												<a href="#none" class="rmBtn whiteBtn">수정</a>
+												<a href="#none" class="rmBtn whiteBtn">삭제</a>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</li>
+							<li>
+								<table class="writeTable2">
+									<caption>배송지목록</caption>
+									<colgroup><col width="25%"/><col width="75%"/></colgroup>
+									<tr>
+										<th scope="col" colspan="2">
+											<div class="radioBoxWrap">
+												<input type="radio" id="radio_deli_2" name="radio_deli"/><label for="radio_deli_2">택인택</label>
+												<div class="basicAddress">기본배송</div>
+											</div>
+										</th>
+									</tr>
+									<tr>
+										<td><span class="label">이름</span></td>
+										<td>홍길동</td>
+									</tr>
+									<tr>
+										<td><span class="label">주소</span></td>
+										<td>[03766] 서울특별시 서대문구 대현동 90-85 화영빌딩 4층 택인택(주)</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<div class="pageBtnBox taC">
+												<a href="#none" class="rmBtn whiteBtn">수정</a>
+												<a href="#none" class="rmBtn whiteBtn">삭제</a>
+											</div>
+										</td>
+									</tr>
+								</table>
+							</li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+				-->
+				<div class="marketingInfoBox">
+					<div class="wWrap">
+						<h2>부가정보</h2>
+						<!-- <div class="grayBgBox mt5">마케팅 정보를 입력하여 주시면 <span>회원의 등급이 상향되어 더 높은 포인트 보상</span>을 받으실 수 있습니다.</div> -->
+						<table class="writeTable2">
+							<caption>부가정보</caption>
+							<colgroup><col width="30%"/><col width="70%"/></colgroup>
+							<tr>
+								<th scope="row">생년월일(6자리)</th>
+								<td><input type="text" id=""/></td>
+							</tr>
+							<tr>
+								<th scope="row">성별</th>
+								<td>
+									<div class="radioBoxWrap">
+										<input type="radio" id="rSex1" name="rSex" /><label for="rSex1" class="fs14x">남자</label>
+										<input type="radio" id="rSex2" name="rSex" /><label for="rSex2" class="fs14x">여자</label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="mLive">거주지역</label></th>
+								<td>
+									<select name="" id="mLive" class="mMarketingSlt">
+										<option value="">제주특별자치도</option>
+										<option value="">서울특별시</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">직업</th>
+								<td>
+									<select name="" id="mJop" class="mMarketingSlt">
+										<option value="">회사원</option>
+										<option value="">자영업</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><label for="rMarry">결혼여부</label></th>
+								<td>
+									<div class="radioBoxWrap">
+										<input type="radio" id="rMarry1" name="rMarry" /><label for="rMarry1" class="fs14x">기혼</label>
+										<input type="radio" id="rMarry2" name="rMarry" /><label for="rMarry2" class="fs14x">미혼</label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">이메일 수신</th>
+								<td>
+									<div class="radioBoxWrap">
+										<input type="radio" id="rMarketEmail1" name="rMarketEmail" /><label for="rMarketEmail1">거부</label><br>
+										<input type="radio" id="rMarketEmail2" name="rMarketEmail" class="ml0"/><label for="rMarketEmail2">수신(이벤트/쇼핑정보 메일 수신)</label>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">SMS 수신</th>
+								<td>
+									<div class="radioBoxWrap">
+										<input type="radio" id="rMarketSms1" name="rMarketSms" /><label for="rMarketSms1">거부</label><br>
+										<input type="radio" id="rMarketSms2" name="rMarketSms" class="ml0"/><label for="rMarketSms2">수신(이벤트/쇼핑정보 SMS 수신)</label>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="pageBtnBox taC">
+					<div class="wWrap">
+						<!-- <a href="#none" class="smBtn whiteBtn mt0" onclick="callPopup('#mbmLeaveNoticePopBox'); return false;">회원탈퇴</a> -->
+						<a href="#none" class="mBtn purpleBtn">회원정보수정</a>
+					</div>
+				</div>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+		<? include '../include/div_popup.php' ?> <!-- divPopup -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("회원정보수정"); //page title
+	</script>
+</body>
+</html>

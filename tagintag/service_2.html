@@ -1,0 +1,97 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include '../include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="serviceWrap">
+			<? include 'inc_tagintag_tab.php' ?> <!-- tab  -->
+			<section id="serviceBox_1" class="serviceBox">
+				<div class="wWrap">
+					<? include 'inc_tagintag_service_tab.php' ?> <!-- tab  -->
+					<h2>까보기</h2>
+					<div class="serviceConWrap">
+						<div id="serviceConBox_2" class="serviceConBox">
+							<ul class="brownDotLi dotLineBottom pb20">
+								<li>택인택에서의 까보기란, 택 안에 또 다른 택(가격)을 확인하는 일련의 과정입니다.</li>
+								<li>택인택에서 판매하는 하나의 상품에는 여러가지 택(가격)이 존재하며, 까보기 버튼을 클릭하여 자신이 뽑은 택의 가격을 확인 하실 수 있습니다.</li>
+							</ul>
+							<ul class="exUl">
+								<li>
+									<div class="exImg"><img src="<?=$root?>/skin/images/sub_tagintag/item_img_2_1.png" alt="설명이미지"/></div>
+									<div class="exTxt">
+										<div class="ext1 mt10">택(가격)구성 확인</div>
+										<div class="ext2">구매하고 싶은 상품페이지의 TAG 구성에서 최고가(인터넷최저가)와 최저가를 확인</div>
+									</div>
+								</li>
+								<li>
+									<div class="exImg"><img src="<?=$root?>/skin/images/sub_tagintag/item_img_2_2.png" alt="설명이미지"/></div>
+									<div class="exTxt">
+										<div class="ext1 mt15">까보기 버튼 클릭</div>
+										<div class="ext2">상단의 까보기 버튼을 클릭</div>
+									</div>
+								</li>
+								<li>
+									<div class="exImg"><img src="<?=$root?>/skin/images/sub_tagintag/item_img_2_3.png" alt="설명이미지"/></div>
+									<div class="exTxt">
+										<div class="ext1 mt15">행운의 숫자 선택</div>
+										<div class="ext2">자신만의 행운의 숫자를 선택</div>
+									</div>
+								</li>
+								<li>
+									<div class="exImg"><img src="<?=$root?>/skin/images/sub_tagintag/item_img_2_4.png" alt="설명이미지"/></div>
+									<div class="exTxt">
+										<div class="ext1 mt15">Start</div>
+										<div class="ext2">출발지점으로 최근(직전) 오픈한 다른 회원의 도착지점</div>
+									</div>
+								</li>
+								<li>
+									<div class="exImg"><img src="<?=$root?>/skin/images/sub_tagintag/item_img_2_5.png" alt="설명이미지"/></div>
+									<div class="exTxt">
+										<div class="ext1 mt15">Input</div>
+										<div class="ext2">출발지점에서 선택한 숫자만큼 이동하는 과정(구매완료, 오픈중 인 택은 건너뜀)</div>
+									</div>
+								</li>
+								<li>
+									<div class="exImg"><img src="<?=$root?>/skin/images/sub_tagintag/item_img_2_6.png" alt="설명이미지"/></div>
+									<div class="exTxt">
+										<div class="ext1 mt15">Result</div>
+										<div class="ext2">내가 받은 택</div>
+									</div>
+								</li>
+								<li>
+									<div class="exImg"><img src="<?=$root?>/skin/images/sub_tagintag/item_img_2_7.png" alt="설명이미지"/></div>
+									<div class="exTxt" style="margin-top:-10px;">
+										<div class="ext1">내가 받은 택(Result)의 가격(할인율)확인</div>
+										<div class="ext2">- 선택된 택(TAG)의 가격(할인율) 확인 <br>- 내가 받은 택(TAG)의 번호는 '까보기'를 선택한 다음 회원의 시작번호로 쓰임.</div>
+									</div>
+								</li>
+								<li>
+									<div class="exImg"><img src="<?=$root?>/skin/images/sub_tagintag/item_img_2_8.png" alt="설명이미지"/></div>
+									<div class="exTxt">
+										<div class="ext1 mt15">TAG 사용하기</div>
+										<div class="ext2">확인한 TAG으로 주문 / 양동 / 한번더 선택</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div id="contentsTopBtn"><a href="#wrap"><img src="<?=$root?>/skin/images/common/btn_top.png" alt="top"/></a></div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("택인택이란?"); //page title
+		currnetTab(0); //tab 활성화
+		currnetTab_servie(1); //tab 활성화
+		$(function($){
+			$(window).scroll(function(){ //스크롤시 topBtn 활성화
+				top_btn_act();
+			});
+		});
+	</script>
+</body>
+</html>

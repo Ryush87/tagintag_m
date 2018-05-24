@@ -1,0 +1,28 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include $d_root.'/include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header -->
+		<div id="contents" class="findIdPwWrap">
+			<div class="wWrap">
+				<section id="findIdPwBox">
+					<div class="resetPwBox">
+						<div class="grayBgBox pt10 pb10">
+							<div class="fs16e clr33">비밀번호가 변경되었습니다.</div>
+						</div>
+						<div class="pageBtnBox taC mt0">
+							<a href="<?=$root?>/login/login.html" class="mBtnH purpleBtn">로그인</a>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("비밀번호 재설정"); //page title
+	</script>
+</body>
+</html>

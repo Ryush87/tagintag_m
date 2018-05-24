@@ -1,0 +1,83 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include $d_root.'/include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header -->
+		<div id="contents" class="csNoticeWrap">
+			<? include 'inc_customer_tab.php' ?> <!-- tab  -->
+			<section id="csNoticeListBox">
+				<div class="wWrap">
+					<div class="listSearchBox mt10">
+						<input type="text" id="searchWord" class="fL" />
+						<a href="#none" class="listSearchBtn"><img src="<?=$root?>/skin/images/common/btn_search_w.png" alt="검색" /></a>
+					</div>
+				</div>
+				<table class="listTable2" summary="번호,제목,작성일">
+					<caption>공지사항</caption>
+					<colgroup><col width="15%"/><col width="55%"/><col width="30%"/></colgroup>
+					<tr>
+						<td>103</td>
+						<td class="listSubject"><a href="notice_view.html">택앤택서비스가 오픈했습니다.</a></td>
+						<td>2016.11.26</td>
+					</tr>
+					<tr>
+						<td>102</td>
+						<td class="listSubject"><a href="notice_view.html">택앤택서비스가 오픈했습니다.</a></td>
+						<td>2016.11.26</td>
+					</tr>
+					<tr>
+						<td>101</td>
+						<td class="listSubject"><a href="notice_view.html">택앤택서비스가 오픈했습니다.</a></td>
+						<td>2016.11.26</td>
+					</tr>
+					<tr>
+						<td>100</td>
+						<td class="listSubject"><a href="notice_view.html">택앤택서비스가 오픈했습니다.</a></td>
+						<td>2016.11.26</td>
+					</tr>
+					<tr>
+						<td>99</td>
+						<td class="listSubject"><a href="notice_view.html">택앤택서비스가 오픈했습니다.</a></td>
+						<td>2016.11.26</td>
+					</tr>
+					<tr>
+						<td>98</td>
+						<td class="listSubject"><a href="notice_view.html">택앤택서비스가 오픈했습니다.</a></td>
+						<td>2016.11.26</td>
+					</tr>
+					<tr>
+						<td>97</td>
+						<td class="listSubject"><a href="notice_view.html">택앤택서비스가 오픈했습니다.</a></td>
+						<td>2016.11.26</td>
+					</tr>
+					<tr>
+						<td>96</td>
+						<td class="listSubject"><a href="notice_view.html">택앤택서비스가 오픈했습니다.</a></td>
+						<td>2016.11.26</td>
+					</tr>
+					<tr>
+						<td>95</td>
+						<td class="listSubject"><a href="notice_view.html">택앤택서비스가 오픈했습니다.</a></td>
+						<td>2016.11.26</td>
+					</tr>
+					<tr>
+						<td>94</td>
+						<td class="listSubject"><a href="notice_view.html">택앤택서비스가 오픈했습니다.</a></td>
+						<td>2016.11.26</td>
+					</tr>
+				</table>
+				<div class="pageBtnBox">
+					<a href="#none" class="listMoreBtn">더보기 (<span>10/47</span>)</a>
+				</div>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("공지사항"); //page title
+		currnetTab(1); //tab 활성화
+	</script>
+</body>
+</html>

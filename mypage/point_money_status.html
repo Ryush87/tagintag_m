@@ -1,0 +1,143 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include $d_root.'/include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header -->
+		<div id="contents" class="myTagPointMoneyWrap">
+			<section id="myTagPointMoneyBox">
+				<!-- <h2 class="linePD">택포인트/택머니 현황</h2> -->
+				<table class="viewTable" summary="나의택포인트,나의택머니">
+					<caption>나의택포인트</caption>
+					<colgroup><col width="40%"/><col width="60%"/></colgroup>
+					<tr class="trPoint">
+						<th scope="col">
+							<div class="pstR">
+								<a href="#none" class="infoPopBtn"><span>택포인트</span></a>
+								<dl class="infoPop">
+									<dt class="mb5 fs14x"><span class="pointC3">택포인트란?</span></dt>
+									<dd>택포인트(Tag point)는 상품의 구매가를 결정하기 위한<br />택오픈(Tag open)시 사용되는 비용의 단위 입니다.<br />1회의 택오픈시 50p씩 사용됩니다.<br /><br />택포인트는 택오픈 용도로만 사용이 가능하며 신용카드,<br />실시간 계좌이체등으로 충전이 가능합니다.</dd>
+								</dl>
+							</div>
+						</th>
+						<td class="pointC1">15,000 P</td>
+					</tr>
+					<tr class="trMoney">
+						<th scope="col">
+							<div class="pstR">
+								<a href="#none" class="infoPopBtn"><span>택머니</span></a>
+								<dl class="infoPop">
+									<dt class="mb5 fs14x"><span class="pointC2">택머니란?</span></dt>
+									<dd>택머니(Tag Money)는 택인택 내에서 상품의 구매시 사용할 수 잇는 사이버 머니입니다. 빠르게 재고가 소진되는 택인택 서비스의 특성상 결제과정에서의 불필요한 시간 소요, 오류 발생등을 막기 위해 미리 충전해두셨다가 결제하시면 더욱 편리하게 서비스를 이용 하실 수 있습니다. <br /><br />택머니는 상품구매 대금, 재판매 거래대금용도로만 사용이 가능하며 신용카드, 실시간 계좌이체로 충전이 가능합니다.</dd>
+								</dl>
+							</div>
+						</th>
+						<td class="pointC1">270,150 M</td>
+					</tr>
+				</table>
+				<div class="myTpmListBox">
+					<h5 class="mt15 mb5"><span class="myTpmName">홍길동</span> 님의 택포인트 현황</h5>
+					<select name="" id="myTpmCate1" class="myTpmCateSlt">
+						<option value="">구분선택</option>
+						<option value="">적립</option>
+						<option value="">사용</option>
+						<option value="">충전</option>
+					</select>
+					<table class="listTable">
+						<caption>택포인트현황</caption>
+						<colgroup><col width="20%" /><col width="50%" /><col width="30%" /></colgroup>
+						<tr>
+							<td><div class="listCate ct1">적립</div></td>
+							<td>
+								<ul class="myTpmListUl">
+									<li class="li1">2016.11.30 16:25:02</li>
+									<li class="li2">SNS공유 리워드</li>
+									<li class="li3">잔고 : 1,500</li>
+								</ul>
+							</td>
+							<td class="taR">25</td>
+						</tr>
+						<tr>
+							<td><div class="listCate ct2">사용</div></td>
+							<td>
+								<ul class="myTpmListUl">
+									<li class="li1">2016.11.30 16:25:02</li>
+									<li class="li2">SNS공유 리워드</li>
+									<li class="li3">잔고 : 1,500</li>
+								</ul>
+							</td>
+							<td class="taR">50</td>
+						</tr>
+						<tr>
+							<td><div class="listCate ct3">충전</div></td>
+							<td>
+								<ul class="myTpmListUl">
+									<li class="li1">2016.11.30 16:25:02</li>
+									<li class="li2">SNS공유 리워드</li>
+									<li class="li3">잔고 : 1,500</li>
+								</ul>
+							</td>
+							<td class="taR">10,000</td>
+						</tr>
+					</table>
+					<div class="pageBtnBox taC">
+						<a href="point_status_list.html" class="listMoreBtn">전체보기</a>
+					</div>
+					<h5 class="mt20 mb5"><span class="myTpmName">홍길동</span> 님의 택머니 현황</h5>
+					<select name="" id="myTpmCate2" class="myTpmCateSlt">
+						<option value="">구분선택</option>
+						<option value="">적립</option>
+						<option value="">사용</option>
+						<option value="">충전</option>
+					</select>
+					<table class="listTable">
+						<caption>택머니현황</caption>
+						<colgroup><col width="20%" /><col width="50%" /><col width="30%" /></colgroup>
+						<tr>
+							<td><div class="listCate ct1">적립</div></td>
+							<td>
+								<ul class="myTpmListUl">
+									<li class="li1">2016.11.30 16:25:02</li>
+									<li class="li2">SNS공유 리워드</li>
+									<li class="li3">잔고 : 1,500</li>
+								</ul>
+							</td>
+							<td class="taR">25</td>
+						</tr>
+						<tr>
+							<td><div class="listCate ct2">사용</div></td>
+							<td>
+								<ul class="myTpmListUl">
+									<li class="li1">2016.11.30 16:25:02</li>
+									<li class="li2">SNS공유 리워드</li>
+									<li class="li3">잔고 : 1,500</li>
+								</ul>
+							</td>
+							<td class="taR">50</td>
+						</tr>
+						<tr>
+							<td><div class="listCate ct3">충전</div></td>
+							<td>
+								<ul class="myTpmListUl">
+									<li class="li1">2016.11.30 16:25:02</li>
+									<li class="li2">SNS공유 리워드</li>
+									<li class="li3">잔고 : 1,500</li>
+								</ul>
+							</td>
+							<td class="taR">10,000</td>
+						</tr>
+					</table>
+					<div class="pageBtnBox taC">
+						<a href="money_status_list.html" class="listMoreBtn">전체보기</a>
+					</div>
+				</div>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("택포인트/택머니 현황"); //page title
+	</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+</head>
+<body>
+	<? include '../include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header  -->
+		<div id="contents" class="serviceWrap">
+			<? include 'inc_tagintag_tab.php' ?> <!-- tab  -->
+			<section id="serviceHomeBox" class="mb0">
+				<div class="serviceIndexImg"><img src="<?=$root?>/skin/images/sub_tagintag/icon_index_title.png" alt="택인택 어떤 서비스가 궁금하세요?"/></div>
+				<ul class="serviceIndexBox">
+					<li class="serviceIndexLi_1">
+						<a href="service_1.html">
+							<div class="siItem">
+								<span class="siTitle">시작하기</span>
+							</div>
+						</a>
+					</li>
+					<li class="serviceIndexLi_2">
+						<a href="service_2.html">
+							<div class="siItem">
+								<span class="siTitle">까보기</span>
+							</div>
+						</a>
+					</li>
+					<li class="serviceIndexLi_3">
+						<a href="service_3.html">
+							<div class="siItem">
+								<span class="siTitle">가격구성</span>
+							</div>
+						</a>
+					</li>
+					<li class="serviceIndexLi_4">
+						<a href="service_4.html">
+							<div class="siItem">
+								<span class="siTitle">즉시구매</span>
+							</div>
+						</a>
+					</li>
+					<li class="serviceIndexLi_5">
+						<a href="service_5.html">
+							<div class="siItem">
+								<span class="siTitle">수익얻기</span>
+							</div>
+						</a>
+					</li>
+					<li class="serviceIndexLi_6">
+						<a href="service_6.html">
+							<div class="siItem">
+								<span class="siTitle">공정성</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("택인택이란?"); //page title
+		currnetTab(0); //tab 활성화
+	</script>
+</body>
+</html>

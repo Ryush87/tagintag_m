@@ -1,0 +1,55 @@
+<? include '../include/top.php' ?> <!-- top -->
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_sub.css">
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_goods.css">
+</head>
+<body>
+	<? include $d_root.'/include/lnb.php' ?> <!-- lnb -->
+	<div id="wrap">
+		<? include '../include/header.php' ?> <!-- header -->
+		<div id="contents" class="returnChangeWrap">
+			<section id="goodsInfoConfilmBox" class="sectionSlideBox openScts">
+				<h4 class="sctsTitle">상품정보</h4>
+				<div class="sctsCon">
+					<div class="oGoodsImgBox">
+						<img src="<?=$root?>/skin/images/temp/temp_main_goods_01.jpg" alt="상품이미지" />
+					</div>
+					<div class="oGoodsInfoBox">
+						<div class="ogiName">[파리바게뜨]떠먹는 블루베리케이크</div>
+						<div class="ogiPrice1">25,000원</div>
+						<div class="ogiPrice2">12,500원(-99%)</div>
+						<div class="ogiOption">배송비:0원(전자상품권)</div>
+					</div>
+				</div>
+			</section>
+			<section id="returnGuideBox" class="sectionSlideBox openScts">
+				<h4 class="sctsTitle">반품신청안내</h4>
+				<div class="sctsCon">
+					<p class="pointC6">교환/반품접수 절차 없이 임의로 상품을 반송하실 경우, 반품내용을 확인할 수 없으므로 환불이 지연되거나 환불이 되지 않을 수 있습니다.</p>
+					<ul class="grayDotLi mt10">
+						<li>단순변심에 의한 반품은 상품 수령후 7일 이내에 신청 가능합니다.</li>
+						<li>반품은 구매확인이 이루어지지 않은 경우에만 가능합니다.</li>
+						<li>상품의 불량,오류로 인한 반품은 <a href="<?=$root?>/customer/inquiry_write.html" class="msmBtn">1:1 문의</a> 를 통해 신청 바랍니다.</li>
+						<li>반품 신청후 안내된 반품처로 상품을 반송하시면 됩니다.</li>
+					</ul>
+					<a href="#none" class="mBtn whiteBtn2" onclick="callPopup('#returnApplyPopBox'); return false;">반품신청</a>
+				</div>
+			</section>
+			<section id="changeGuideBox" class="sectionSlideBox openScts">
+				<h4 class="sctsTitle">교환신청안내</h4>
+				<div class="sctsCon">
+					<ul class="grayDotLi">
+						<li>상품의 교환은 동일한 가격의  상품내에서 가능합니다.</li>
+						<li>교환신청을 작성 하시면 상품의 반송 및 교환상품의 배송절차를 안내해드립니다.</li>
+					</ul>
+					<a href="#none" class="mBtn whiteBtn2" onclick="callPopup('#changeApplyPopBox'); return false;">교환신청</a>
+				</div>
+			</section>
+		</div>
+		<? include '../include/footer.php' ?> <!-- footer -->
+		<? include '../include/div_popup.php' ?> <!-- divPopup -->
+	</div>
+	<script type="text/javascript">
+		changeTitle("반품/교환"); //page title
+	</script>
+</body>
+</html>
