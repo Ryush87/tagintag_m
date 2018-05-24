@@ -22,54 +22,16 @@
 			.slick-next {right:5% !important;}
 			.slick-dots {bottom:0 !important;}
 			.mCaruselItem {}
-			.slick-prev:before,
-			.slick-next:before {font-size:20px;color:white;}
 
 	#mainTotalDiscountBox {float:left;width:100%;}
-		.mtdTextBox {float:left;width:100%;height:50px;line-height:40px;font-weight:500;font-size:15px;color:#fff;text-align:center;background:#464646;border:5px solid #fff;}
-	#episodeBox {}
-		.episodeBoxWrap {float:left;width:100%;border-top:1px solid #ddd;}
-			.episodeBoxWrap li {float:left;width:50%;}
-				.epsdItem {position:relative;float:left;padding:20px;width:100%;border-right:1px solid #fff;border-bottom:1px solid #ddd;}
-					.episodeBoxWrap li:nth-child(2n+1) .epsdItem {border-right:1px solid #ddd;}
-						.epsdLabel {position:absolute;top:0;right:20px;padding-top:10px;width:45px;height:45px;}
-							.epsdLabel span {display:block;width:100%;height:100%;font-weight:500;font-size:1.2em;color:#fff;text-align:center;background:url(../images/common/list_label_bg.png) no-repeat 50% 100%;}
-						.epsdLabel1 {background:#70b986;}
-						.epsdLabel2 {background:#d26666;}
-						.epsdLabel3 {background:#bac0c4;}
-						.epsdKindLabel {position:absolute;top:5px;left:5px;width:42px;height:49px;}
-							.epsdKindLabel span {display:block;padding-top:14px;width:100%;height:100%;font-weight:600;font-size:12px;letter-spacing:-0.025em;text-align:center;background:url(../images/common/icon_tag_kind_bg.png) no-repeat;background-size:contain;}
-						.epsdKindLabel1 {color:#e40075;}
-						.epsdKindLabel2 {color:#00a7b0;}
-						.epsdKindLabel3 {color:#663b93;}
-						.epsdImg {width:58%;min-height:69px;}
-						.epsdTitle {margin-top:15px;height:52px;font-weight:500;font-size:1.8em;color:#c6a370;overflow:hidden;}
-							.epsdTitle span {}
-						.epsdProbability {position:absolute;top:70px;right:24px;width:46px;height:48px;background:#2b343a;border-radius:23px;}
-							.epsdProbability .proba1,
-							.epsdProbability .proba2 {margin:0 auto;width:60%;height:19px;line-height:19px;font-size:12px;text-align:center;color:#fff;}
-							.epsdProbability .proba2 {line-height:15px;border-top:1px solid #fff;}
-						/*.epsdNum {font-weight:bold;font-size:2em;color:#091b25;}*/
-						.epsdNum {position:absolute;top:45px;right:20px;font-weight:bold;font-size:1.4em;width:45px;text-align:center;color:#091b25;}
-						/*.epsdDate {margin-top:20px;font-size:1.5em;color:#333;}*/
-						.epsdDate {margin-top:5px;font-size:1.5em;color:#333;}
-						.epsdDesc {margin-top:10px;height:35px;font-size:1.2em;color:#a3aeb7;}
-						.epsdBtns {margin-top:10px;text-align:right;}
-							/*.epsdBtns .btnS1 {margin-left:0;padding-right:15px;padding-left:15px;}*/
-							.epsdBtns .btnS1 {width:100%;margin-left:0;padding-right:0px;padding-left:0px;}
-				.epsdItem.epsdItemPrepare {}
-					.epsdItem.epsdItemPrepare .epsdImg {margin:0 auto;}
-					.epsdItem.epsdItemPrepare .epsdTitle {text-align:center;line-height:25px;white-space:initial;overflow:initial}
-					.epsdItem.epsdItemPrepare .epsdDate,
-					.epsdItem.epsdItemPrepare .epsdDesc,
-					.epsdItem.epsdItemPrepare .epsdBtns {visibility:hidden;}
+		.mtdTextBox {float:left;width:100%;height:50px;line-height:40px;font-weight:500;font-size:15px;color:#222;text-align:center;border:5px solid #e8e8e8;}
 	#ingGoodsBox {}
 		.mainPageWrap .ingGoodsList .igiTagPrice {margin-top:0;}
 	#mainBannerBox {float:left;width:100%;}
 	#mainBoardBox {float:left;width:100%;}
-		.mbbWrap {float:left;width:100%;background:#f7f7f7;}
+		.mbbWrap {float:left;width:100%;}
 			.mbbWrap .mbbBox {float:left;padding:5px 0;width:100%;}
-			#mbbWin {border-bottom:1px solid #ddd;}
+			#mbbWin {border-bottom:1px solid #eee;}
 			#mbbReturn {}
 				.mbbLiItem {float:left;width:100%;}
 					.mbCate {float:left;margin-left:5%;line-height:36px;font-size:13px;color:#666;}
@@ -83,18 +45,14 @@
 					#mbbReturn .mbbUser {margin-left:10px;color:#555;}
 					.mbbPrice {float:right;margin-right:5%;line-height:36px;font-size:13px;color:#555;}
 						.mbbPrice span {font-weight:bold;}
-					.mbbCenter {width:100%;line-height:36px;font-size:13px;color:#666;text-align:center;}
-						.mbbCenter span {margin-right:15px;}
 
 /* login */
-.loginWrap {padding-top:30px;}
+.loginWrap {margin-top:30px;}
 	#loginBox {float:left;width:100%;}
 		.loginInputBox {float:left;width:100%;}
 			.loginInputBox input[type="text"],
-			.loginInputBox input[type="password"],
-			.loginInputBox input[type="number"] {width:100%;height:40px;font:normal 12px / 40px "dotum";color:#999;}
-			.loginInputBox input[type="text"],
-			.loginInputBox input[type="number"] {margin-bottom:5px;}
+			.loginInputBox input[type="password"] {width:100%;height:40px;font:normal 12px / 40px "dotum";color:#999;}
+			.loginInputBox input[type="text"] {margin-bottom:5px;}
 			.loginInputBox input:focus {color:#333;}
 			.loginInputBox .mBtn2 {margin-top:10px;margin-left:0;width:100%;font-weight:bold;font-size:1.6em;border-radius:3px;}
 			.loginInputBox .checkBoxWrap {margin-top:10px;}
@@ -119,22 +77,19 @@
 				#restorationBox .guideBox .bd1sEEE {margin-top:10px;padding:10px 20px;line-height:18px;font-weight:500;font-size:1.3em;color:#777;letter-spacing:-0.025em;}
 			#restorationBox #findKind_phon .findIdPwUl {padding-top:180px;background:url(../images/sub_login/find_box_tel_bg.png) no-repeat 50% 30%;background-size:120px;}
 
-.findIdPwWrap {padding-top:10px;}
+.findIdPwWrap {margin-top:10px;}
 	#findIdPwBox {float:left;width:100%;}
 			#findIdPwBox .pageTab li {width:50%;}
 		#findIdPwBox .grayBgBox {float:left;margin-bottom:10px;padding:10px 20px;width:100%;font-weight:500;font-size:1.2em;color:#888;letter-spacing:-0.05em;}
 			#findIdPwBox .grayBgBox span {color:#333;}
 		#findKind_phon {display:block;float:left;width:100%;}
-			/*#findKind_phon .findIdPwUl {padding-top:250px;background:url(../images/sub_login/find_box_tel_bg.png) no-repeat 50% 40%;background-size:120px;}*/
+			#findKind_phon .findIdPwUl {padding-top:250px;background:url(../images/sub_login/find_box_tel_bg.png) no-repeat 50% 40%;background-size:120px;}
 		#findKind_email {display:none;float:left;width:100%;}
 			.idInputBox,
 			.findIdPwUl li {margin-bottom:10px;}
 				#findIdPwBox input[type="text"],
-				#findIdPwBox input[type="email"],
-				#findIdPwBox input[type="password"],
-				#findIdPwBox input[type="number"] {width:100%;font-size:1.2em;}
-				#findIdPwBox input[type="text"].certiNum,
-				#findIdPwBox input[type="number"].certiNum {/*width:65%;*/width:100%;}
+				#findIdPwBox input[type="password"] {width:100%;font-size:1.2em;}
+				#findIdPwBox input[type="text"].certiNum {width:65%;}
 				.leftTime {font-size:12px;}
 		.findResultBox {float:left;width:100%;}
 		.resetPwBox {float:left;width:100%;}
@@ -150,11 +105,11 @@
 		#mbJoinBox .mbJoinStepBox {float:left;margin-bottom:0;padding:0 5%;width:100%;line-height:40px;font-size:1.5em;border-bottom:1px solid #eee;}
 		#mbJoinBox .allCheck {float:left;padding:10px 0;width:100%;font-size:1.2em;color:#333;}
 		#mbJoinBox h3 {float:left;width:100%;font-size:1.4em;color:#333;font-weight:bold;}
-		#mbJoinBox .pageBtnBox .mBtn {/*width:49%;*/width:100%;}
+		#mbJoinBox .pageBtnBox .mBtn {width:49%;}
 		.mbPolicyBox {float:left;width:100%;}
 			.mbPolicyBox .gridL {float:left;width:100%;}
 				#mbJoinBox .mbPolicyBox h3 {padding:10px 20px;font-weight:500;font-size:12px;color:#777;background:#f9f9f9;border:1px solid #e9e9e9;}
-				.mbPolicyBox .mbPolicyBoxUL {float:left;padding:5px 0;width:100%;border:1px solid #e9e9e9;border-top:0;}
+				.mbPolicyBox .mbPolicyBoxUL {float:left;padding:5px 0;border:1px solid #e9e9e9;border-top:0;}
 				.mbPolicyBox .mbPolicyBoxUL > li {float:left;margin:4px 0;padding:0 20px;width:100%;font:normal 12px "Noto Sans KR";color:#777;}
 					.mbPolicyBox .mbPolicyBoxUL > li label {line-height:20px;color:#777;}
 					.mbPolicyBox .mbPolicyBoxUL > li .smBtn {float:right;font-family:"Noto Sans KR";color:#777;border-radius:15px;}
@@ -173,11 +128,8 @@
 					.mbNecePolicyBox ul li p {float:left;width:90%;}
 		#mbJoinBox .pageBtnBox {margin-top:0;}
 			#mbJoinBox .pageBtnBox .textBox {float:left;font:normal 1.2em "Noto Sans KR";color:#666;}
-		.mbCertiDescBox {padding-top:140px;padding-bottom:20px;text-align:center;background:url(../images/sub_login/find_box_tel_bg.png) no-repeat 50% 20px;background-size:100px;}
-			.mbCertiDescTit {font-weight:500;font-size:18px;font-family:"Noto Sans KR";}
-		.mbCertiBox {clear:both;margin:0 auto;width:100%;}
-			.mbCertiBox h5 {margin-bottom:5px;width:100%;line-height:40px;font-weight:bold;font-size:15px;color:#444;border-bottom:1px solid #eee;}
-			.mbCertiBox .mBtn{margin-top:20px;margin-left:0;padding-right:20px;padding-left:20px;width:100%;border-radius:5px;}
+		.mbCertiBox {clear:both;margin:0 auto;width:100%;background:url(../images/sub_login/find_box_tel_bg.png) no-repeat 50% 40%;background-size:120px;}
+			.mbCertiBox .mBtn{margin-top:250px;margin-left:0;padding-right:20px;padding-left:20px;width:100%;}
 		.mbInfoInputBox {float:left;width:100%;}
 			.mbJoinGuideBox {float:left;padding:10px 5%;width:100%;font-weight:normal;font-size:12px;color:#444;letter-spacing:-0.05em;}
 			.mbInfoInputBox h5 {margin-bottom:5px;width:100%;line-height:40px;font-weight:bold;font-size:15px;color:#444;border-bottom:1px solid #eee;}
@@ -189,7 +141,7 @@
 			#mbJoinBox .mbJoinCompleteBox .mbjcBox {float:left;width:100%;padding-top:160px;background:url(../images/sub_member/join_complet.png) no-repeat 50% 0;background-size:140px}
 				.mbCmpText,
 				.mbComId {font:500 14px "Noto Sans KR";color:#888;}
-				.mbComId {margin-top:20px;margin-bottom:20px;}
+				.mbComId {margin-top:20px;}
 					.mbComId span {color:#cc5222;}
 			#mbJoinBox .mbJoinCompleteBox .pageBtnBox {margin-top:20px;}
 				#mbJoinBox .mbJoinCompleteBox .pageBtnBox .mBtn {width:100%;}
@@ -210,14 +162,7 @@
 				.mypageHomeWrap #myActInfoBox .gridR ul li:first-child {height:40px;line-height:40px;font-weight:bold;font-size:12px;color:#222;background:#f6f6f6;border-top:0;}
 					.mypageHomeWrap #myActInfoBox .gridR ul li a {display:block;width:100%;background:url(../images/common/blt_arrow_right_gray2.png) no-repeat 100% 50%;background-size:10px;}
 					.mypageHomeWrap #myActInfoBox .gridR ul li .fR {color:#ff4100;}
-					.mypageHomeWrap #myActInfoBox .gridR ul li .fR span {display:inline-block;font-family:"Arial";font-weight:bold;font-size:15px;}
-	.mypageHomeWrap #myActInfoBox .grid100 {float:left;width:100%;/*height:130px;*/}
-			.mypageHomeWrap #myActInfoBox .grid100 ul {float:left;width:100%;}
-				.mypageHomeWrap #myActInfoBox .grid100 ul li {float:left;padding:0 15px;width:100%;height:45px;line-height:45px;font-weight:500;font-size:12px;color:#555;border-top:1px solid #ddd;}
-				.mypageHomeWrap #myActInfoBox .grid100 ul li:first-child {height:40px;line-height:40px;font-weight:bold;font-size:12px;color:#222;background:#f6f6f6;border-top:0;}
-					.mypageHomeWrap #myActInfoBox .grid100 ul li a {display:block;width:100%;background:url(../images/common/blt_arrow_right_gray2.png) no-repeat 100% 50%;background-size:10px;}
-					.mypageHomeWrap #myActInfoBox .grid100 ul li .fR {color:#ff4100;}
-					.mypageHomeWrap #myActInfoBox .grid100 ul li .fR span {display:inline-block;font-family:"Arial";font-weight:bold;font-size:15px;}
+					.mypageHomeWrap #myActInfoBox .gridR ul li .fR span {font-family:"Arial";font-weight:bold;font-size:17px;}
 	#myOrderInfoBox {float:left;margin-bottom:5px;width:100%;background:#c6a370;background:linear-gradient(to left,#d9c382,#c6a370);}
 		#myOrderInfoBox ul {float:left;padding:15px 0;width:100%;}
 			#myOrderInfoBox ul li {float:left;width:25%}
@@ -241,7 +186,7 @@
 		.mypageHomeWrap #mypageMenuBox ul {float:left;margin-bottom:5px;width:100%;background:#fff;border-bottom:1px solid #ccc;}
 			.mypageHomeWrap #mypageMenuBox ul li {height:40px;line-height:40px;}
 				.mpm1d {float:left;margin:0 auto;padding:0 15px;width:100%;font-weight:bold;font-size:14px;color:#444;border-bottom:1px solid #ccc;}
-				.mpm2d {float:right;margin:0 auto;padding:0 15px 0 0;width:88%;font-weight:500;font-size:12px;color:#444;border-bottom:1px solid #f1f1f1;}
+				.mpm2d {float:right;margin:0 auto;padding:0 15px 0 0;width:95%;font-weight:500;font-size:12px;color:#444;border-bottom:1px solid #ccc;}
 				.mypageHomeWrap #mypageMenuBox ul li.mpm2d:last-child {border-bottom:0;}
 				.mypageHomeWrap #mypageMenuBox ul li a {display:block;width:100%;background:url(../images/common/blt_arrow_right_gray2.png) no-repeat 98% 50%;background-size:10px;}
 	.mypageHomeWrap #contentsTopBtn {position:relative;float:right;margin-right:10px;margin-bottom:10px;opacity:1;}
@@ -258,25 +203,23 @@
 						.miniBtn.actOn,
 						.miniBtn:hover {color:#c6a370;border:1px solid #c6a370;}
 						.termListSearchBox .calendarBox {float:left;margin-top:-3px;width:47%;font-size:1.2em;border:1px solid #ddd;}
-							.termListSearchBox .calendarBox input[type="text"],
-							.termListSearchBox .calendarBox input[type="number"] {width:75%;border:0;text-align:center;}
+							.termListSearchBox .calendarBox input[type="text"] {width:75%;border:0;text-align:center;}
 							.termListSearchBox .calendarBox .blt_calendar {float:right;}
 						.termListSearchBox .calendarGubun {float:left;width:6%;line-height:30px;text-align:center;}
 				.termListSearchBox select {width:100%;}
 				.termListSearchBox .lsSearchBox {float:left;margin-top:4px;width:100%;height:35px;line-height:30px;font-size:1.2em;color:#777;border:1px solid #ddd;overflow:hidden;}
-					input[type="text"].lsGoodsName,
-					input[type="number"].lsGoodsName {width:80%;line-height:30px;border:0;}
+					input[type="text"].lsGoodsName {width:80%;line-height:30px;border:0;}
 					.lsBtn {float:right;padding-left:10px;margin-right:10px;width:26px;background:url(../images/common/line_h_d7.gif) no-repeat 0 50%;background-size:1px 50%;}
 		.orderGoodsListBox {float:left;width:100%;}
 			.orderGoodsListBox > li {float:left;margin-top:10px;width:100%;}
 			.ogdItem {float:left;width:100%;border:1px solid #eee;border-top:2px solid #ccc;}
 				.ogdiDate {float:left;padding:0 10px;width:100%;height:35px;font:bold 1.2em / 35px "Arial";color:#444;background:#f7f7f7;}
 					.ogdiDate > span {font-weight:normal;color:#888;}
-					.ogdOrderNum {float:left;}
+					.ogdOrderNum {float:right;color:#888;}
+					.ogdOrderNum:hover {color:#888;}
 						.ogdOrderNum > span {color:#c6a370;}
-					.ogdOrderDate {float:right;}
 				.ogdiInfo {float:left;padding:10px;width:100%;}
-					.ogdiImgBox {float:left;margin-right:10px;/*width:90px;height:90px;*/width:32%;text-align:center;/*border:1px solid #eee;*/overflow:hidden;}
+					.ogdiImgBox {float:left;margin-right:10px;/*width:90px;height:90px;*/width:32%;text-align:center;border:1px solid #eee;overflow:hidden;}
 						.ogdiImgBox img {/*width:auto;height:100%;*/}
 					.ogdiTextBox {float:right;width:62%;}
 						.ogdiTit {float:left;width:100%;font-size:1.2em;color:#222;}
@@ -293,11 +236,11 @@
 	#myOrderViewBox {}
 		.topOrderInfoBox {float:left;padding:0 5%;width:100%;height:40px;line-height:40px;font-size:11px;color:#666;background:#f9fafa;}
 			.toN1 {float:left;}
-				.toN1 span {color:#c6a370;}
+				.toN1 span {color:#333;}
 			.toN2 {float:right;font-family:"Arial";font-size:12px;letter-spacing:-0.05em;}
 		#orderGoodsInfoBox {float:left;width:100%;}
 			#orderGoodsInfoBox .sctsCon {margin-top:0;padding-top:0;border-top:0;}
-				#myOrderViewBox .oGoodsImgBox {position:relative;float:left;width:30%;/*border:1px solid #e8e8e8;*/}
+				#myOrderViewBox .oGoodsImgBox {position:relative;float:left;width:30%;border:1px solid #e8e8e8;}
 				#myOrderViewBox .oGoodsInfoBox {float:left;padding-left:15px;width:70%;letter-spacing:-0.075em;}
 					#myOrderViewBox .ogiName {font-weight:500;font-size:1.6em;color:#444;}
 					#myOrderViewBox .ogiPrice1 {margin-right:5px;display:inline-block;font-size:1.4em;color:#888;text-decoration:line-through;}
@@ -323,202 +266,16 @@
 		#changeGuideBox {}
 			#changeGuideBox p {font-size:1.2em;line-height:20px;color:#888;}
 
-.myInstantBuyListWrap {}
-	#myInstantBuyListBox {}
-		#myInstantBuyListBox .grayBgBox {float:left;margin-top:15px;margin-bottom:10px;width:100%;height:45px;font:500 1.3em / 45px "Noto Sans KR";color:#333;text-align:center;}
-			#myInstantBuyListBox .grayBgBox span {margin-left:10px;font-weight:bold;font-size:18px;font-family:"Arial";}
-		.myInstantBuyListWrap .slideListBox {float:left;width:100%;}
-		.myInstantBuyListWrap .slideListBody > li {border:1px solid #ddd;border-top:0;}
-			.myInstantBuyListWrap .slideListBody > li:first-child {margin-top:15px;border-top:1px solid #ddd;}
-				.myInstantBuyListWrap .slideListBox .titleLine {float:left;width:97%;background:url(../images/common/blt_arrow_down_gray.png) no-repeat 100% 16px;background-size:10px;}
-				.myInstantBuyListWrap .slideListBox .openLine .titleLine {background:url(../images/common/blt_arrow_up_gray.png) no-repeat 100% 16px;background-size:10px;}
-				.myInstantBuyListWrap .conLine {background:#fff;}
-		
-
-.myTransferListWrap {}
-	#myTransferListBox {}
-		.myTransferListWrap .slideListBox {float:left;width:100%;}
-		.myTransferListWrap .slideListBody > li {border:1px solid #ddd;border-top:0;}
-			.myTransferListWrap .slideListBody > li:first-child {margin-top:15px;border-top:1px solid #ddd;}
-				.myTransferListWrap .slideListBox .titleLine {float:left;width:97%;background:url(../images/common/blt_arrow_down_gray.png) no-repeat 100% 16px;background-size:10px;}
-				.myTransferListWrap .slideListBox .openLine .titleLine {background:url(../images/common/blt_arrow_up_gray.png) no-repeat 100% 16px;background-size:10px;}
-				.myTransferListWrap .conLine {background:#fff;}
-
-.myTagOpenHistoryListWrap {}
-	#myTagOpenHistoryListBox {}
-		.myTagOpenHistoryListWrap .slideListBox {float:left;width:100%;}
-			.myTagOpenHistoryListWrap .slideListBody > li {border:1px solid #ddd;border-top:0;}
-			.myTagOpenHistoryListWrap .slideListBody > li:first-child {margin-top:15px;border-top:1px solid #ddd;}
-				.myTagOpenHistoryListWrap .slideListBox .titleLine {float:left;width:97%;background:url(../images/common/blt_arrow_down_gray.png) no-repeat 100% 16px;background-size:10px;}
-				.myTagOpenHistoryListWrap .slideListBox .openLine .titleLine {background:url(../images/common/blt_arrow_up_gray.png) no-repeat 100% 16px;background-size:10px;}
-				.mthTit {float:left;padding:10px 10px;width:100%;}
-					.mthT1 {float:left;width:30px;}
-					.mthT2 {float:left;width:60%;}
-					.mthT3 {float:right;width:70px;}
-						.mthT3 span {display:block;margin-right:20%;width:80%;height:20px;line-height:20px;font-size:10px;text-align:center;background:#fff;border-radius:10px;}
-						.tStts1 {color:#663b93;border:1px solid #663b93;}
-						.tStts2 {color:#c82358;border:1px solid #c82358;}
-						.tStts3 {color:#aaa;border:1px solid #aaa;}
-						.tStts4 {color:#480000;border:1px solid #480000;}
-				.myTagOpenHistoryListWrap .conLine {background:#fff;}
-				.mthCon {float:left;padding:10px 10px 10px 10px;width:100%;}
-					.mthCon dl {float:left;width:100%;}
-						.mthCon dt {float:left;padding-left:30px;width:50%;line-height:20px;font-weight:normal;font-size:11px;color:#666;letter-spacing:-0.05em;}
-						.mthCon dd {float:right;padding-right:10px;width:50%;line-height:20px;font-weight:normal;font-size:11px;color:#666;letter-spacing:-0.05em;text-align:right;}
-					.mthCon .pageBtnBox {margin-top:10px;padding-top:10px;border-top:1px solid #ddd;}
-						.mthCon .pageBtnBox .mBtn2 {margin-top:0;width:65px;height:25px;line-height:25px;border:1px solid #aaa;}
-						.mthCon .pageBtnBox .mBtn2:hover {border:1px solid #aaa;}
-						.mthCon .pageBtnBox .mBtn2:first-child {margin-right:5px;}
-						.mthCon .pageBtnBox .whiteBtn2 {font-size:12px;color:#888;}
-		.myTagOpenHistoryListWrap .pageBtnBox {margin-top:10px;}
-
-.mySnsHistoryListWrap {}
-	#mySnsHistoryListBox {}
-
-.myProudHistoryListWrap {}
-	#myProudHistoryListBox {}
-
-.mySmsHistoryListWrap {}
-	#mySmsHistoryListBox {}
-
-.myTagPointMoneyWrap {}
-	#myTagPointMoneyBox {}
-		#myTagPointMoneyBox .viewTable {float:left;width:100%;}
-		#myTagPointMoneyBox .viewTable th {padding:0 20px;height:45px;vertical-align:middle;font-weight:500;font-size:1.3em;color:#555;text-align:left;background:#fff;border-right:0;border-bottom:1px solid #ddd;}
-			#myTagPointMoneyBox .viewTable th > div > a > span {display:block;width:100%;height:100%;line-height:45px;color:#333;}
-			#myTagPointMoneyBox .viewTable .trPoint th > div > a > span {background:url(../images/common/icon_exclamation1.png) no-repeat 100% 50%;background-size:20px;}
-			#myTagPointMoneyBox .viewTable .trMoney th > div > a > span {background:url(../images/common/icon_exclamation2.png) no-repeat 100% 50%;background-size:20px;}
-				.infoPop {display:none;position:absolute;top:50px;left:0;padding:15px 10px;width:280px;font:normal 11px "Noto Sans KR";text-align:left;background:#fff;border-radius:5px;z-index:100;}
-				.trPoint .infoPop {border:1px solid #d9c382;}
-				.trMoney .infoPop {border:1px solid #7ec2cd;}
-		#myTagPointMoneyBox .viewTable td {padding:0 20px;height:45px;vertical-align:middle;font:bold 1.6em "Arial";color:#333;text-align:right;border-bottom:1px solid #ddd;}
-	#myTagPointMoneyBox .myTpmListBox {float:left;padding:0 5%;width:100%;}
-		.myTpmName {font-weight:500;font-size:13px;color:#555;}
-		#myTagPointMoneyBox select {float:left;width:100%;}
-		#myTagPointMoneyBox .listTable {float:left;margin-top:10px;width:100%;}
-			#myTagPointMoneyBox .listTable td {border-bottom:1px solid #f4f4f4;}
-				#myTagPointMoneyBox .listTable .listCate {width:36px;height:36px;line-height:36px;text-align:center;color:#fff;border-radius:18px;}
-				.ct1 {background:#d7b252;}
-				.ct2 {background:#f09774;}
-				.ct3 {background:#f07474;}
-				.ct4 {background:#60add4;}
-				#myTagPointMoneyBox .listTable .myTpmListUl {float:left;width:100%;text-align:left;}
-					#myTagPointMoneyBox .listTable .myTpmListUl li {float:left;width:100%;}
-					.li1 {font-family:"arial";font-size:12px;color:#888;letter-spacing:-0.05em;}
-					.li2 {font-weight:bold;font-size:14px;color:#444;letter-spacing:-0.05em;}
-					.li3 {font-weight:500;font-size:13px;color:#555;letter-spacing:-0.05em;}
-				#myTagPointMoneyBox .listTable td.taR {padding-right:10px;font-weight:bold;font-size:14px;color:#444;}
-		#myTagPointMoneyBox .pageBtnBox {margin-top:10px;margin-bottom:0;}
-	#myTagPointMoneyBox .grayBgBox {float:left;margin-top:15px;margin-bottom:10px;width:100%;height:45px;font:500 1.3em / 45px "Noto Sans KR";color:#333;text-align:center;}
-		#myTagPointMoneyBox .grayBgBox span {margin-left:10px;font-weight:bold;font-size:18px;font-family:"Arial";}
-
-.myChargeWrap {}
-	#myPointChargeBox {}
-		.pointInfoDesc {float:left;padding:20px 20px 20px 35%;width:100%;line-height:24px;background:url(../images/sub_mypage/icon_pointInfo_desc.png) no-repeat 10% 50%;background-size:70px;}
-		.moneyInfoDesc {float:left;padding:20px 20px 20px 35%;width:100%;line-height:24px;background:url(../images/sub_mypage/icon_moneyInfo_desc.png) no-repeat 10% 50%;background-size:70px;}
-			.pointInfoDesc h5,
-			.moneyInfoDesc h5 {float:left;margin-bottom:5px;width:100%;font-weight:500;font-size:1.4em;color:#222;}
-			.pointInfoDesc p,
-			.moneyInfoDesc p {float:left;width:100%;line-height:1.6em;font-weight:400;font-size:1em;color:#777;}
-		.selectChargeCostWrap {float:left;width:100%;background:#d7b252;}
-			.selectChargeCostBox {float:left;padding:20px 20px 20px 35%;width:100%;background:url(../images/sub_mypage/icon_point_charge.png) no-repeat 10% 50%;background-size:70px}
-				.selectChargeCostBox h5 {float:left;width:100%;font-weight:bold;font-size:1.4em;color:#fff;letter-spacing:-0.05em;}
-				.selectChargeCostBox select.chargePriceSlt {float:left;width:70%;font-size:10px;color:#fff;letter-spacing:-0.05em;background:#d7b252;border:1px solid #fff;}
-		.costSummaryBox {float:left;padding:0 5%;width:100%;background:#f5f6f8;}
-			.costSummaryBox li {padding-left:25px;width:100%;height:50px;line-height:50px;font-weight:500;font-size:1.2em;color:#222;letter-spacing:-0.05em;}
-				.costSummaryBox li span {float:right;font-family:"arial";font-weight:bold;font-size:14px;color:#999;letter-spacing:-0.05em;}
-			.chargeC {float:left;background:url(../images/sub_mypage/icon_w.png) no-repeat 0 50%;background-size:19px;}
-			.balaceP {float:left;background:url(../images/sub_mypage/icon_p.png) no-repeat 0 50%;background-size:19px;}
-		.paymentInputBox {float:left;padding:5%;width:100%;background:#f5f6f8;}
-			.payInputUlBox {float:left;width:100%;background:#fff;border-top:1px solid #ddd;}
-				.payInputUlBox > li {float:left;padding:10px;width:100%;border:1px solid #ddd;border-top:0;}
-					.payKindUlBox {float:left;width:100%;}
-						.payKindUlBox > li {float:left;width:50%;}
-						.payKindUlBox > li a {display:block;width:100%;height:35px;line-height:35px;font-weight:500;font-size:13px;color:#444;letter-spacing:-0.05em;text-align:center;background:#f8f9fa;border:1px solid #dfe3e7;}
-						.payKindUlBox > li.actOn a {color:#fff;background:#c6a370;border:1px solid #a88b5f;}
-				.payInputUlBox li.payKindLi_1 {background:#f9fafb;}
-					.paymentInputBox .payKindSlt {float:left;width:100%;}
-						.payKindDesc {float:left;margin:5px 0;width:100%;font-size:1.2em;color:#777;letter-spacing:-0.05em;}
-						.cardInstallmentGuide {float:left;line-height:15px;font-weight:500;font-size:1.1em;color:#333;text-decoration:underline;}
-				.payInputUlBox li.payKindLi_2 {display:none;padding:0;background:#f9fafb;}
-					.cashReciptBox {float:left;padding:10px 5%;width:100%;background:#fff;border-bottom:1px solid #dfe3e7;}
-						.cashReciptTit {float:left;width:40%;font-weight:500;font-size:13px;color:#222;}
-						.cashReciptBox .radioBoxWrap {float:left;width:60%;}
-							.cashReciptBox .radioBoxWrap label {font-family:"Noto Sans KR";font-size:12px;}
-					.cashReciptInputBox {float:left;padding:5%;width:100%;}
-						.cashReciptInputBox .radioBoxWrap {font-size:12px;}
-						.cashReciptInputBox .inputTelBox {float:left;margin-top:10px;width:100%;}
-							.cashReciptInputBox .inputTelBox input[type="text"],
-							.cashReciptInputBox .inputTelBox input[type="number"] {width:29.5%;}
-				.payInputUlBox li.totalPriceBox {float:left;width:100%;}
-					.priceTit {float:left;font:500 12px "Noto Sans KR";color:#333;text-align:left;}
-					.priceNum {float:right;font:500 11px "Noto Sans KR";color:#ff4100;text-align:right;}
-						.priceNum span {font-weight:bold;font-size:18px;font-family:"Arial";}
-		.myChargeWrap .pageBtnBox {margin-top:0;padding:0 5%;background:#f9fafb;}
-			.myChargeWrap .pageBtnBox .checkBoxWrap {float:left;font-size:1.1em;color:#333;text-align:left;}
-				.myChargeWrap .pageBtnBox .checkBoxWrap input {float:left;height:28px;}
-				.myChargeWrap .pageBtnBox .checkBoxWrap label {display:inline;}
-			.myChargeWrap .pageBtnBox .mBtn {margin-top:0;margin-bottom:20px;}
-	#myMoneyChargeBox {}
-		#myMoneyChargeBox .radioBoxWrap input[type="radio"] {margin-left:50px;}
-		#myMoneyChargeBox .radioBoxWrap input[type="radio"]:first-child {margin-left:0px;}
-		.virtualAccountBox {float:left;padding:20px 0;width:100%;border-top:1px solid #dedede;}
-			.sltLabel {font-weight:bold;}
-			.payAccountSlt {margin-left:10px;width:200px;}
-		.payGuideTxt {float:left;width:100%;padding-top:20px;}
-
-.myRefundWrap {}
-	#myRefundBox {}
-		.refundSummaryBox {float:left;padding:10px;width:100%;}
-			.refundSummaryBox .sentenceBox {float:left;margin-bottom:5px;padding-bottom:10px;width:100%;border-bottom:1px solid #eee;}
-			.rfsmrUl {float:left;width:100%;}
-				.rfsmrUl li {float:left;width:100%;height:30px;line-height:30px;font-weight:500;font-size:14px;color:#777;}
-					.rfsmrUl li div {font-size:17px;color:#444;}
-		.refundApplyBox {float:left;width:100%;}
-			.refundApplyBox .writeTable {}
-				.refundApplyBox .writeTable th,
-				.refundApplyBox .writeTable th label {font-weight:500;font-size:14px;color:#444;}
-				.refundApplyBox .writeTable th,
-				.refundApplyBox .writeTable td {padding:5px 5px;vertical-align:middle;}
-				.refundApplyBox .writeTable .inputWrap {border:1px solid #ddd;}
-					.refundApplyBox .writeTable .inputWrap input[type="text"],
-					.refundApplyBox .writeTable .inputWrap input[type="number"] {width:90%;border:0;}
-			.refundApplyBox .viewTable {}
-			.refundApplyBox .viewTable.insideTable {margin-bottom:10px;}
-				.refundApplyBox .viewTable.insideTable th {color:#fff;background:#c6a370;}
-				.refundApplyBox .viewTable.insideTable td {text-align:center;}
-			.refundApplyBox .brownDotLi {float:left;width:100%;}
-				.refundApplyBox .brownDotLi li {line-height:14px;font-size:11px;color:#777;}
-			.refundApplyBox .pageBtnBox {margin-top:10px;}
-		.returnBankSlt {}
-
-.myTurnoverWrap {}
-	#myTurnoverBox {width:100%;}
-		.myTurnoverInfo {float:left;width:100%;border-bottom:5px solid #eee;}
-		.myTurnoverCerti {float:left;width:100%;}
-		#myTurnoverBox .writeTable2 th,
-		#myTurnoverBox .writeTable2 td {padding-top:10px;padding-bottom:10px;vertical-align:middle;}
-		#myTurnoverBox .writeTable2 th {font-size:14px;}
-		#myTurnoverBox .writeTable2 td {text-align:right;}
-			.trnApplyInput1,
-			.trnApplyInput2 {text-align:right;font-weight:bold;font-size:14px;}
-			.trnApplyUnit {float:right;margin:0 0 0 15px;line-height:30px;font-weight:bold;font-size:20px;color:#222;}
-			.trnDesc {float:right;line-height:20px;color:#666;font-size:11px;}
-		#myTurnoverBox .writeTable2 .checkBoxWrap {float:right;margin-left:20px;}
-		#myTurnoverBox .brownDotLi {clear:both;padding:0;width:100%;}
-			#myTurnoverBox .brownDotLi li {font-size:11px;line-height:14px;}
-
 .myCsCounselListWrap {}
 	#myCsCounselListBox {float:left;width:100%;}
 		.listSearchBox {float:left;width:100%;border:2px solid #c6a370;}
-			.listSearchBox input[type="text"]#searchWord,
-			.listSearchBox input[type="number"]#searchWord {float:left;margin-right:10px;width:80%;font-size:1.2em;border:0;}
+			.listSearchBox input[type="text"]#searchWord {float:left;margin-right:10px;width:80%;font-size:1.2em;border:0;}
 			.listSearchBox .listSearchBtn {float:right;padding-left:2px;width:40px;height:35px;line-height:35px;text-align:center;background:#c6a370;}
 				.listSearchBox .listSearchBtn img {width:50%;}
 		#myCsCounselListBox .csSlideListBox {margin-top:10px;}
 			/* slideListBox */
 			.csSlideListBox {float:left;width:100%;font-family:inherit;}
-				.csSlideListBox .slideListBody {float:left;margin-bottom:10px;width:100%;}
+				.csSlideListBox .slideListBody {float:left;margin-bottom:10px;}
 					.csSlideListBox .slideListBody > li {float:left;width:100%;font-size:1.3em;letter-spacing:-0.025em;border-bottom:0;}
 					.csSlideListBox .slideListBody > li:last-child {border-bottom:1px solid #e2e2e2;}
 					.csSlideListBox > li.openLine {}
@@ -531,11 +288,11 @@
 			.qIcon1 {float:left;width:23px;height:23px;background:url(../images/common/icon_q.png) no-repeat 0 0;background-size:23px;}
 			.qIcon2 {float:left;width:23px;height:23px;background:url(../images/common/icon_a.png) no-repeat 0 0;background-size:23px;}
 			.qText {float:left;margin-left:10px;}
-			#myCsCounselListBox .titleLine .qText {width:80%;}
+			#myCsCounselListBox .titleLine .qText {width:60%;}
 				#myCsCounselListBox .titleLine .qtCon {display:none;}
 			#myCsCounselListBox .conLine .qText {width:80%;}
 				.qtTit {font-weight:bold;}
-				.qtCon {/*padding-top:10px;*/color:#555;}
+				.qtCon {padding-top:10px;;color:#555;}
 				.qtInfo {padding-top:10px;font-size:11px;color:#888;}
 					.qtInfo span {font-family:"Arial";}
 			.qStatus {float:right;}
@@ -546,15 +303,6 @@
 				.qIng {background:#fff;}
 				.qYet {background:#fff;}
 				.qSecret {display:inline-block;width:10px;height:13px;vertical-align:middle;background:url(../images/common/icon_secret.png) no-repeat 0 0;background-size:10px;}
-
-.myGoodsQnaListWrap {}
-	#myGoodsQnaListBox {float:left;width:100%;}
-		#myGoodsQnaListBox .csSlideListBox {margin-top:10px;}
-			#myGoodsQnaListBox .titleLine a,
-			#myGoodsQnaListBox .titleLine a:hover {text-decoration:none;}
-			#myGoodsQnaListBox .titleLine .qText {width:60%;}
-				#myGoodsQnaListBox .titleLine .qtCon {display:none;}
-			#myGoodsQnaListBox .conLine .qText {width:80%;}
 
 .myMemberInfoPwWrap {}
 	#myMemberInfoPwBox {float:left;width:100%;}
@@ -567,8 +315,6 @@
 .myMemberInfoWrap {}
 	#myMemberInfoBox {float:left;width:100%;}
 		.basicInfoBox {float:left;width:100%;}
-			.mPhonEditBox1 {display:block;}
-			.mPhonEditBox2 {display:none;margin-top:10px;}
 		.deliveryInfoBox {float:left;width:100%;}
 		.marketingInfoBox {float:left;width:100%;}
 			.myMemberInfoWrap .writeTable2 {margin-bottom:10px;}
@@ -591,17 +337,14 @@
 						.inputPwBox > li > label {width:90px;}
 						.inputPwBox > li > input {width:350px;color:#999;}
 				.inputMailBox {float:left;}
-					.writeTable2 .inputMailBox > input[type="text"],
-					.writeTable2 .inputMailBox > input[type="number"] {float:left;/*width:40%;*/}
+					.writeTable2 .inputMailBox > input[type="text"] {float:left;width:40%;}
 					.inputMailBox select.mDomainSlt {float:left;margin-left:0;width:40%;}
 					.inputMailBox .divi {float:left;margin:0 5px;line-height:30px;}
 				.inputTelBox {}
 					.inputTelBox select.mPhonSlt,
 					.inputTelBox select.mTelSlt {float:left;width:30%;}
 					.inputTelBox > input[type="text"],
-					.writeTable2 .inputTelBox > input[type="text"],
-					.inputTelBox > input[type="number"],
-					.writeTable2 .inputTelBox > input[type="number"] {float:left;width:27%;text-align:center;}
+					.writeTable2 .inputTelBox > input[type="text"] {float:left;width:27%;text-align:center;}
 					.inputTelBox .divi {float:left;margin:0 5px;line-height:30px;}
 				.inputDeliBox {float:left;}
 					.inputDeliBox > li {float:left;margin-top:10px;width:100%;}
@@ -617,8 +360,7 @@
 				.phonNum {height:30px;line-height:30px;}
 				.phonNumEditBtn {float:right;width:46%;}
 				a.areaAddBtn {font-size:18px;}
-				.writeTable2 td input[type="text"].postCodeInput,
-				.writeTable2 td input[type="number"].postCodeInput {width:66%;}
+				.writeTable2 td input[type="text"].postCodeInput {width:66%;}
 				.zipCodeBtn {float:right;width:30%;}
 				.writeTable2 .mBtn {margin-top:0;height:35px;line-height:35px;font-size:13px;}
 				.writeTable2 .rmBtn {margin-top:0;}
@@ -626,32 +368,6 @@
 				.delTrBtn {position:absolute;top:0;right:0;width:10px;}
 				.mMarketingSlt {float:left;width:200px;}
 				.sltDesc {float:left;margin-right:10px;margin-left:50px;line-height:30px;}
-
-.myMemberLeaveWrap {}
-	#myMemberLeaveBox {}
-		.leaveInfoDesc {float:left;margin-top:10px;margin-bottom:20px;padding:0;width:100%;font-weight:500;font-size:1.2em;color:#888;letter-spacing:-0.05em;}
-		#myMemberLeaveBox .viewTable {margin-bottom:20px;}
-		#myMemberLeaveBox .viewTable th {font-weight:500;font-size:14px;text-align:left;}
-		#myMemberLeaveBox .viewTable td {line-height:22px;font-size:13px;letter-spacing:-0.05em;}
-		#myMemberLeaveBox .brownDotLi {float:left;width:100%;}
-			#myMemberLeaveBox .brownDotLi li {float:left;width:100%;font-size:13px;}
-		#myMemberLeaveBox .viewTable h6 {margin:10px 0 0 0;padding:0 0 5px 0;font-weight:500;font-size:14px;color:#222;background:none;}
-			#myMemberLeaveBox .insideTable th {padding:5px 0;color:#fff;line-height:12px;text-align:center;background:#c6a370;}
-			#myMemberLeaveBox .insideTable td {padding:5px;text-align:center;}
-		#myMemberLeaveBox .pageBtnBox {margin-top:0px;}
-			#myMemberLeaveBox .pageBtnBox .checkBoxWrap,
-			#myMemberLeaveBox .pageBtnBox .checkBoxWrap input,
-			#myMemberLeaveBox .pageBtnBox .checkBoxWrap label {float:left;margin-top:0;}
-			#myMemberLeaveBox .pageBtnBox label {width:90%;font:normal 1.2em "dotum";}
-
-.myMemberLeaveCmpWrap {}
-	#myMemberLeaveCmpBox {}
-		.leaveCmpInfoDesc {clear:both;margin-top:40px;margin-bottom:30px;width:100%;line-height:24px;font-weight:500;font-size:1.8em;color:#222;text-align:center;}
-			.leaveCmpInfoDesc p {padding-bottom:160px;width:100%;background:url(../images/sub_mypage/icon_member_leave_complet.png) no-repeat 50% 100%;background-size:200px;}
-		#myMemberLeaveCmpBox .sentenceBox {margin:0 auto;margin-bottom:10px;width:90%;font-weight:500;font-size:13px;font-family:"Noto Sans KR";color:#666;}
-		#myMemberLeaveCmpBox .brownDotLi {float:left;padding:15px;width:100%;}
-			#myMemberLeaveCmpBox .brownDotLi li {color:#333;}
-
 
 .myMemberLevelWrap {}
 	#myMemberLevelBox {float:left;width:100%;}
@@ -710,6 +426,139 @@
 			.mmaSns_t {background:url(../images/sub_mypage/icon_sns_twitter.png) repeat-x 0;background-size:cover;}
 		#myMyActBox .pageBtnBox {margin-top:10px;margin-bottom:20px;}
 
+.myTagPointMoneyWrap {}
+	#myTagPointMoneyBox {}
+		#myTagPointMoneyBox .viewTable {float:left;width:100%;}
+		#myTagPointMoneyBox .viewTable th {padding:0 20px;height:45px;vertical-align:middle;font-weight:500;font-size:1.3em;color:#555;text-align:left;background:#fff;border-right:0;border-bottom:1px solid #ddd;}
+			#myTagPointMoneyBox .viewTable th > div > a > span {display:block;width:100%;height:100%;line-height:45px;color:#333;}
+			#myTagPointMoneyBox .viewTable .trPoint th > div > a > span {background:url(../images/common/icon_exclamation1.png) no-repeat 100% 50%;background-size:20px;}
+			#myTagPointMoneyBox .viewTable .trMoney th > div > a > span {background:url(../images/common/icon_exclamation2.png) no-repeat 100% 50%;background-size:20px;}
+				.infoPop {display:none;position:absolute;top:50px;left:0;padding:15px 10px;width:280px;font:normal 11px "Noto Sans KR";text-align:left;background:#fff;border-radius:5px;z-index:100;}
+				.trPoint .infoPop {border:1px solid #d9c382;}
+				.trMoney .infoPop {border:1px solid #7ec2cd;}
+		#myTagPointMoneyBox .viewTable td {padding:0 20px;height:45px;vertical-align:middle;font:bold 1.6em "Arial";color:#333;text-align:right;border-bottom:1px solid #ddd;}
+	#myTagPointMoneyBox .myTpmListBox {float:left;padding:0 5%;width:100%;}
+		.myTpmName {font-weight:500;font-size:13px;color:#555;}
+		#myTagPointMoneyBox select {float:left;width:100%;}
+		#myTagPointMoneyBox .listTable {float:left;margin-top:10px;width:100%;}
+			#myTagPointMoneyBox .listTable td {border-bottom:1px solid #f4f4f4;}
+				#myTagPointMoneyBox .listTable .listCate {width:36px;height:36px;line-height:36px;text-align:center;color:#fff;border-radius:18px;}
+				.ct1 {background:#d7b252;}
+				.ct2 {background:#f09774;}
+				.ct3 {background:#f07474;}
+				.ct4 {background:#60add4;}
+				#myTagPointMoneyBox .listTable .myTpmListUl {float:left;width:100%;text-align:left;}
+					#myTagPointMoneyBox .listTable .myTpmListUl li {float:left;width:100%;}
+					.li1 {font-family:"arial";font-size:12px;color:#888;letter-spacing:-0.05em;}
+					.li2 {font-weight:bold;font-size:14px;color:#444;letter-spacing:-0.05em;}
+					.li3 {font-weight:500;font-size:13px;color:#555;letter-spacing:-0.05em;}
+				#myTagPointMoneyBox .listTable td.taR {padding-right:10px;font-weight:bold;font-size:14px;color:#444;}
+		#myTagPointMoneyBox .pageBtnBox {margin-top:10px;margin-bottom:0;}
+	#myTagPointMoneyBox .grayBgBox {float:left;margin-top:15px;margin-bottom:10px;width:100%;height:45px;font:500 1.3em / 45px "Noto Sans KR";color:#333;text-align:center;}
+		#myTagPointMoneyBox .grayBgBox span {margin-left:10px;font-weight:bold;font-size:18px;font-family:"Arial";}
+
+.myChargeWrap {}
+	#myPointChargeBox {}
+		.pointInfoDesc {float:left;padding:20px 20px 20px 35%;width:100%;line-height:24px;background:url(../images/sub_mypage/icon_pointInfo_desc.png) no-repeat 10% 50%;background-size:70px;}
+		.moneyInfoDesc {float:left;padding:20px 20px 20px 35%;width:100%;line-height:24px;background:url(../images/sub_mypage/icon_moneyInfo_desc.png) no-repeat 10% 50%;background-size:70px;}
+			.pointInfoDesc h5,
+			.moneyInfoDesc h5 {float:left;margin-bottom:5px;width:100%;font-weight:500;font-size:1.4em;color:#222;}
+			.pointInfoDesc p,
+			.moneyInfoDesc p {float:left;width:100%;line-height:1.6em;font-weight:400;font-size:1em;color:#777;}
+		.selectChargeCostWrap {float:left;width:100%;background:#d7b252;}
+			.selectChargeCostBox {float:left;padding:20px 20px 20px 35%;width:100%;background:url(../images/sub_mypage/icon_point_charge.png) no-repeat 10% 50%;background-size:70px}
+				.selectChargeCostBox h5 {float:left;width:100%;font-weight:bold;font-size:1.4em;color:#fff;letter-spacing:-0.05em;}
+				.selectChargeCostBox select.chargePriceSlt {float:left;width:70%;font-size:10px;color:#fff;letter-spacing:-0.05em;background:#d7b252;border:1px solid #fff;}
+		.costSummaryBox {float:left;padding:0 5%;width:100%;}
+			.costSummaryBox li {padding-left:25px;width:48%;height:50px;line-height:50px;font-weight:500;font-size:1.2em;color:#222;letter-spacing:-0.05em;}
+				.costSummaryBox li span {float:right;font-family:"arial";font-weight:bold;font-size:14px;color:#999;letter-spacing:-0.05em;}
+			.chargeC {float:left;background:url(../images/sub_mypage/icon_w.png) no-repeat 0 50%;background-size:19px;}
+			.balaceP {float:right;background:url(../images/sub_mypage/icon_p.png) no-repeat 0 50%;background-size:19px;}
+		.paymentInputBox {float:left;padding:5%;width:100%;background:#f5f6f8;}
+			.payInputUlBox {float:left;width:100%;background:#fff;border-top:1px solid #ddd;}
+				.payInputUlBox > li {float:left;padding:10px;width:100%;border:1px solid #ddd;border-top:0;}
+					.payKindUlBox {float:left;width:100%;}
+						.payKindUlBox > li {float:left;width:50%;}
+						.payKindUlBox > li a {display:block;width:100%;height:35px;line-height:35px;font-weight:500;font-size:13px;color:#444;letter-spacing:-0.05em;text-align:center;background:#f8f9fa;border:1px solid #dfe3e7;}
+						.payKindUlBox > li.actOn a {color:#fff;background:#c6a370;border:1px solid #a88b5f;}
+				.payInputUlBox li.payKindLi_1 {background:#f9fafb;}
+					.paymentInputBox .payKindSlt {float:left;width:100%;}
+						.payKindDesc {float:left;margin:5px 0;width:100%;font-size:1.2em;color:#777;letter-spacing:-0.05em;}
+						.cardInstallmentGuide {float:left;line-height:15px;font-weight:500;font-size:1.1em;color:#333;text-decoration:underline;}
+				.payInputUlBox li.payKindLi_2 {display:none;padding:0;background:#f9fafb;}
+					.cashReciptBox {float:left;padding:10px 5%;width:100%;background:#fff;border-bottom:1px solid #dfe3e7;}
+						.cashReciptTit {float:left;width:40%;font-weight:500;font-size:13px;color:#222;}
+						.cashReciptBox .radioBoxWrap {float:left;width:60%;}
+							.cashReciptBox .radioBoxWrap label {font-family:"Noto Sans KR";font-size:12px;}
+					.cashReciptInputBox {float:left;padding:5%;width:100%;}
+						.cashReciptInputBox .radioBoxWrap {font-size:12px;}
+						.cashReciptInputBox .inputTelBox {float:left;margin-top:10px;width:100%;}
+							.cashReciptInputBox .inputTelBox input[type="text"] {width:29.5%;}
+				.payInputUlBox li.totalPriceBox {float:left;width:100%;}
+					.priceTit {float:left;font:500 12px "Noto Sans KR";color:#333;text-align:left;}
+					.priceNum {float:right;font:500 11px "Noto Sans KR";color:#ff4100;text-align:right;}
+						.priceNum span {font-weight:bold;font-size:18px;font-family:"Arial";}
+		.myChargeWrap .pageBtnBox {margin-top:0;padding:0 5%;background:#f9fafb;}
+			.myChargeWrap .pageBtnBox .checkBoxWrap {float:left;font-size:1.1em;color:#333;text-align:left;}
+				.myChargeWrap .pageBtnBox .checkBoxWrap input {float:left;height:28px;}
+				.myChargeWrap .pageBtnBox .checkBoxWrap label {display:inline;}
+			.myChargeWrap .pageBtnBox .mBtn {margin-top:0;margin-bottom:20px;}
+	#myMoneyChargeBox {}
+		#myMoneyChargeBox .radioBoxWrap input[type="radio"] {margin-left:50px;}
+		#myMoneyChargeBox .radioBoxWrap input[type="radio"]:first-child {margin-left:0px;}
+		.virtualAccountBox {float:left;padding:20px 0;width:100%;border-top:1px solid #dedede;}
+			.sltLabel {font-weight:bold;}
+			.payAccountSlt {margin-left:10px;width:200px;}
+		.payGuideTxt {float:left;width:100%;padding-top:20px;}
+
+.myRefundWrap {}
+	#myRefundBox {}
+		.refundSummaryBox {float:left;padding:10px;width:100%;}
+			.refundSummaryBox .sentenceBox {float:left;margin-bottom:5px;padding-bottom:10px;width:100%;border-bottom:1px solid #eee;}
+			.rfsmrUl {float:left;width:100%;}
+				.rfsmrUl li {float:left;width:100%;height:30px;line-height:30px;font-weight:500;font-size:14px;color:#777;}
+					.rfsmrUl li div {font-size:17px;color:#444;}
+		.refundApplyBox {float:left;width:100%;}
+			.refundApplyBox .writeTable {}
+				.refundApplyBox .writeTable th,
+				.refundApplyBox .writeTable th label {font-weight:500;font-size:14px;color:#444;}
+				.refundApplyBox .writeTable th,
+				.refundApplyBox .writeTable td {padding:5px 5px;vertical-align:middle;}
+				.refundApplyBox .writeTable .inputWrap {border:1px solid #ddd;}
+					.refundApplyBox .writeTable .inputWrap input[type="text"] {width:90%;border:0;}
+			.refundApplyBox .viewTable {}
+			.refundApplyBox .viewTable.insideTable {margin-bottom:10px;}
+				.refundApplyBox .viewTable.insideTable th {color:#fff;background:#c6a370;}
+				.refundApplyBox .viewTable.insideTable td {text-align:center;}
+			.refundApplyBox .brownDotLi {float:left;width:100%;}
+				.refundApplyBox .brownDotLi li {line-height:14px;font-size:11px;color:#777;}
+			.refundApplyBox .pageBtnBox {margin-top:10px;}
+		.returnBankSlt {}
+
+.myMemberLeaveWrap {}
+	#myMemberLeaveBox {}
+		.leaveInfoDesc {float:left;margin-top:10px;margin-bottom:20px;padding:0;width:100%;font-weight:500;font-size:1.2em;color:#888;letter-spacing:-0.05em;}
+		#myMemberLeaveBox .viewTable {margin-bottom:20px;}
+		#myMemberLeaveBox .viewTable th {font-weight:500;font-size:14px;text-align:left;}
+		#myMemberLeaveBox .viewTable td {line-height:22px;font-size:13px;letter-spacing:-0.05em;}
+		#myMemberLeaveBox .brownDotLi {float:left;width:100%;}
+			#myMemberLeaveBox .brownDotLi li {float:left;width:100%;font-size:13px;}
+		#myMemberLeaveBox .viewTable h6 {margin:10px 0 0 0;padding:0 0 5px 0;font-weight:500;font-size:14px;color:#222;background:none;}
+			#myMemberLeaveBox .insideTable th {padding:5px 0;color:#fff;line-height:12px;text-align:center;background:#c6a370;}
+			#myMemberLeaveBox .insideTable td {padding:5px;text-align:center;}
+		#myMemberLeaveBox .pageBtnBox {margin-top:0px;}
+			#myMemberLeaveBox .pageBtnBox .checkBoxWrap,
+			#myMemberLeaveBox .pageBtnBox .checkBoxWrap input,
+			#myMemberLeaveBox .pageBtnBox .checkBoxWrap label {float:left;margin-top:0;}
+			#myMemberLeaveBox .pageBtnBox label {width:90%;font:normal 1.2em "dotum";}
+
+.myMemberLeaveCmpWrap {}
+	#myMemberLeaveCmpBox {}
+		.leaveCmpInfoDesc {clear:both;margin-top:40px;margin-bottom:30px;width:100%;line-height:24px;font-weight:500;font-size:1.8em;color:#222;text-align:center;}
+			.leaveCmpInfoDesc p {padding-bottom:160px;width:100%;background:url(../images/sub_mypage/icon_member_leave_complet.png) no-repeat 50% 100%;background-size:200px;}
+		#myMemberLeaveCmpBox .sentenceBox {margin:0 auto;margin-bottom:10px;width:90%;font-weight:500;font-size:13px;font-family:"Noto Sans KR";color:#666;}
+		#myMemberLeaveCmpBox .brownDotLi {float:left;padding:15px;width:100%;}
+			#myMemberLeaveCmpBox .brownDotLi li {color:#333;}
 
 /* mytag */
 .mytOpenHistoryWrap {}
@@ -722,7 +571,7 @@
 				.mthTit {float:left;padding:10px 10px;width:100%;}
 					.mthT1 {float:left;width:30px;}
 					.mthT2 {float:left;width:60%;}
-					.mthT3 {float:right;width:70px;}
+					.mthT3 {float:right;width:60px;}
 						.mthT3 span {display:block;margin-right:20%;width:80%;height:20px;line-height:20px;font-size:10px;text-align:center;background:#fff;border-radius:10px;}
 						.tStts1 {color:#663b93;border:1px solid #663b93;}
 						.tStts2 {color:#c82358;border:1px solid #c82358;}
@@ -730,7 +579,7 @@
 				.mytOpenHistoryWrap .conLine {background:#fff;}
 				.mthCon {float:left;padding:10px 10px 10px 10px;width:100%;}
 					.mthCon dl {float:left;width:100%;}
-						.mthCon dt {float:left;padding-left:30px;width:50%;line-height:20px;font-weight:normal;font-size:11px;color:#999;letter-spacing:-0.05em;}
+						.mthCon dt {float:left;padding-left:30px;width:50%;line-height:20px;font-weight:normal;font-size:11px;color:#666;letter-spacing:-0.05em;}
 						.mthCon dd {float:right;padding-right:10px;width:50%;line-height:20px;font-weight:normal;font-size:11px;color:#666;letter-spacing:-0.05em;text-align:right;}
 					.mthCon .pageBtnBox {margin-top:10px;padding-top:10px;border-top:1px solid #ddd;}
 						.mthCon .pageBtnBox .mBtn2 {margin-top:0;width:65px;height:25px;line-height:25px;border:1px solid #aaa;}
@@ -757,15 +606,12 @@
 	.customerHomeWrap .pageTab2 li,
 	.csNoticeWrap .pageTab2 li,
 	.csFaqWrap .pageTab2 li,
-	.csInquiryWrap .pageTab2 li {/*width:33.33%;*/width:50%;}
+	.csInquiryWrap .pageTab2 li {width:33.33%;}
 	.customerHomeWrap#contents h2 {padding:0 5%;border-bottom:1px solid #a8b4bc;}
 	.customerHomeWrap #csFaqBox {float:left;width:100%;border-bottom:5px solid #eee;}
 		.customerHomeWrap #csFaqBox ul {float:left;width:100%;}
-			/*.customerHomeWrap #csFaqBox ul li {float:left;padding:10px 0;width:50%;background:url(../images/common/blt_arrow_right_gray2.png) no-repeat 93% 50%;background-size:8px;border-bottom:1px solid #ddd;}*/
-			.customerHomeWrap #csFaqBox ul li {float:left;padding:10px 5%;width:100%;border-bottom:1px solid #ddd;}
-			.customerHomeWrap #csFaqBox .csSlideListBox .titleLine {padding:0;border-top:0;}
-			.customerHomeWrap #csFaqBox .csSlideListBox .conLine {margin-top:10px;}
-			/*.customerHomeWrap #csFaqBox ul li:last-child {border-bottom:0;}
+			.customerHomeWrap #csFaqBox ul li {float:left;padding:10px 0;width:50%;background:url(../images/common/blt_arrow_right_gray2.png) no-repeat 93% 50%;background-size:8px;border-bottom:1px solid #ddd;}
+			.customerHomeWrap #csFaqBox ul li:last-child {border-bottom:0;}
 				.customerHomeWrap #csFaqBox ul li a {display:block;margin:0 5% 0 7%;padding-left:35px;width:90%;height:30px;line-height:27px;font-weight:500;font-size:13px;color:#444;letter-spacing:-0.05em;}
 				.csfCate1 {background:url(../images/sub_customer/icon_faq_01.png) no-repeat 0 50%;background-size:contain;}
 				.csfCate2 {background:url(../images/sub_customer/icon_faq_02.png) no-repeat 0 50%;background-size:contain;}
@@ -774,27 +620,10 @@
 				.csfCate5 {background:url(../images/sub_customer/icon_faq_05.png) no-repeat 0 50%;background-size:contain;}
 				.csfCate6 {background:url(../images/sub_customer/icon_faq_06.png) no-repeat 0 50%;background-size:contain;}
 				.csfCate7 {background:url(../images/sub_customer/icon_faq_07.png) no-repeat 0 50%;background-size:contain;}
-				*/
-			.customerHomeWrap #csFaqBox .pageBtnBox {margin-top:0;margin-bottom:20px;padding:0 5%;}
 	.customerHomeWrap #csNoticeBox {float:left;width:100%;}
 		.customerHomeWrap #csNoticeBox .listTable2 {border-top:0;}
 			.customerHomeWrap #csNoticeBox .listTable2 td:last-child {font-family:"Arial";}
 		.customerHomeWrap #csNoticeBox .pageBtnBox {margin-top:10px;padding:0 5%;}
-	.customerHomeWrap #csInquiryBox {float:left;width:100%;}
-		.customerHomeWrap #csInquiryBox .listTable2 {border-top:0;}
-			.customerHomeWrap #csInquiryBox .listTable2 td:last-child {font-family:"Arial";}
-		.customerHomeWrap #csInquiryBox .pageBtnBox {margin-top:10px;padding:0 5%;}
-
-#csInfoBox {float:left;width:100%;background:url(../images/sub_customer/customer_bg.gif);border-bottom:5px solid #eee;}
-	.csInfoBoxWrap {float:left;padding:20px 15px;width:100%;}
-		.csibImg {display:none;float:left;width:20%;}
-		.csibText1 {float:left;margin-top:10px;width:100%;font-weight:500;font-size:1.2em;color:#45403a;}
-			.csibText1 span {display:inline-block;width:30%;}
-		.csibText2 {float:left;padding:10px 0;width:100%;font-weight:400;font-size:1.2em;letter-spacing:-0.025em;color:#fff;border:5px solid #d3bf82;}
-		.csibBtns {float:left;margin-top:20px;width:100%;}
-			.csibBtn {display:block;padding-left:15px;width:48%;height:40px;line-height:34px;font-weight:500;font-size:1.4em;letter-spacing:-0.05em;border:2px solid #fff;}
-			a.csibBtn1 {float:left;color:#fff;background:url(../images/sub_customer/customer_btn_1.jpg) no-repeat 100% 50%;}
-			a.csibBtn2 {float:right;color:#3b1e1e;background:url(../images/sub_customer/customer_btn_2.jpg) no-repeat 100% 50%;}
 
 .csNoticeWrap {}
 	#csNoticeListBox {float:left;width:100%;}
@@ -810,7 +639,6 @@
 				.bbsvInfo {float:left;width:100%;font-size:12px;color:#888;}
 			.bbsvCon {float:left;width:100%;font-size:12px;color:#888;}
 				.bbsvCon textarea {float:left;width:100%;}
-				.bbsvCon img {margin-bottom:10px;}
 		#csNoticeViewBox .pageBtnBox {margin-top:0;}
 
 .csFaqWrap {}
@@ -849,35 +677,11 @@
 			#csInquiryWriteBox .writeTable2 th {font-size:13px;}
 			#csInquiryWriteBox #webEditorBox {float:left;width:100%;}
 			#csInquiryWriteBox .attachBox {float:left;padding-bottom:10px;border-bottom:1px solid #eee;}
-				#csInquiryWriteBox .writeTable2 input[type="text"].fileInputType,
-				#csInquiryWriteBox .writeTable2 input[type="number"].fileInputType {width:60%;}
+				#csInquiryWriteBox .writeTable2 input[type="text"].fileInputType {width:60%;}
 				#csInquiryWriteBox .writeTable2 .uploadFile {float:right;margin-left:0;width:38%;font-weight:500;font-size:14px;color:#555;background:#fff;border:1px solid #ddd;}
 			#csInquiryWriteBox .pushKindBox label {font-size:13px;color:#888;}
 				#csInquiryWriteBox .pushKindBox .rmBtn {margin-top:10px;margin-bottom:10px;}
-			#csInquiryWriteBox .pageBtnBox {padding-top:5px;/*border-top:1px solid #eee;*/}
-
-.tBbsWrap {}
-	#tBbsListBox {width:100%;}
-		#tBbsListBox .listTable2 {margin-top:10px;border-top:1px solid #ddd;}
-		#tBbsListBox .pageBtnBox {margin-top:10px;padding:0 5%;}
-	#tBbsViewBox {width:100%;}
-	#tBbsWriteBox {width:100%;}
-
-/* event */
-.eventListWrap {}
-	#eventListBox {padding-top:15px;width:100%;}
-		.eventListUl {width:100%;}
-			.eventListUl li {float:left;margin-bottom:15px;width:100%;}
-				.evntlItem {}
-
-#contents.eventViewDetailWrap {border-top:0;}
-.eventViewDetailWrap {}
-	#eventViewDetailBox {width:100%;}
-#pInviteConfilmBox .listTable2 th,
-#pInviteConfilmBox .listTable2 td {border-right:1px solid #ddd;}
-#pInviteConfilmBox .listTable2 th:last-child,
-#pInviteConfilmBox .listTable2 td:last-child {border-right:0;}
-
+			#csInquiryWriteBox .pageBtnBox {padding-top:5px;border-top:1px solid #eee;}
 
 /* tagintag */
 .serviceWrap {}
@@ -917,7 +721,7 @@
 				.serviceBox .exUl {float:left;margin-top:20px;width:100%;}
 					.serviceBox .exUl li {float:left;margin-bottom:20px;width:100%;height:80px;}
 						.serviceBox .exUl li .exImg {float:left;width:20%;height:100%;vertical-align:middle;}
-							.serviceBox .exUl li .exImg img {margin-top:0px;width:auto;height:100%;}
+							.serviceBox .exUl li .exImg img {margin-top:10px;width:100%;}
 						.serviceBox .exUl li .exTxt {float:left;padding-left:20px;width:80%;}
 							.serviceBox .exUl li .exTxt .ext1 {font:bold 15px "noto sans kr";letter-spacing:-0.05em;color:#333;}
 							.serviceBox .exUl li .exTxt .ext2 {margin-top:0px;font:normal 12px / 18px "noto sans kr";letter-spacing:-0.05em;color:#666;}
@@ -961,7 +765,7 @@
 /* footer */
 .ftcIntroWrap .pageTab2 li,
 .ftcPartnerWrap .pageTab2 li,
-.ftcMapWrap .pageTab2 li {/*width:33.33%;*/width:50%;}
+.ftcMapWrap .pageTab2 li {width:33.33%;}
 
 .ftcIntroWrap {}
 	#ftcIntroBox {float:left;width:100%;}
@@ -1054,7 +858,6 @@
 		.ftCateSlt {width:100%;}
 		#ftPartnershipBox .writeTable2 th,
 		#ftPartnershipBox .writeTable2 td {padding:2px 0;}
-			#ftPartnershipBox .writeTable2 .inputMailBox > input[type="text"],
-			#ftPartnershipBox .writeTable2 .inputMailBox > input[type="number"] {float:left;width:52%;}
+			#ftPartnershipBox .writeTable2 .inputMailBox > input[type="text"] {float:left;width:52%;}
 				#ftPartnershipBox .writeTable2 .smTextBox {margin:5px 0;padding-left:0;line-height:14px;font-weight:300;font-size:11px;color:#777;}
 		#ftPartnershipBox .pageBtnBox {margin-top:0;}

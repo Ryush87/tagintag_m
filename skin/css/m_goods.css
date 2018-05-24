@@ -16,37 +16,13 @@
 #contents section:first-child {margin-top:0px;}
 
 /* ing_goods */
-
-.episodeListTabBox {}
-.episodeListTabBox.pageTab {}
-	.episodeListTabBox.pageTab li {width:33.33%;}
-
-.epsdProbability {position:absolute;top:60px;left:5px;width:42px;height:42px;background:#2b343a;border-radius:21px;}
-	.epsdProbability .proba1,
-	.epsdProbability .proba2 {margin:0 auto;width:60%;height:19px;line-height:19px;font-size:12px;text-align:center;color:#fff;}
-	.epsdProbability .proba2 {line-height:15px;border-top:1px solid #fff;}
-
 .ingGoodsDetailWrap {}
 	#mainGoodsBox {float:left;width:100%;}
-		#mainGoodsBox .epsdKindLabel {position:absolute;top:10px;left:10px;width:42px;height:49px;}
-				#mainGoodsBox .epsdKindLabel span {display:block;padding-top:17px;width:100%;height:100%;font-weight:600;font-size:11px;letter-spacing:-0.025em;text-align:center;background:url(../images/common/icon_tag_kind_bg.png) no-repeat;}
-		#mainGoodsBox .epsdKindLabel1 {color:#e40075;}
-		#mainGoodsBox .epsdKindLabel2 {color:#00a7b0;}
-		#mainGoodsBox .epsdKindLabel3 {color:#663b93;}
-		#mainGoodsBox .epsdProbability {position:absolute;top:70px;left:10px;padding-top:2px;width:42px;height:42px;background:#2b343a;border-radius:21px;}
-		.mainGoodsImgBox {position:relative;float:left;width:100%;padding:20px 30px 0;}
-		.mainGoodsInfoBox {position:relative;float:left;padding:15px;width:100%;}
+		.mainGoodsImgBox {position:relative;float:left;width:100%;}
+		.mainGoodsInfoBox {float:left;padding:15px;width:100%;}
 			.mgiName {font-weight:500;font-size:1.6em;color:#444;}
 			.mgiPrice1 {font-size:1.4em;color:#888;text-decoration:line-through;}
 			.mgiPrice2 {font-weight:500;font-size:2em;color:#e82d34;}
-			#copyUrlBtn {position:absolute;bottom:15px;right:15px;}
-				#copyUrlBtn a {display:block;padding-left:30px;height:25px;line-height:25px;font-size:14px;color:#333;background:url(../images/common/icon_url_btn.png) no-repeat 0 0;}
-			.shareFtBtns {position:absolute;bottom:55px;right:15px;width:25px;height:25px;cursor:pointer;background:url(../images/common/icon_sns_btn.png) no-repeat 0 0;}
-			.shareFtBtns.actOn {background:url(../images/common/icon_url_btn.png) no-repeat 0 0;}
-				.shareFtBtns ul {position:absolute;bottom:35px;display:block;}
-					.shareFtBtns ul li {display:block;margin-top:10px;width:25px;height:25px;}
-						.shareFtBtns ul li a {display:block;width:100%;height:100%;}
-					.shft_facebook {cursor:pointer;background:url(../images/common/icon_url_btn.png) no-repeat 0 0;}
 	/*
 		.mainGoods_01 {background:url(../images/temp/temp_main_goods_01.jpg) no-repeat 50% 0;}
 		.mainGoods_02 {background:url(../images/temp/temp_main_goods_02.jpg) no-repeat 50% 0;}
@@ -189,8 +165,6 @@
 									.bOtionItem > li span {vertical-align:middle;}
 									.boiItem .iCaution {margin-left:10px;}
 									.boiItem .tSoldOut {margin-left:10px;}
-		
-		#tagCountInfoBox {float:left;width:100%;}
 
 		#buyStandbyBox {float:left;width:100%;;}
 			.bsbTotal {float:left;font-size:15px;color:#888;}
@@ -244,31 +218,31 @@
 				.questRegBox .pageBtnBox {margin-top:5px;}
 			.questRegBtnBox {float:left;width:100%;}
 				.questRegBtnBox select {float:left;width:63%;}
-				.questRegBtnBox .mBtn {float:right;margin-top:3px;margin-left:5px;width:35%;height:30px;line-height:30px;}
+				.questRegBtnBox .mBtn {float:right;margin-left:5px;width:35%;height:30px;line-height:30px;}
 			#goodsQnaBox .qnaSlideListBox {margin-top:10px;}
 				/* slideListBox */
 				.qnaSlideListBox {float:left;width:100%;font-family:inherit;}
-					.qnaSlideListBox .slideListBody {float:left;margin-bottom:10px;width:100%;}
+					.qnaSlideListBox .slideListBody {float:left;margin-bottom:10px;}
 						.qnaSlideListBox .slideListBody > li {float:left;width:100%;font-size:1.3em;letter-spacing:-0.025em;border-bottom:0;}
 						.qnaSlideListBox .slideListBody > li:last-child {border-bottom:1px solid #e2e2e2;}
 						.qnaSlideListBox > li.openLine {}
 						.qnaSlideListBox > li a {color:#333;}
 						.qnaSlideListBox > li.actOn a {text-decoration:underline;}
-							.qnaSlideListBox .titleLine {position:relative;float:left;padding:15px 0;width:100%;border-top:1px solid #e2e2e2;}
+							.qnaSlideListBox .titleLine {float:left;padding:15px 0;width:100%;border-top:1px solid #e2e2e2;}
 							.qnaSlideListBox .conLine {display:none;float:left;padding:15px 0;width:100%;background:#fff;border-top:1px solid #e2e2e2;}
 				#goodsQnaBox .titleLine a,
 				#goodsQnaBox .titleLine a:hover {text-decoration:none;}
 				.qIcon1 {float:left;width:23px;height:23px;background:url(../images/common/icon_q.png) no-repeat 0 0;background-size:23px;}
 				.qIcon2 {float:left;width:38px;height:23px;background:url(../images/common/blt_a.png) no-repeat 0 0;background-size:38px;}
 				.qText {float:left;margin-left:10px;}
-				#goodsQnaBox .titleLine .qText {width:80%;}
+				#goodsQnaBox .titleLine .qText {width:60%;}
 					#goodsQnaBox .titleLine .qtCon {display:none;}
 				#goodsQnaBox .conLine .qText {width:80%;}
 					.qtTit {font-weight:bold;}
 					.qtCon {padding-top:10px;;color:#555;}
 					.qtInfo {padding-top:10px;font-size:11px;color:#888;}
 						.qtInfo span {font-family:"Arial";}
-				.qStatus {/*float:right;*/position:absolute;top:10px;right:0;}
+				.qStatus {float:right;}
 					.qDone,
 					.qIng {display:inline-block;float:left;padding-right:10px;padding-left:10px;height:20px;line-height:20px;font-size:11px;color:#888;border:1px solid #ddd;}
 					.qDone {background:#fff;}
@@ -280,12 +254,12 @@
 		#goodsReturnBox {float:left;width:100%;}
 			#goodsReturnBox .viewTable th {font-size:1.4em;}
 
-		#bottomOpenTagBox {position:fixed;left:0;bottom:0;width:100%;background:#fff;border:1px solid #707070;/*box-shadow:0 1px 2px 1px #333;*/}
-			#botToggleBtn {position:absolute;top:-17px;left:50%;margin-left:-50px;width:100px;height:20px;background:url(../images/sub_goods/floating_bg_top2.png) no-repeat 0 0;background-size:100px;}
+		#bottomOpenTagBox {position:fixed;left:0;bottom:0;width:100%;background:#fff;border:1px solid #bcbcbc;/*box-shadow:0 1px 2px 1px #333;*/}
+			#botToggleBtn {position:absolute;top:-17px;left:50%;margin-left:-50px;width:100px;height:20px;background:url(../images/sub_goods/floating_bg_top.png) no-repeat 0 0;background-size:100px;}
 			#botToggleBtn.actOn {top:-17px;}
 				#botToggleBtn a {display:block;width:100%;height:16px;}
-				#botToggleBtn .botToggleDown {background:url(../images/common/blt_arrow_down_black2.png) no-repeat 50% 5px;background-size:16px;}
-				#botToggleBtn .botToggleUp {background:url(../images/common/blt_arrow_up_black2.png) no-repeat 50% 5px;background-size:16px;}
+				#botToggleBtn .botToggleDown {background:url(../images/common/blt_arrow_down_black.png) no-repeat 50% 5px;background-size:16px;}
+				#botToggleBtn .botToggleUp {background:url(../images/common/blt_arrow_up_black.png) no-repeat 50% 5px;background-size:16px;}
 			.tagCountInfoBox {display:none;float:left;width:100%;}
 				.tagCountInfoBox h4 {padding-top:15px;padding-bottom:15px;width:100%;}
 					.tagCountInfoBox h4 .tagTotal {float:right;font-size:11px;color:#666;}
@@ -293,9 +267,7 @@
 					.tagCountBox {float:left;padding:15px 20px 15px 15px;width:100%;background:#fff;border:1px solid #e3e3e3;}
 						.tagCountBox .gridL {float:left;width:45%;}
 						.tagCountBox .gridR {float:right;width:48%;}
-						.tagCountBox li {padding-left:30px;height:25px;line-height:25px;font-weight:400;font-size:1em;color:#666;letter-spacing:-0.05em;}
-						.tagCountBox li:nth-child(2n) {float:right;width:48%;}
-						.tagCountBox li:nth-child(2n+1) {float:left;width:45%;}
+						.tagCountBox li {float:left;padding-left:30px;width:100%;height:25px;line-height:25px;font-weight:400;font-size:1.3em;color:#666;letter-spacing:-0.05em;}
 						.tagCountBox li span {float:right;font-weight:500;color:#444;}
 						.tagCountBox li.tagRating1 {background:url(../images/sub_goods/icon_tag_rating_1.png) no-repeat 0 0;background-size:25px;}
 						.tagCountBox li.tagRating2 {background:url(../images/sub_goods/icon_tag_rating_2.png) no-repeat 0 0;background-size:25px;}
@@ -305,10 +277,7 @@
 			.tagCountInfoBtn {float:left;margin:10px 0;width:100%;text-align:center;}
 				.botShareBtn {float:left;width:15%;height:40px;line-height:35px;border:1px solid #5fa9dd;border-radius:5px;}
 					.botShareBtn img {width:20px;}
-				.tagCountBoxBtn {float:left;width:48%;height:40px;line-height:35px;background:#fff;border:1px solid #ccc;border-radius:5px;}
-					a.tagCountBoxBtn {font-weight:bold;font-size:16px;color:#444;}
-				.botOpenBtn {float:right;width:48%;height:40px;line-height:35px;background:#c82358;border:1px solid #c82358;border-radius:5px;}
-					a.botOpenBtn {font-weight:bold;font-size:16px;color:#fff;}
+				.botOpenBtn {float:right;width:83%;height:40px;line-height:35px;background:#c82358;border:1px solid #c82358;border-radius:5px;}
 					.botOpenBtn img {width:70px;}
 				.botSoldOutBtn {float:right;width:83%;height:40px;font:bold 16px / 35px "Noto Sans KR";background:#949494;border:1px solid #949494;border-radius:5px;}
 					a.botSoldOutBtn {color:#fff;}
@@ -409,7 +378,7 @@
 			.closingGoodsList li {float:left;padding:0 20px 25px 20px;width:100%;border-bottom:1px solid #eee;}
 				.clsItem {float:left;padding-top:20px;width:100%;background:#fff;}
 					.clsiImgBox {float:left;width:48%;height:110px;text-align:center;overflow:hidden;}
-						.clsiImgBox img {width:100%;/*width:auto;height:100%;*/}
+						.clsiImgBox img {/*width:100%;*/width:auto;height:100%;}
 					.clsiTextBox {float:right;width:49%;}
 						.clsiLabel {float:left;margin-top:0px;padding:0;width:80px;line-height:18px;font-weight:500;font-size:1.1em;font-family:"Noto Sans KR";text-align:center;background:#fff;border-radius:3px;}
 						.clsiLabel_1 {color:#c82358;border:1px solid #c82358;}
@@ -430,10 +399,6 @@
 	#pTagOpenHistoryBox {float:left;width:100%;}
 		.pTagOpenGoodsInfo {float:left;margin-top:15px;padding:10px 15px;width:100%;border:1px solid #383838;}
 				.pTagOpenGoodsInfo p {padding:5px 0;line-height:18px;font-weight:500;font-size:1.4em;color:#333;}
-		.pTagOpenHistoryListTabBox {float:left;margin-top:20px;margin-bottom:10px;}
-			.pTagOpenHistoryListTabBox.pageTab {}
-				.pTagOpenHistoryListTabBox.pageTab li {width:33.33%;}
-					.pTagOpenHistoryListTabBox.pageTab li a {height:50px;line-height:50px;}
 		#pTagOpenHistoryBox .brownDotLi {float:left;margin-top:15px;width:100%;}
 			#pTagOpenHistoryBox .brownDotLi li {font-size:1.24em;background-position:0 9px;}
 		#pTagOpenHistoryBox .slideListBox {float:left;width:100%;}
@@ -445,13 +410,11 @@
 						.gthT1 {float:left;width:30px;}
 						.gthT2 {float:left;width:60%;}
 						.gthT3 {float:left;width:60px;}
-						.gthT4 {float:right;width:10%;}
 					#pTagOpenHistoryBox .conLine {background:#fff;}
 					.gthCon {float:left;padding:0 10px 10px 10px;width:100%;border-top:0;}
 						.gthCon dl {float:left;padding:10px 20px;width:100%;background:#f6f7f8;}
 							.gthCon dt {float:left;width:45%;line-height:20px;font-weight:normal;font-size:13px;color:#777;letter-spacing:-0.05em;}
 							.gthCon dd {float:right;width:55%;line-height:20px;font-weight:normal;font-size:13px;color:#777;letter-spacing:-0.05em;text-align:left;}
-		#pTagOpenHistoryBox form {float:left;width:100%;}
 
 /* comming_goods*/
 .commingGoodsWrap {}
@@ -540,10 +503,9 @@
 /* order */
 .orderWrap {}
 	#goodsInfoConfilmBox {float:left;width:100%;}
-		.oGoodsImgBox {position:relative;float:left;width:30%;/*border:1px solid #e8e8e8;*/}
+		.oGoodsImgBox {position:relative;float:left;width:30%;border:1px solid #e8e8e8;}
 		.oGoodsInfoBox {float:left;padding-left:15px;width:70%;letter-spacing:-0.075em;}
 			.ogiName {font-weight:500;font-size:1.6em;color:#444;}
-			.ogiPrice0 {margin-right:5px;display:inline-block;font-size:1.4em;color:#888;}
 			.ogiPrice1 {margin-right:5px;display:inline-block;font-size:1.4em;color:#888;text-decoration:line-through;}
 			.ogiPrice2 {display:inline-block;font-weight:500;font-size:2em;color:#ff4100;}
 				.ogiPrice2 span {display:inline-block;font-weight:400;font-size:14px;color:#666;}
@@ -558,8 +520,7 @@
 		.inputTelBox {}
 			.inputTelBox select.mPhonSlt,
 			.inputTelBox select.mTelSlt {float:left;width:30%;}
-			.writeTable .inputTelBox > input[type="text"],
-			.writeTable .inputTelBox > input[type="number"] {float:left;width:27%;}
+			.writeTable .inputTelBox > input[type="text"] {float:left;width:27%;}
 			.inputTelBox .divi {float:left;margin:0 5px;line-height:30px;}
 		#deliveryInfoBox .grayBgBox {margin-top:10px;}
 			#deliveryInfoBox .brownDotLi li {font-size:14px;}
@@ -581,8 +542,7 @@
 							.payKindChoiceChild {display:none;float:left;padding-bottom:20px;width:100%;}
 									.tagMoneyUse {float:left;width:100%;font-size:12px;color:#666;}
 										.tagMoneyUseDesc {}
-										.tagMoneyUse input[type="text"],
-										.tagMoneyUse input[type="number"] {margin:5px 0;}
+										.tagMoneyUse input[type="text"] {margin:5px 0;}
 										.tagMoneyUse .smBtn {float:right;}
 										.tagMoneyUse .whiteBtnB {float:right;width:35%;margin-top:5px !important;}
 										#tagMoneyPrice {}
@@ -593,17 +553,13 @@
 								.pymntKindUlBox > li:nth-child(4) .payKindSlt {margin-bottom:5px;width:100%;}
 								.payKindLi_1 li:last-child {margin-top:10px;font-size:11px;}
 								.deductionBox {margin-top:5px;padding-top:5px;}
-								.pymntKindUlBox input[type="text"],
-								.pymntKindUlBox input[type="number"] {width:100%;}
-								.pymntKindUlBox input[type="text"].tagMoneyPrice,
-								.pymntKindUlBox input[type="number"].tagMoneyPrice {padding-right:10px;width:60%;text-align:right;font-size:14px;color:#333;}
+								.pymntKindUlBox input[type="text"] {width:100%;}
+								.pymntKindUlBox input[type="text"].tagMoneyPrice {padding-right:10px;width:60%;text-align:right;font-size:14px;color:#333;}
 							
 	#paymentBox {float:left;width:100%;}
 		.paymentInputBox2 {float:right;width:100%;}
 			.paySummaryBox {float:left;padding-top:5px;width:100%;}
 				.paySummaryBox li {float:left;padding:0;width:100%;color:#333;font-weight:500;}
-					li.paysmmryLi1,
-					li.paysmmryLi2 {line-height:25px;font-size:1.2em;}
 					li.paysmmryLi3 {line-height:25px;font-size:1.4em;}
 					li.paysmmryLi3 .gridR {color:#ff4100;}
 					li.paysmmryLi3 span {font-size:18px;color:#ff4100;}
@@ -640,7 +596,6 @@
 					.toTit .toCol1 {width:45%;}
 					.toTit .toCol2 {width:20%;}
 					.toTit .toCol3 {padding-right:20px;width:35%;color:#ff4100;background:url(../images/common/blt_arrow_down.png) no-repeat 95% 50%;background-size:8px;}
-					.takeoverListBox li.openLine .toTit .toCol3 {background:url(../images/common/blt_arrow_up.png) no-repeat 95% 50%;background-size:8px;}
 				.toCon {display:none;float:left;width:100%;line-height:25px;font-weight:500;font-size:1.2em;color:#777;letter-spacing:-0.07em;}
 					.toCon ul {float:left;margin:0 3% 3% 3%;padding:10px;width:94%;background:#f7f7f7;}
 						.toCon li {float:left;width:100%;}
@@ -685,14 +640,9 @@
 						.tagMoneyBox .num {display:inline-block;font-size:14px;text-align:right;}
 						.tagMoneyBox .mBtn {float:left;margin-top:0;width:100px;height:30px;line-height:30px;}
 						.tagMoneyBox label {font-weight:500;}
-						.tagMoneyBox input[type="text"],
-						.tagMoneyBox input[type="number"] {float:left;margin-right:5px;width:85%;font-size:12px;font-weight:normal;text-align:right;}
+						.tagMoneyBox input[type="text"] {float:left;margin-right:5px;width:85%;font-size:12px;font-weight:normal;text-align:right;}
 		.transferPolicyUl {float:left;margin-top:10px;width:100%;}
 			#transferPolicyBox {float:left;width:100%;height:130px;font-size:11px;color:#777;border:1px solid #dedede;}
 			.transferPolicyUl .checkBoxWrap {float:left;margin-top:10px;font-size:14px;color:#333;}
 	.transferRequestWrap .pageBtnBox {margin-top:20px;padding-top:10px;border-top:1px solid #eee;}
 		.transferRequestWrap .pageBtnBox .mBtn {width:49%;}
-
-/* transfer_request_complete */
-.transferRequestCompleteWrap {}
-	.transferRequestCompleteWrap #orderGoodsInfoBox .sctsCon {margin-top:15px;padding-top:15px;border-top:1px solid #f4f4f4;}

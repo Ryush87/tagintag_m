@@ -135,10 +135,6 @@ function hidePopup2(obj){ //divpopup2 숨기기
 	divPopBg2_hide();
 	objHide($(obj));
 }
-function hidePopup3(obj){ //divpopup3 숨기기
-	resetFadeEff(obj);
-	objHide($(obj));
-}
 function nextPopup(pObj,nObj){ //divpopup 보이기
 	var closeObj=pObj.parents('.divPopupBox');
 	resetFadeEff(closeObj);
@@ -168,29 +164,10 @@ function top_btn_act(qy){ //topBtn 활성화
 		topBtn.stop().animate({'opacity':'0'},500);
 	}
 }
-function top_btn_act2(){ //topBtn2 활성화
-	var topBtn=$('#contentsTopBtn2');
-	var topBtnParentPY=topBtn.parent().offset().top;
-	var winPY=$(window).scrollTop();
-	var screenH=$(window).height();
-	var topBtnFinalPY=(winPY-topBtnParentPY)+screenH-topBtn.height();
-	var topBtnParentMaxH=topBtn.parent().height()-topBtn.height();
-	if(winPY>topBtnParentPY){
-		if(topBtnFinalPY>topBtnParentMaxH){
-			//topBtn.css({'opacity':'1'});
-			topBtn.stop().animate({'right':0+'px'},200);
-		}else{
-			//topBtn.css({'opacity':'1'});
-			topBtn.stop().animate({'right':20+'px'},200);
-		}
-	}else{
-		topBtn.stop().animate({'right':'-50px'},200);
-	}
-}
 function top_btn_click(){ //topBtn 클릭
 	$(window).scrollTop(0);
 }
-//숫자 카운트-v1
+//숫자 카운트
 var total_time=0;
 var hour=total_time/3600;
 var minute=(total_time/60)%60;
@@ -210,28 +187,35 @@ function time_count(){
 	total_time=60;
 	clearInterval(timeCount);
 	timeCount=setInterval(function(){count_down();},1000);
+	
 }
-//숫자 카운트-v2
-function count_down2(obj){
-	total_time--;
-	hour=total_time/3600;
-	minute=(total_time/60)%60;
-	second=total_time%60;
-	obj.html(parseInt(total_time));
-	if(total_time<=0){
-		clearInterval(timeCount);
-		obj.html(parseInt(0));
-	}
+/*
+function tagKeepBoxAct(){ //상단 택보관 박스 활성화
+	$('.tagKeepBoxWrap').slideDown();
+	bigTagToggle();
+	time_count();
 }
-function time_count2(obj){
-	var sec=obj.html();
-	if(sec==null){
-		total_time=60;
-	}
-	total_time=sec;
-	clearInterval(timeCount);
-	timeCount=setInterval(function(){count_down2(obj);},1000);
+*/
+/*
+function bigTagToggle(){ //상단 택보관 박스의 세로로 있는 택 Toggle
+	var bigTag=$('.bigTagBox');
+		var tempWrapH=bigTag.height()-90;
+		var currentY=bigTag.position().top;
+		if(currentY>0){
+			//접기
+			bigTag.animate({"top":-(tempWrapH)+"px"},500,'linear');
+			bigTag.find('.bgtStatus').removeClass('bgtSttClose').addClass('bgtSttOpen')
+			objShow($('.tkTimeCon1'));
+			objHide($('.tkTimeCon2'));
+		}else{
+			//열기
+			bigTag.animate({"top":80+"px"},500,'linear');
+			bigTag.find('.bgtStatus').removeClass('bgtSttOpen').addClass('bgtSttClose');
+			objHide($('.tkTimeCon1'));
+			objShow($('.tkTimeCon2'));
+		}
 }
+*/
 //calender
 function setDatePick(obj){ //calender 셋팅
 	jQuery('.blt_calendar').click(function(){
@@ -265,6 +249,11 @@ function actAnim(obj,act) { //acting Animation (animation.css 참조)
 		$(this).removeClass(act + ' animated actBefore');
 	});
 };
+//택보관버튼 호출
+function actTagKeepBtn(){
+	$('.tkTimeBtn').animate({'right':'0'},1000);
+}
+
 $(document).bind("mobileinit", function () {
 	$.mobile.pushStateEnabled = true;
 });
@@ -458,7 +447,7 @@ $(function($){
 	//sectionSlide UI e-----------------
 	
 	//slideList UI s-----------------
-	$('.slideListBox .titleLine a').on('click', function(){
+	$('.slideListBox .titleLine a').on('click',function(){
 		var totalIndex=$('.slideListBody > li').length;
 		var tempIndex=$('.slideListBody > li').index($(this).parents('li'));
 		for(i=0;i<totalIndex;i++){
@@ -488,34 +477,21 @@ $(function($){
 	//slideList UI e-----------------
 
 	//bottomOpenTagBox UI s-----------------
-	function toggleTagCnt (){ //상품상세페이지의 까보기 영역
-		var tObj=$('#botToggleBtn a');
-		tObj.parent().next('.tagCountInfoBox').slideToggle("",function(){
+	$('#botToggleBtn a').on('click',function(){ //상품상세페이지의 까보기 영역
+		$(this).parent().next('.tagCountInfoBox').slideToggle("",function(){
 			if($(this).parent().parent().height()>62){
 				$(this).parent().find('#botToggleBtn').addClass('actOn');
 				$(this).parent().find('#botToggleBtn a').removeClass('botToggleUp').addClass('botToggleDown');
-				$('.tagCountBoxBtn').html("Tag 구성 닫기");
 			}else{
 				$(this).parent().find('#botToggleBtn').removeClass('actOn');
 				$(this).parent().find('#botToggleBtn a').removeClass('botToggleDown').addClass('botToggleUp');
-				$('.tagCountBoxBtn').html("Tag 구성 열기");
 			}
 		});
-	};
-	$('#botToggleBtn a').on('click',function(){ //상품상세페이지의 까보기 영역
-		toggleTagCnt();
-	});
-	$('.tagCountBoxBtn').on('click',function(){ //상품상세페이지의 까보기 영역
-		toggleTagCnt();
 	});
 	//bottomOpenTagBox UI e-----------------
 
 	//BtnAction  s-----------------	
 	//subPage s---------------
-	$('.pageListTab li').click(function(){ //pageListTab 클릭시 활성화
-		$('.pageListTab li').removeClass('actOn');
-		$(this).addClass('actOn');
-	});
 	$('#findIdPwBox .pageTab li a').on('click',function(){ //아이디찾기
 		var targetObj=$(this).attr("tab-href");
 		$(this).parents('.pageTab').find('li').removeClass('actOn');
@@ -543,6 +519,7 @@ $(function($){
 			$(this).parent().find('.basicAddress').addClass("actOn");
 		}
 	});
+	
 	$(".mbPolicyBox .smBtn").on('click',function(){ //회원가입 > 이용약관 > 내용보기
 		$(this).next('.smPolicyT').slideToggle("",function(){
 			if($(this).parent().height()>50){
@@ -552,16 +529,26 @@ $(function($){
 			}
 		});
 	});
+	$('.tkTimeBtn').on('click',function(){ //택보관 박스 보이기
+		$('.tagKeepBoxWrap').fadeIn(function(){
+			$('.tkTimeBtn').fadeOut();
+		});
+	});
+	$(".tagKeepBoxWrap .tagKeepBoxClose").on('click',function(){ //택보관 박스 숨기기
+		$('.tagKeepBoxWrap').fadeOut(function(){
+			$('.tkTimeBtn').fadeIn();
+		});
+	});
+	$(".bigTagBox .bgtStatus a").on('click',function(){ //택보관 박스의 bigTag Toggle
+		bigTagToggle();
+	});
+	$('.tagKeepBoxWrap .tagKeepUse').on('click',function(){ //택보관 박스 사용하기 버튼
+		//hidePopup2($('.divPopupBox'));
+		//hidePopup($('.divPopupBox'));
+		//callPopup('#tagUseBox');
+	});
 	$(".infoPopBtn").on('click',function(){ //mypage 느낌표 아이콘
 		$(this).next().slideToggle();
-	});
-	$(".shareFtBtns").on('click',function(){ //공유버튼
-		$(this).find('ul').slideToggle();
-		if(Number($(this).find('ul').height())<5){
-			$(this).addClass("actOn");
-		}else{
-			$(this).removeClass("actOn");
-		}
 	});
 	$(".paymentInputBox .payKindUlBox li").on("click",function(){ //충전하기 결제방법
 		var li_index=$(".paymentInputBox .payKindUlBox li").index($(this))+1;
@@ -577,13 +564,7 @@ $(function($){
 		}
 	});
 	$('.takeoverListBox .toTit').on('click',function(){ //양도하기
-		$(this).next('.toCon').slideToggle("",function(){
-			if($(this).css('display')=="block"){
-				$(this).parents('li').addClass('openLine');
-			}else{
-				$(this).parents('li').removeClass('openLine');
-			}
-		});
+		$(this).next('.toCon').slideToggle();
 	});
 	//subPage e---------------
 
@@ -598,21 +579,6 @@ $(function($){
 		hidePopup($(this).parents('.divPopupBox'));
 	});
 	//divPop e---------------
-
-	//clipboard s-------------------
-	var clipboard=new Clipboard('.clipboardBtn');
-	clipboard.on('success', function(e) { //copy URL
-		//console.info('Action:', e.action);
-		//console.info('Text:', e.text);
-		//console.info('Trigger:', e.trigger);
-		alert('선택하신 상품의 고유주소(URL)가 클립보드에 복사되었습니다.\n\Ctrl + V 또는 붙여넣기를 선택하여 이용하시기 바랍니다.');
-		e.clearSelection();
-	});
-	clipboard.on('error', function(e) {
-		console.error('Action:', e.action);
-		console.error('Trigger:', e.trigger);
-	});
-	//clipboard e-------------------
 
 	//BtnAction UI e-----------------
 });
@@ -660,27 +626,3 @@ $(document).ready(function(){
 	});
 	//quick_menu_act(quickY);
 });
-
-function setComma( num ){ // 숫자콤마
-	return String(num).replace(/(\d)(?=(?:\d{3})+(?!\d))/g, '$1,'); // 정규식을 통한 콤마 넣기
-}
-
-/******************************** 택관련 함수 ************************************/
-function actTagKeepBtn(){ // 택보관버튼 호출
-	//time_count2($('.leftTimeTag')); //시간 카운트
-	$('.tkTimeBtn').fadeIn();
-	$('.tkTimeBtn').animate({'right':'0'},1000);
-}
-$(function(){ // 온로드시
-	$('.tkTimeBtn').on('click',function(){ //택보관 박스 보이기
-		$('.tagKeepBoxWrap').fadeIn(function(){
-			$('.tkTimeBtn').fadeOut();
-		});
-	});
-	$(".tagKeepBoxWrap .tagKeepBoxClose").on('click',function(){ //택보관 박스 숨기기
-		$('.tagKeepBoxWrap').fadeOut(function(){
-			$('.tkTimeBtn').fadeIn();
-		});
-	});
-});
-/******************************** 택관련 함수 ************************************/

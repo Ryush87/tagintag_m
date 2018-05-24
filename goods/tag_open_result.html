@@ -1,0 +1,52 @@
+<? include '../include/top.php' ?>
+<link rel="stylesheet" href="<?=$root?>/skin/css/m_goods.css">
+</head>
+<body>
+	<? include $d_root.'/include/lnb.php' ?>
+	<div id="wrap">
+		<? include '../include/header.php' ?>
+		<div id="contents">
+			<div class="wWrap">
+				<section id="tagResultBox" class="trRating2">
+					<div class="trTagBox">
+						<div class="trTagTitle">이지선님 <span>GOLD TAG</span>오픈</div>
+						<div class="trSale">97%OFF</div>
+					</div>
+					<div class="tagResultWrap">
+						<div class="trTime"><span class="leftTime">59</span><sup>'</sup></div>
+						<div class="trGoodsInfo">
+							<div class="trgName">[파리바게뜨]떠먹는 블루베리케이크</div>
+							<div class="trgOrgPrice">25,000원</div>
+							<div class="trgPrice">12,500원</div>
+							<div class="trDesc">제한시간내에 본 상품을 주문/판매하거나 새로운 tag을  뽑지 않으면 본 혜택은 소멸됩니다.</div>
+						</div>
+						<div class="trUse">
+							<div class="gridL">Tag를 사용하시겠습니까?</div>
+							<div class="gridR"><a href="order.html" class="trBtn trPurpleBtn">주문하기</a></div>
+						</div>
+					</div>
+					<ul class="trTagBtns">
+						<li>
+							<div class="gridL">즉시구매가를 제시한 다른 회원에게 판매하겠습니까?</div>
+							<div class="gridR"><a href="transfer.html" class="trBtn trWhiteBtn">양도하기</a></div>
+						</li>
+						<li>
+							<div class="gridL">더 높은 할인율에 도전합니다!</div>
+							<div class="gridR"><a href="tag_open_motion.html" class="trBtn trWhiteBtn">한번더</a></div>
+						</li>
+						<li>
+							<div class="trDesc">현재 택과 새로 뽑을 택 중 할인율이 높은 택 1개만 사용가능하며 나머지 택은 자동으로 소멸됩니다.</div>
+						</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+		<? include '../include/footer.php' ?>
+	</div>
+	<script type="text/javascript">
+		//actFadeEff($('#tagResultBox'));
+		changeTitle("택 오픈");
+		$('#backBtn a').attr('onclick','history.go(-3);return false;');
+	</script>
+</body>
+</html>

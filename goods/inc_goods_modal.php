@@ -8,7 +8,7 @@
 			<img src="<?=$root?>/skin/images/divpop/input_num_title.png" alt="원하는 숫자를 선택하세요" />
 		</div>
 		<div class="inpnInputBox fadeEff slide-rt e2">
-			<label for="tagNumInput" onclick="callPopup('#trialBox'); return false;">직접입력<br />(1 ~ 9999)</label>
+			<label for="tagNumInput">직접입력<br />(1 ~ 999)</label>
 			<input type="text" id="tagNumInput" class="tagNumInput" maxlength="3" readonly/>
 			<div class="numResetBtn"><a href="#none"><span class="blind">초기화</span></a></div>
 		</div>
@@ -29,46 +29,106 @@
 			</ul>
 		</div>
 		<div class="pageBtnBox">
-			<!-- <a href="#none" class="tagNumSubmit fadeEff slide-rt e9"><img src="<?=$root?>/skin/images/divpop/input_num_submit.png" alt="선택완료(-50p)"/></a> -->
-			<a href="#none" class="tagNumSubmit fadeEff slide-rt e9">
-				<img src="<?=$root?>/skin/images/divpop/input_num_submit.png" alt="선택완료(-50p)"/>
-				<div class="tagNumSubmitTxt">선택완료 (-5000P)</div>
-			</a>
+			<a href="#none" class="tagNumSubmit fadeEff slide-rt e9"><img src="<?=$root?>/skin/images/divpop/input_num_submit.png" alt="선택완료(-50p)"/></a>
 		</div>
 	</div>
 </div>
 
-<div id="trialBox" class="divPopupBox tagMotionBox fadeEff slide-up">
+<div id="slotMachineBox" class="divPopupBox tagMotionBox fadeEff slide-up">
 	<div class="divPopWrap">
-		<a href="#none" class="closePopBtn" onClick="hidePopupAll();"><img src="<?=$root?>/skin/images/divpop/btn_close.png" alt="닫기" class="closeIcon"/></a>
-		<div class="trialConBox">
-			<div class="trialTitle fadeEff slide-rt">
-				택(가격) 확인은<br>택인택 회원만 가능합니다.
+		<div class="sltmTitle fadeEff slide-rt">
+			<div class="sltmMsg"></div>
+		</div>
+		<div id="slotM">
+			<div class="sltmReelCount">
+				<img src="<?=$root?>/skin/images/divpop/slotmachin_box_bg2.png" alt="카운트배경"/>
+				<p class="countN">999</p>
 			</div>
-			<div class="gridL fadeEff slide-rt e2">
-				<div class="trialBtn fadeEff slide-rt e3">
-					<a href="<?=$root?>/member/join_step1_policy.html">회원가입</a>
-				</div>
-				<div class="trialDescBox fadeEff slide-rt e4">
-					지금 회원 가입 하시면<br>
-					특별한 혜택 3가지가 제공 됩니다.<br><br>
-					- 감사 포인트 1,000P 제공<br>
-					- 신규 회차 OPEN시 무료 알림(한시적 제공)<br>
-					- 판매 자격 확보(수익, 돈 버는 쇼핑몰)<br>
-					※ 회원가입 후 바로 택(가격)확인 가능
+			<div class="sltmReelWrap">
+				<img src="<?=$root?>/skin/images/divpop/slotmachin_box_bg1.png" alt="슬롯머신배경"/>
+				<div class="sltmReel"></div>
+			</div>
+			<div class="sltmReelShadow"></div>
+			<a href="#none" class="sltmSkipBtn"><img src="<?=$root?>/skin/images/divpop/slotmachin_skip_btn.png" alt="Skip"/></a>
+		</div>
+		<div class="sltmGuide">
+			<img src="<?=$root?>/skin/images/divpop/slotmachin_text_tit.png" alt="밑줄"/>
+			<ul>
+				<li>※ Start : 가장 최근에 오픈된 Tag을 시작지점으로 합니다.</li>
+				<li>※ 고객님께서 선택한  숫자 만큼 이동하여  Tag을 오픈 합니다.</li>
+				<li>※ 이미 오픈된 Tag은 건너 뜁니다.</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="divPopupBg2"></div>
+
+<div id="bigTagOpenBox" class="divPopupBox tagMotionBox fadeEff slide-rt">
+	<div class="divPopWrap">
+		<div class="bgtoTitle fadeEff slide-rt">
+			<img src="<?=$root?>/skin/images/divpop/big_tag_title.png" alt="택안의 가격을 확인하세요" />
+		</div>
+		<div id="bigTagWrap">
+			<!-- v1 s -->
+			<!--
+			<div class="bigTagFront slideHover">
+				<img src="<?=$root?>/skin/images/divpop/big_tag_front_bg.png" alt="택앞면배경" />
+				<div class="bgtoText">
+					<div class="btfPrice"><span class="btfPriceNum">298</span>번 <br />Tag을 받으셨습니다.</div>
+					<div class="hoverHand hoverEff2"><img src="<?=$root?>/skin/images/divpop/big_tag_front_hand.png" alt="클릭" /></div>
 				</div>
 			</div>
-			<div class="gridR fadeEff slide-rt e5">
-				<div class="trialBtn fadeEff slide-rt e6"">
-					<a href="#none">체험하기</a>
-				</div>
-				<div class="trialDescBox fadeEff slide-rt e7">
-					돈 버는 쇼핑몰 택인택!<br>
-					체험하기 버튼을 클릭하시면<br>
-					회원가입 없이도 체험이 가능 합니다.<br><br>
-					<span class="pointC7">※ “체험하기”에서는 실제 구매가 불가 합니다.<br>
+			<div class="bigTagBack">
+				<img src="<?=$root?>/skin/images/divpop/big_tag_back_bg_1.png" alt="택뒷면배경" />
+				<div class="bgtoText">
+					<div class="btbSale">97%↓SALE</div>
+					<div class="btbPrice"><span class="btbPriceNum">150</span> 원</div>
 				</div>
 			</div>
+			<div class="bigTagBack_after">
+				<div class="celebrationBox actBefore"><span>축하</span>합니다!</div>
+				<div class="btbaDescTxt actBefore">고객님은 본 상품의 <span>97% 할인</span> Tag를 받았습니다.</div>
+			</div>
+			<div class="celebrationBg"></div>
+			-->
+			<!-- v1 e -->
+
+			<!-- v2 s -->
+			<div class="bigTagFront slideHover" style="user-select:none;">
+				<img src="<?=$root?>/skin/images/divpop/big_tag_front_bg.png" alt="택앞면배경" />
+				<div class="bgtoText">
+					<div class="btfPrice"><span class="btfPriceNum">298</span>번 <br />Tag을 받으셨습니다.</div>
+					<div class="hoverHand hoverEff2"><img src="<?=$root?>/skin/images/divpop/big_tag_front_hand.png" style="user-select:none; user-drag: none;" alt="클릭" /></div>
+				</div>
+			</div>
+			<div class="bigTagBack">
+				<img src="<?=$root?>/skin/images/divpop/big_tag_back_bg_1.png" alt="택뒷면배경" />
+				<div class="bgtoText">
+					<div class="btbSale">97%↓SALE</div>
+					<div class="btbPrice"><span class="btbPriceNum">999,950</span> 원</div>
+				</div>
+			</div>
+			<div class="bigTagBack_after">
+				<div class="celebrationBox actBefore"><span>축하</span>합니다!</div>
+				<div class="btbaDescTxt actBefore">고객님은 본 상품의 <span>97% 할인</span> Tag를 받았습니다.</div>
+			</div>
+			<!-- 폭죽 -->
+			<div class="celebrationBg" style="z-index:1;">
+				<div class="celebrationBg2">
+					<!-- by jang  -->
+					<div id="canvas-container"></div>
+				</div>
+			</div>
+			<!-- v2 e -->
+		</div>
+		<div class="bgtoGuide">
+			<img src="<?=$root?>/skin/images/divpop/big_tag_text_tit.png" alt="밑줄"/>
+			<ul>
+				<li>※ Start : 가장 최근에 오픈된 Tag을 시작지점으로 합니다.</li>
+				<li>※ 고객님께서 선택한  숫자 만큼 이동하여  Tag을 오픈 합니다.</li>
+				<li>※ 이미 오픈된 Tag은 건너 뜁니다.</li>
+			</ul>
 		</div>
 	</div>
 </div>
